@@ -1,3 +1,11 @@
+<p align="center">
+  <a href="https://github.com/pooltogether/pooltogether--brand-assets">
+    <img src="https://github.com/pooltogether/pooltogether--brand-assets/blob/977e03604c49c63314450b5d432fe57d34747c66/logo/pooltogether-logo--purple-gradient.png?raw=true" alt="PoolTogether Brand" style="max-width:100%;" width="400">
+  </a>
+</p>
+
+<br />
+
 # v4-draw-results
 
 This is where the results of a [draw-calculator-cli](https://github.com/pooltogether/draw-calculator-cli) run triggered by Defender lives.
@@ -7,6 +15,7 @@ Also serves as the data source for the Netlify API.
 The structure is `./chainId/<prizeDistributorAddress>/draw<drawId>/*.json`
 
 The file structure is according to Prize Distributor address (not by Ticket) is because a Ticket can mave multiple associated Prize Distributors.
+NOTE: The use of lower case strings for addresses.
 
 For example:
 
