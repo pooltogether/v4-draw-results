@@ -1,6 +1,6 @@
 # v4-draw-results
 
-This is where the results of a (draw-calculator-cli)[https://github.com/pooltogether/draw-calculator-cli] run triggered by Defender lives.
+This is where the results of a [draw-calculator-cli](https://github.com/pooltogether/draw-calculator-cli) run triggered by Defender lives.
 
 Also serves as the data source for the Netlify API.
 
