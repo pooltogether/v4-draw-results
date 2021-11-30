@@ -6,16 +6,50 @@
 
 <br />
 
-# v4-draw-results
+# V4-Draw-Results
 
-This is where the results of a [draw-calculator-cli](https://github.com/pooltogether/draw-calculator-cli) run triggered by Defender lives.
+## Description
 
-Also serves as the data source for the Netlify API.
+This is where the results of a [draw-calculator-cli](https://github.com/pooltogether/draw-calculator-cli) are stored.
 
-The structure is `./chainId/<prizeDistributorAddress>/draw<drawId>/*.json`
+Also serves as the data source for the hosted [Netlify API](https://eager-fermat-3a8c47.netlify.app).
+
+The file structure is:
+
+```
+v4-draw-results
+│   README.md
+└───1 (chainId)
+│    └─── 0xb9a179dca5a7bf5f8b9e088437b3a85ebb495efe (Prize Distributor address)
+│           └───draw1
+│           │   0xa123..json
+│           │   0xa124..json
+│           │   ...
+│           │   prizes.json
+│           │   status.json
+|
+│           └───draw2
+│           ...
+└───137
+│    └─── 0x8141bcfbcee654c5de17c4e2b2af26b67f9b9056 (Prize Distributor address)
+│           └───draw1
+│           │   0xa123..json
+│           │   0xa124..json
+│           │   ...
+│           │   prizes.json
+│           │   status.json
+|
+│           └───draw2
+│           ...
+
+```
+
+Where `prizes.json` is an index of all the individual address files and `status.json` includes metadata about the CLI run (status and time elapsed).
 
 The file structure is according to Prize Distributor address (not by Ticket) is because a Ticket can mave multiple associated Prize Distributors.
-NOTE: The use of lower case strings for addresses.
+**NOTE** : The use of lower case strings for addresses.
+
+## Usage
 
 For example:
 
