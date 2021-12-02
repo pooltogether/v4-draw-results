@@ -23,25 +23,27 @@ v4-draw-results
 │   README.md
 └───1 (chainId)
 │    └─── 0xb9a179dca5a7bf5f8b9e088437b3a85ebb495efe (Prize Distributor address)
-│           └───draw1
-│           │   0xa123..json
-│           │   0xa124..json
-│           │   ...
-│           │   prizes.json
-│           │   status.json
+│           └───draw
+│               └───1
+│                   │   0xa123..json
+│                   │   0xa124..json
+│                   │   ...
+│                   │   prizes.json
+│                   │   status.json
 |
-│           └───draw2
-│           ...
+│               └───2
+│               ...
 └───137
 │    └─── 0x8141bcfbcee654c5de17c4e2b2af26b67f9b9056 (Prize Distributor address)
-│           └───draw1
-│           │   0xa123..json
-│           │   0xa124..json
-│           │   ...
-│           │   prizes.json
-│           │   status.json
+│           └───draw
+│               └───1
+│               │   0xa123..json
+│               │   0xa124..json
+│               │   ...
+│               │   prizes.json
+│               │   status.json
 |
-│           └───draw2
+│               └───2
 │           ...
 
 ```
@@ -55,10 +57,10 @@ The file structure is according to Prize Distributor address (not by Ticket) is 
 
 For example:
 
-1. `./1/0xb9a179dca5a7bf5f8b9e088437b3a85ebb495efe/draw1/prizes.json`
+1. `./1/0xb9a179dca5a7bf5f8b9e088437b3a85ebb495efe/draw/1/prizes.json`
    will display all prizes for chainId = 1 (Ethereum Mainnet) for Prize Distributor (address: 0xb9a179dca5a7bf5f8b9e088437b3a85ebb495efe) for draw 1.
-   Also viewable at the [Netlify API](https://eager-fermat-3a8c47.netlify.app/1/0xb9a179dca5a7bf5f8b9e088437b3a85ebb495efe/draw1/prizes.json).
+   Also viewable at the [Netlify API](https://eager-fermat-3a8c47.netlify.app/1/0xb9a179dca5a7bf5f8b9e088437b3a85ebb495efe/draw/1/prizes.json).
 
-1. `./137/0x8141bcfbcee654c5de17c4e2b2af26b67f9b9056/draw12/prizes.json`
+1. `./137/0x8141bcfbcee654c5de17c4e2b2af26b67f9b9056/draw/12/prizes.json`
    will display all prizes for chainId = 137 (Polygon/Matic) for Prize Distributor (address: 0x8141bcfbcee654c5de17c4e2b2af26b67f9b9056) for draw 12.
-   Also viewable at the [Netlify API](https://eager-fermat-3a8c47.netlify.app/137/0x8141bcfbcee654c5de17c4e2b2af26b67f9b9056/draw12/prizes.json).
+   Also viewable at the [Netlify API](https://eager-fermat-3a8c47.netlify.app/137/0x8141bcfbcee654c5de17c4e2b2af26b67f9b9056/draw/12/prizes.json).
