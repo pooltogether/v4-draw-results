@@ -16,7 +16,7 @@
 
 This is where the results of a [draw-calculator-cli](https://github.com/pooltogether/draw-calculator-cli) are stored.
 
-Also serves as the data source for the hosted [Netlify API](https://eager-fermat-3a8c47.netlify.app/readme.md).
+Also serves as the data source for the hosted [Netlify API](https://api.pooltogether.com/prizes/137/0x8141bcfbcee654c5de17c4e2b2af26b67f9b9056/draw/12/prizes.json).
 
 The file structure is:
 
@@ -25,31 +25,32 @@ v4-draw-results
 │   README.md
 │   package.json
 │   ...
-└───results
-    └───1 (chainId for mainnet)
-    │    └─── 0xb9a179dca5a7bf5f8b9e088437b3a85ebb495efe (Prize Distributor address)
-    │           └─── draw
-    │                └─── 1
-    │                     │   0xa123..json
-    │                     │   0xa124..json
-    │                     │   ...
-    │                     │   prizes.json
-    │                     │   status.json
-    |
-    │                └─── 2
-    │               ...
-    └───137 (chainId for polygon)
-    │    └─── 0x8141bcfbcee654c5de17c4e2b2af26b67f9b9056 (Prize Distributor address)
-    │           └─── draw
-    │                └─── 1
-    │                     │    0xa123..json
-    │                     │    0xa124..json
-    │                     │    ...
-    │                     │    prizes.json
-    │                     │    status.json
-    |
-    │                └─── 2
-    │           ...
+└───api
+    └───prizes
+        └───1 (chainId for mainnet)
+            │    └─── 0xb9a179dca5a7bf5f8b9e088437b3a85ebb495efe (Prize Distributor address)
+            │           └─── draw
+            │                └─── 1
+            │                     │   0xa123..json
+            │                     │   0xa124..json
+            │                     │   ...
+            │                     │   prizes.json
+            │                     │   status.json
+            |
+            │                └─── 2
+            │               ...
+        └───137 (chainId for polygon)
+            └─── 0x8141bcfbcee654c5de17c4e2b2af26b67f9b9056 (Prize Distributor address)
+            │           └─── draw
+            │                └─── 1
+            │                     │    0xa123..json
+            │                     │    0xa124..json
+            │                     │    ...
+            │                     │    prizes.json
+            │                     │    status.json
+            |
+            │                └─── 2
+            │           ...
 
 ```
 
@@ -62,10 +63,10 @@ The file structure is according to Prize Distributor address (not by Ticket) is 
 
 For example:
 
-1. `.results/1/0xb9a179dca5a7bf5f8b9e088437b3a85ebb495efe/draw/1/prizes.json`
-   will display all prizes for chainId = 1 (Ethereum Mainnet) for Prize Distributor (address: 0xb9a179dca5a7bf5f8b9e088437b3a85ebb495efe) for draw 1.
-   Also viewable at the [Netlify API](https://api.pooltogether.com/results/1/0xb9a179dca5a7bf5f8b9e088437b3a85ebb495efe/draw/1/prizes.json).
+1. `./api/prizes/1/0xb9a179dca5a7bf5f8b9e088437b3a85ebb495efe/draw/1/prizes.json`
+   will display all prizes for chainId = 1 (Ethereum Mainnet) for Prize Distributor (address: `0xb9a179dca5a7bf5f8b9e088437b3a85ebb495efe`) for draw 1.
+   Also viewable at the [Netlify API](https://api.pooltogether.com/prizes/1/0xb9a179dca5a7bf5f8b9e088437b3a85ebb495efe/draw/1/prizes.json).
 
-1. `.results/137/0x8141bcfbcee654c5de17c4e2b2af26b67f9b9056/draw/12/prizes.json`
-   will display all prizes for chainId = 137 (Polygon/Matic) for Prize Distributor (address: 0x8141bcfbcee654c5de17c4e2b2af26b67f9b9056) for draw 12.
-   Also viewable at the [Netlify API](https://api.pooltogether.com/results/137/0x8141bcfbcee654c5de17c4e2b2af26b67f9b9056/draw/12/prizes.json).
+1. `./api/prizes/137/0x8141bcfbcee654c5de17c4e2b2af26b67f9b9056/draw/12/prizes.json`
+   will display all prizes for chainId = 137 (Polygon/Matic) for Prize Distributor (address: `0x8141bcfbcee654c5de17c4e2b2af26b67f9b9056`) for draw 12.
+   Also viewable at the [Netlify API](https://api.pooltogether.com/prizes/137/0x8141bcfbcee654c5de17c4e2b2af26b67f9b9056/draw/12/prizes.json).

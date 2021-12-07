@@ -42,7 +42,7 @@ jobs:
           MATICVIGIL_URL: ${{secrets.MATICVIGIL_URL}}
           MUMBAI_URL: ${{secrets.MUMBAI_URL}}
           DEBUG: ${{secrets.DEBUG}}
-        run: node ./node_modules/@pooltogether/draw-calculator-cli/dist/index.js -c ${{github.event.client_payload.chainId}} -t ${{github.event.client_payload.ticket}} -d ${{github.event.client_payload.drawId}} -o ./results
+        run: node ./node_modules/@pooltogether/draw-calculator-cli/dist/index.js -c ${{github.event.client_payload.chainId}} -t ${{github.event.client_payload.ticket}} -d ${{github.event.client_payload.drawId}} -o ./api/prizes
       - name: Commit files
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
