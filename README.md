@@ -8,7 +8,7 @@
 
 # V4 Draw Results
 
-![Draw Calculator CLI](https://github.com/pooltogether/v4-periphery/actions/workflows/main.yml/badge.svg)
+![Draw Calculator CLI](https://github.com/pooltogether/v4-draw-results/actions/workflows/main.yml/badge.svg)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/27b08c1f-abf1-4e39-ba86-60bd8584302d/deploy-status)](https://app.netlify.com/sites/eager-fermat-3a8c47/deploys)
 
