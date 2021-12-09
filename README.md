@@ -16,9 +16,37 @@
 
 This is where the results of a [draw-calculator-cli](https://github.com/pooltogether/draw-calculator-cli) are stored.
 
-Also serves as the data source for the hosted [Netlify API](https://api.pooltogether.com/prizes/137/0x8141bcfbcee654c5de17c4e2b2af26b67f9b9056/draw/12/prizes.json).
+Also serves as the data source for the hosted [Netlify API](https://api.pooltogether.com/prizes/137/0x8141bcfbcee654c5de17c4e2b2af26b67f9b9056/draw/12/prizes.json). More information on how to use this API can be found [here](https://v4.docs.pooltogether.com/prize-api).
 
-The file structure is:
+## Setup
+
+### Prerequisites
+
+This repository can be cloned/forked and the data reproduced or continued.
+
+You'll need to add the following secrets to the repository (under settings/Secrets -> Repository Secrets):
+
+| Secret              | Value/Description |
+| ------------------- | ----------------- |
+| ALCHEMY_MAINNET_URL | Mainnet RPC URL   |
+| ALCHEMY_RINKEBY_URL | Rinkeby RPC URL   |
+| MATICVIGIL_URL      | Polygon RPC URL   |
+| MUMBAI_URL          | Mumbai RPC URL    |
+
+You'll also need a Github Personal Access Token in order to trigger the workflow remotely using the `repository_dispatch` API.
+
+The script at `./scripts/sync.js` will fire requests for the workflow to run from the genesis drawId (= 1) to the most recent drawId.
+
+### Steps
+
+1. Add the environmental secrets to your Github repo as shown above.
+1. Add your Personal Access Token _and_ the other environmental variables to the `.envrc` as shown in the `.envrc.example`.
+1. Install the repo using `yarn`.
+1. Run the sync script using `yarn sync`. This may take some time. You can see the progress by viewing the workflows executing in the Actions tab in your repo.
+
+## Data Structure
+
+The generated file structure is:
 
 ```
 v4-draw-results
@@ -54,38 +82,18 @@ v4-draw-results
 
 ```
 
-Where `prizes.json` is an index of all the individual address files and `status.json` includes metadata about the CLI run (status and time elapsed).
+| File         | Description                                          |
+| ------------ | ---------------------------------------------------- |
+| 0xa123..json | Data for a winning address for a draw                |
+| prizes.json  | Index file including all winners for draw            |
+| status.json  | Metadata about the CLI run (status and time elapsed) |
+
+Where `prizes.json` is an index of all the individual address files and `status.json` includes .
 
 The file structure is according to Prize Distributor address (not by Ticket) is because a Ticket can mave multiple associated Prize Distributors.
 **NOTE** : The use of lower case strings for addresses.
 
-## Setup
-
-### Prerequisites
-
-This repository can be cloned/forked and reproduced.
-
-You'll need to add the following secrets to the repository (under settings/Secrets -> Repository Secrets):
-
-| Secret              | Value/Description |
-| ------------------- | ----------------- |
-| ALCHEMY_MAINNET_URL | Mainnet RPC URL   |
-| ALCHEMY_RINKEBY_URL | Rinkeby RPC URL   |
-| MATICVIGIL_URL      | Polygon RPC URL   |
-| MUMBAI_URL          | Mumbai RPC URL    |
-
-You'll also need a Github Personal Access Token in order to trigger the workflow remotely using the `repository_dispatch` API.
-
-The script at `./scripts/sync.js` will fire requests for the workflow to run from the genesis drawId (= 1) to the most recent drawId.
-
-### Steps
-
-1. Add the environmental secrets to your Github repo as shown above.
-1. Add your Personal Access Token _and_ the other environmental variables to the `.envrc` as shown in the `.envrc.example`.
-1. Install the repo using `yarn`.
-1. Run the sync script using `yarn sync`. This may take some time. You can see the progress by viewing the workflows executing in the Actions tab in your repo.
-
-## Usage
+## Examples
 
 For example:
 
