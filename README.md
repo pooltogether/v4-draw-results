@@ -59,14 +59,42 @@ Where `prizes.json` is an index of all the individual address files and `status.
 The file structure is according to Prize Distributor address (not by Ticket) is because a Ticket can mave multiple associated Prize Distributors.
 **NOTE** : The use of lower case strings for addresses.
 
+## Setup
+
+### Prerequisites
+
+This repository can be cloned/forked and reproduced.
+
+You'll need to add the following secrets to the repository (under settings/Secrets -> Repository Secrets):
+
+| Secret              | Value/Description |
+| ------------------- | ----------------- |
+| ALCHEMY_MAINNET_URL | Mainnet RPC URL   |
+| ALCHEMY_RINKEBY_URL | Rinkeby RPC URL   |
+| MATICVIGIL_URL      | Polygon RPC URL   |
+| MUMBAI_URL          | Mumbai RPC URL    |
+
+You'll also need a Github Personal Access Token in order to trigger the workflow remotely using the `repository_dispatch` API.
+
+The script at `./scripts/sync.js` will fire requests for the workflow to run from the genesis drawId (= 1) to the most recent drawId.
+
+### Steps
+
+1. Add the environmental secrets to your Github repo as shown above.
+1. Add your Personal Access Token _and_ the other environmental variables to the `.envrc` as shown in the `.envrc.example`.
+1. Install the repo using `yarn`.
+1. Run the sync script using `yarn sync`. This may take some time. You can see the progress by viewing the workflows executing in the Actions tab in your repo.
+
 ## Usage
 
 For example:
 
 1. `./api/prizes/1/0xb9a179dca5a7bf5f8b9e088437b3a85ebb495efe/draw/1/prizes.json`
    will display all prizes for chainId = 1 (Ethereum Mainnet) for Prize Distributor (address: `0xb9a179dca5a7bf5f8b9e088437b3a85ebb495efe`) for draw 1.
-   Also viewable at the [Netlify API](https://api.pooltogether.com/prizes/1/0xb9a179dca5a7bf5f8b9e088437b3a85ebb495efe/draw/1/prizes.json).
+
+   This is also viewable at the [Netlify API](https://api.pooltogether.com/prizes/1/0xb9a179dca5a7bf5f8b9e088437b3a85ebb495efe/draw/1/prizes.json).
 
 1. `./api/prizes/137/0x8141bcfbcee654c5de17c4e2b2af26b67f9b9056/draw/12/prizes.json`
    will display all prizes for chainId = 137 (Polygon/Matic) for Prize Distributor (address: `0x8141bcfbcee654c5de17c4e2b2af26b67f9b9056`) for draw 12.
-   Also viewable at the [Netlify API](https://api.pooltogether.com/prizes/137/0x8141bcfbcee654c5de17c4e2b2af26b67f9b9056/draw/12/prizes.json).
+
+   This is also viewable at the [Netlify API](https://api.pooltogether.com/prizes/137/0x8141bcfbcee654c5de17c4e2b2af26b67f9b9056/draw/12/prizes.json).
