@@ -5,7 +5,7 @@ const drawBufferPolygonAddress =
   require('@pooltogether/v4-mainnet/deployments/polygon/DrawBuffer.json').address;
 const ethers = require('ethers');
 
-async function getDrawCount(chainId) {
+async function getNewestDraw(chainId) {
   let drawBufferAddress = '';
   let providerUrl = '';
 
@@ -22,7 +22,9 @@ async function getDrawCount(chainId) {
   const provider = new ethers.providers.JsonRpcProvider(providerUrl);
   const drawBufferContract = new ethers.Contract(drawBufferAddress, drawBufferAbi, provider);
 
-  return await drawBufferContract.getNewestDraw();
+  const draw = await drawBufferContract.getOldestDraw();
+
+  return draw.drawId;
 }
 
-module.exports = getDrawCount;
+module.exports = getNewestDraw;

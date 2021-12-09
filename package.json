@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "sync": "nvm use && node ./scripts/sync.js"
+    "sync": "node ./scripts/sync.js"
   },
   "dependencies": {
     "@pooltogether/draw-calculator-cli": "^0.1.0-beta.13",
