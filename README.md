@@ -42,6 +42,7 @@ The script at `./scripts/sync.js` will fire requests for the workflow to run fro
 1. Add the environmental secrets to your Github repo as shown above.
 1. Add your Personal Access Token _and_ the other environmental variables to the `.envrc` as shown in the `.envrc.example`.
 1. Install the repo using `yarn`.
+1. Update the constants in `./scripts/sync.js` to target this repo.
 1. Run the sync script using `yarn sync`. This may take some time. You can see the progress by viewing the workflows executing in the Actions tab in your repo.
 
 ## Data Structure
