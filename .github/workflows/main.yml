@@ -48,7 +48,7 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git pull
           git add .
-          git commit -m "Add draw ${{github.event.client_payload.drawId}}"
+          git commit -m "Add draw ${{github.event.client_payload.drawId}} for chainId ${{github.event.client_payload.chainId}}"
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
