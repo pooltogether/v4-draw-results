@@ -14,10 +14,11 @@ async function getNewestDraw(chainId) {
     providerUrl = process.env.ALCHEMY_MAINNET_URL;
   } else if (chainId == '137') {
     drawBufferAddress = drawBufferPolygonAddress;
+    providerUrl = process.env.MATICVIGIL_URL;
   }
 
   if (drawBufferAddress == '' || providerUrl == '') {
-    throw new Error('Chain ID not supported');
+    throw new Error('Chain ID not supported or drawBuffer address not found');
   }
   const provider = new ethers.providers.JsonRpcProvider(providerUrl);
   const drawBufferContract = new ethers.Contract(drawBufferAddress, drawBufferAbi, provider);

@@ -1,0 +1,52 @@
+name: Run Draw Calculator CLI
+on:
+ - push
+
+
+jobs:
+  build:
+    name: Build, lint, and test on Node ${{ matrix.node }} and ${{ matrix.os }}
+
+    runs-on: ${{ matrix.os }}
+    strategy:
+      max-parallel: 1
+      matrix:
+        node: ["16.9.0"]
+        os: [ubuntu-latest]
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+
+      - name: Use Node ${{ matrix.node }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node }}
+
+      - name: Install deps and build (with cache)
+        uses: bahmutov/npm-install@v1
+
+      - name: Find most recent prize distribution
+        run: |
+        node ../scripts/helpers/getNewestPrizeDistribution.js
+
+      # - name: Run CLI
+      #   env:
+      #     ALCHEMY_MAINNET_URL: ${{secrets.ALCHEMY_MAINNET_URL}}
+      #     ALCHEMY_RINKEBY_URL: ${{secrets.ALCHEMY_RINKEBY_URL}}
+      #     MATICVIGIL_URL: ${{secrets.MATICVIGIL_URL}}
+      #     MUMBAI_URL: ${{secrets.MUMBAI_URL}}
+      #     DEBUG: ${{secrets.DEBUG}}
+      #   run: node ./node_modules/@pooltogether/draw-calculator-cli/dist/index.js -c ${{github.event.client_payload.chainId}} -t ${{github.event.client_payload.ticket}} -d ${{github.event.client_payload.drawId}} -o ./api/prizes
+      # - name: Commit files
+      #   run: |
+      #     git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      #     git config --local user.name "github-actions[bot]"
+      #     git pull
+      #     git add .
+      #     git commit -m "Add draw ${{github.event.client_payload.drawId}} for chainId ${{github.event.client_payload.chainId}}"
+      # - name: Push changes
+      #   uses: ad-m/github-push-action@master
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      #     branch: ${{ github.ref }}
