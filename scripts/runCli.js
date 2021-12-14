@@ -1,40 +1,26 @@
 const findMostRecentDrawCommitedForChainId = require('./helpers/findMostRecentDrawCommitedForChainId');
 const getNewestPrizeDistribution = require('./helpers/getNewestPrizeDistribution');
 const spawnCLIProcess = require('./spawnCLIProcess');
-
+const { MAINNET_TICKET_ADDRESS, POLYGON_TICKET_ADDRESS } = require('./constants');
 async function run() {
+  const path = './api/prizes';
   let chainId = 1;
-  console.log(`checking if draw calculator CLI needs to be run for chainId: ${chainId}`);
 
-  const runRequired = await checkIfRunRequired(chainId);
-  console.log(`run required? ${runRequired}`);
-  if (runRequired);
-  {
+  if (await checkIfRunRequired(chainId)) {
     const newestPrizeDistributionDrawId = (await getNewestPrizeDistribution(chainId)).drawId;
     console.log(`running CLI for chainId: ${chainId} and drawId ${newestPrizeDistributionDrawId}`);
 
-    await spawnCLIProcess(
-      chainId,
-      '0xdd4d117723C257CEe402285D3aCF218E9A8236E1',
-      newestPrizeDistributionDrawId,
-      './api/prizes',
-    );
+    await spawnCLIProcess(chainId, MAINNET_TICKET_ADDRESS, newestPrizeDistributionDrawId, path);
   }
 
   // now polygon
-  // chainId = 137;
-  // console.log(`checking if draw calculator CLI needs to be run for chainId: ${chainId}`);
-  // if (await checkIfRunRequired(chainId));
-  // {
-  //   const newestPrizeDistributionDrawId = (await getNewestPrizeDistribution(chainId)).drawId;
-  //   console.log(`running CLI for chainId: ${chainId} and drawId ${newestPrizeDistributionDrawId}`);
-  //   await spawnCLIProcess(
-  //     chainId,
-  //     '0x6a304dFdb9f808741244b6bfEe65ca7B3b3A6076',
-  //     newestPrizeDistributionDrawId,
-  //     './api/prizes',
-  //   );
-  // }
+  chainId = 137;
+
+  if (await checkIfRunRequired(chainId)) {
+    const newestPrizeDistributionDrawId = (await getNewestPrizeDistribution(chainId)).drawId;
+    console.log(`running CLI for chainId: ${chainId} and drawId ${newestPrizeDistributionDrawId}`);
+    await spawnCLIProcess(chainId, POLYGON_TICKET_ADDRESS, newestPrizeDistributionDrawId, path);
+  }
 
   console.log('done!');
   return;
@@ -42,6 +28,7 @@ async function run() {
 run();
 
 async function checkIfRunRequired(chainId) {
+  console.log(`checking if draw calculator CLI needs to be run for chainId: ${chainId}`);
   const mostRecentCommit = findMostRecentDrawCommitedForChainId(chainId);
   console.log(`chainId ${chainId} most recent commit drawId:  ${mostRecentCommit}`);
 
