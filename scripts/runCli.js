@@ -1,7 +1,6 @@
 const findMostRecentDrawCommitedForChainId = require('./helpers/findMostRecentDrawCommitedForChainId');
 const getNewestPrizeDistribution = require('./helpers/getNewestPrizeDistribution');
 const spawnCLIProcess = require('./spawnCLIProcess');
-const core = require('@actions/core');
 
 const { MAINNET_TICKET_ADDRESS, POLYGON_TICKET_ADDRESS } = require('./constants');
 async function run() {
@@ -27,7 +26,6 @@ async function run() {
   }
 
   if (!cliToolRan) {
-    core.setFailed('No draw calculator CLI run required');
     process.exit(1);
   }
 
