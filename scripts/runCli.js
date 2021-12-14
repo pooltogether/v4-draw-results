@@ -1,6 +1,6 @@
 const findMostRecentDrawCommitedForChainId = require('./helpers/findMostRecentDrawCommitedForChainId');
 const getNewestPrizeDistribution = require('./helpers/getNewestPrizeDistribution');
-const cli = require('@pooltogether/draw-calculator-cli/dist/index.js');
+// const cli = require('@pooltogether/draw-calculator-cli/dist/index.js');
 
 function run() {
   let chaindId = 1;
