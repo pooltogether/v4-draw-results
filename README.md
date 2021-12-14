@@ -8,15 +8,17 @@
 
 # V4 Draw Results
 
-![Draw Calculator CLI](https://github.com/pooltogether/v4-draw-results/actions/workflows/main.yml/badge.svg)
+![Draw Calculator CLI](https://github.com/pooltogether/v4-draw-results/actions/workflows/cron.yml/badge.svg)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/27b08c1f-abf1-4e39-ba86-60bd8584302d/deploy-status)](https://app.netlify.com/sites/eager-fermat-3a8c47/deploys)
 
 ## Description
 
-This is where the results of a [draw-calculator-cli](https://github.com/pooltogether/draw-calculator-cli) are stored.
+This is where the results of the [draw-calculator-cli](https://github.com/pooltogether/draw-calculator-cli) are stored.
 
-Also serves as the data source for the hosted [Netlify API](https://api.pooltogether.com/prizes/137/0x8141bcfbcee654c5de17c4e2b2af26b67f9b9056/draw/12/prizes.json). More information on how to use this API can be found [here](https://v4.docs.pooltogether.com/prize-api).
+The draw calculator CLI is instantiated periodically from the [cron workflow](./.github/cron.yml). This workflow checks if the most recent `drawId` for a network is greater than the last committed draw, and if so, runs the [draw-calculator-cli](https://github.com/pooltogether/draw-calculator-cli).
+
+This data serves as the data source for the hosted [Netlify API](https://api.pooltogether.com/prizes/137/0x8141bcfbcee654c5de17c4e2b2af26b67f9b9056/draw/12/prizes.json). More information on how to use this API can be found [here](https://v4.docs.pooltogether.com/prize-api).
 
 ## Setup
 
