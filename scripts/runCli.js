@@ -33,6 +33,8 @@ async function run() {
       './api/prizes',
     );
   }
+
+  console.log('done!');
 }
 run();
 
@@ -42,7 +44,7 @@ async function checkIfRunRequired(chainId) {
   const newestPrizeDistributionDrawId = (await getNewestPrizeDistribution(chainId)).drawId;
   console.log('most recent newestPrizeDistributionDrawId drawId: ', newestPrizeDistributionDrawId);
 
-  if (mostRecentCommit != newestPrizeDistributionDrawId) {
+  if (mostRecentCommit.toString() != newestPrizeDistributionDrawId.toString()) {
     console.log('checkIfRunRequired returning: ', newestPrizeDistributionDrawId);
     return newestPrizeDistributionDrawId;
   }
