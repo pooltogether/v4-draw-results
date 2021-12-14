@@ -9,7 +9,7 @@ async function run() {
   {
     const newestPrizeDistributionDrawId = (await getNewestPrizeDistribution(chainId)).drawId;
     console.log(`running CLI for chainId: ${chainId} and drawId ${newestPrizeDistributionDrawId}`);
-    return;
+
     await spawnCLIProcess(
       chainId,
       '0xdd4d117723C257CEe402285D3aCF218E9A8236E1',
@@ -25,7 +25,6 @@ async function run() {
   {
     const newestPrizeDistributionDrawId = (await getNewestPrizeDistribution(chainId)).drawId;
     console.log(`running CLI for chainId: ${chainId} and drawId ${newestPrizeDistributionDrawId}`);
-    return;
     await spawnCLIProcess(
       chainId,
       '0x6a304dFdb9f808741244b6bfEe65ca7B3b3A6076',
