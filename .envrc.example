@@ -1,10 +1,7 @@
 # Github Personal Access Token with Repo Write Access
 export GITHUB_PAT=''
 
-export ALCHEMY_MAINNET_URL=''
-
-export ALCHEMY_RINKEBY_URL=''
-
-export MATICVIGIL_URL=''
-
-export MUMBAI_URL=''
+export MATICVIGIL_URL='https://rpc-mainnet.maticvigil.com/v1/f0f915d9c14c455e12fde3efb9360bdf9645dcf6'
+export MUMBAI_URL='https://matic-mumbai.chainstacklabs.com'
+export ALCHEMY_MAINNET_URL='https://eth-mainnet.alchemyapi.io/v2/RMQDXzuOiYuuNUF3TGDw66ylehGJBkik'
+export ALCHEMY_RINKEBY_URL='https://eth-rinkeby.alchemyapi.io/v2/uhDtboQSER8ggYknCggnHj8Cm-3g9ici'
