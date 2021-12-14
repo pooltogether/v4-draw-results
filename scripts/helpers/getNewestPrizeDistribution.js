@@ -35,6 +35,4 @@ async function getNewestPrizeDistribution(chainId) {
 
   return prizeDistribution;
 }
-// getNewestPrizeDistribution(1);
-
 module.exports = getNewestPrizeDistribution;

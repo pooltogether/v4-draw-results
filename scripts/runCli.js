@@ -28,6 +28,7 @@ async function run() {
 
   if (!cliToolRan) {
     core.setFailed('No draw calculator CLI run required');
+    process.exit(1);
   }
 
   console.log('done! exiting 0');
