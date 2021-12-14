@@ -25,6 +25,9 @@ jobs:
       - name: Install deps and build (with cache)
         uses: bahmutov/npm-install@v1
 
+      - name: pwd
+        run: pwd
+
       - name: Find most recent prize distribution
         env:
           ALCHEMY_MAINNET_URL: ${{secrets.ALCHEMY_MAINNET_URL}}
