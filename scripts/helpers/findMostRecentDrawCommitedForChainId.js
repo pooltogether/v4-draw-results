@@ -13,7 +13,7 @@ function findMostRecentDrawCommitedForChainId(chainId) {
   const maxDraw = draws.reduce((a, b) => {
     return Math.max(a, b);
   });
-  console.log('max draw ', maxDraw);
+
   return maxDraw;
 }
 module.exports = findMostRecentDrawCommitedForChainId;

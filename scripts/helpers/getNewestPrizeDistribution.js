@@ -7,7 +7,7 @@ const prizeDistributionBufferPolygon =
 const ethers = require('ethers');
 
 async function getNewestPrizeDistribution(chainId) {
-  console.log(`Finding newest prize distribution for chainId ${chainId}`);
+  // console.log(`Finding newest prize distribution for chainId ${chainId}`);
 
   let drawBufferAddress = '';
   let providerUrl = '';
@@ -32,7 +32,6 @@ async function getNewestPrizeDistribution(chainId) {
   );
 
   const prizeDistribution = await prizeDistributionBuffer.getNewestPrizeDistribution();
-  console.log(`The newest prize distribution set is for draw ${prizeDistribution.drawId}`);
 
   return prizeDistribution;
 }

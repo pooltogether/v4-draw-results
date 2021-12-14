@@ -22,34 +22,38 @@ async function run() {
   }
 
   // now polygon
-  chainId = 137;
-  console.log(`checking if draw calculator CLI needs to be run for chainId: ${chainId}`);
-  if (await checkIfRunRequired(chainId));
-  {
-    const newestPrizeDistributionDrawId = (await getNewestPrizeDistribution(chainId)).drawId;
-    console.log(`running CLI for chainId: ${chainId} and drawId ${newestPrizeDistributionDrawId}`);
-    await spawnCLIProcess(
-      chainId,
-      '0x6a304dFdb9f808741244b6bfEe65ca7B3b3A6076',
-      newestPrizeDistributionDrawId,
-      './api/prizes',
-    );
-  }
+  // chainId = 137;
+  // console.log(`checking if draw calculator CLI needs to be run for chainId: ${chainId}`);
+  // if (await checkIfRunRequired(chainId));
+  // {
+  //   const newestPrizeDistributionDrawId = (await getNewestPrizeDistribution(chainId)).drawId;
+  //   console.log(`running CLI for chainId: ${chainId} and drawId ${newestPrizeDistributionDrawId}`);
+  //   await spawnCLIProcess(
+  //     chainId,
+  //     '0x6a304dFdb9f808741244b6bfEe65ca7B3b3A6076',
+  //     newestPrizeDistributionDrawId,
+  //     './api/prizes',
+  //   );
+  // }
 
   console.log('done!');
+  return;
 }
 run();
 
 async function checkIfRunRequired(chainId) {
   const mostRecentCommit = findMostRecentDrawCommitedForChainId(chainId);
-  console.log('most recent commit drawId: ', mostRecentCommit);
+  console.log(`chainId ${chainId} most recent commit drawId:  ${mostRecentCommit}`);
+
   const newestPrizeDistributionDrawId = (await getNewestPrizeDistribution(chainId)).drawId;
-  console.log('most recent newestPrizeDistributionDrawId drawId: ', newestPrizeDistributionDrawId);
+  console.log(
+    `chainId ${chainId} most recent newestPrizeDistributionDrawId drawId:  ${newestPrizeDistributionDrawId}`,
+  );
 
   if (mostRecentCommit.toString() !== newestPrizeDistributionDrawId.toString()) {
     console.log('checkIfRunRequired returning true');
     return true;
   }
-  console.log('returning false');
+  console.log('checkIfRunRequired returning false');
   return false;
 }
