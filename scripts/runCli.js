@@ -5,7 +5,10 @@ const spawnCLIProcess = require('./spawnCLIProcess');
 async function run() {
   let chainId = 1;
   console.log(`checking if draw calculator CLI needs to be run for chainId: ${chainId}`);
-  if (await checkIfRunRequired(chainId));
+
+  const runRequired = await checkIfRunRequired(chainId);
+  console.log(`run required? ${runRequired}`);
+  if (runRequired);
   {
     const newestPrizeDistributionDrawId = (await getNewestPrizeDistribution(chainId)).drawId;
     console.log(`running CLI for chainId: ${chainId} and drawId ${newestPrizeDistributionDrawId}`);
@@ -43,10 +46,10 @@ async function checkIfRunRequired(chainId) {
   const newestPrizeDistributionDrawId = (await getNewestPrizeDistribution(chainId)).drawId;
   console.log('most recent newestPrizeDistributionDrawId drawId: ', newestPrizeDistributionDrawId);
 
-  if (mostRecentCommit.toString() != newestPrizeDistributionDrawId.toString()) {
-    console.log('checkIfRunRequired returning: ', newestPrizeDistributionDrawId);
-    return newestPrizeDistributionDrawId;
+  if (mostRecentCommit.toString() !== newestPrizeDistributionDrawId.toString()) {
+    console.log('checkIfRunRequired returning true');
+    return true;
   }
-
-  return undefined;
+  console.log('returning false');
+  return false;
 }
