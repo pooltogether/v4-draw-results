@@ -29,6 +29,7 @@ jobs:
         run: |
           pwd
           ls -al
+          ls scripts/
 
       - name: Find most recent prize distribution
         env:
@@ -37,7 +38,7 @@ jobs:
           MATICVIGIL_URL: ${{secrets.MATICVIGIL_URL}}
           MUMBAI_URL: ${{secrets.MUMBAI_URL}}
           DEBUG: ${{secrets.DEBUG}}
-        run: node ../scripts/runCli.js
+        run: node ./scripts/runCli.js
 
       # - name: Run CLI
       #   env:
