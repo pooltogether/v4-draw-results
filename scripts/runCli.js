@@ -1,16 +1,19 @@
 const findMostRecentDrawCommitedForChainId = require('./helpers/findMostRecentDrawCommitedForChainId');
 const getNewestPrizeDistribution = require('./helpers/getNewestPrizeDistribution');
 const spawnCLIProcess = require('./spawnCLIProcess');
+const core = require('@actions/core');
+
 const { MAINNET_TICKET_ADDRESS, POLYGON_TICKET_ADDRESS } = require('./constants');
 async function run() {
+  let cliToolRan = false;
   const path = './api/prizes';
   let chainId = 1;
 
   if (await checkIfRunRequired(chainId)) {
     const newestPrizeDistributionDrawId = (await getNewestPrizeDistribution(chainId)).drawId;
     console.log(`running CLI for chainId: ${chainId} and drawId ${newestPrizeDistributionDrawId}`);
-
     await spawnCLIProcess(chainId, MAINNET_TICKET_ADDRESS, newestPrizeDistributionDrawId, path);
+    cliToolRan = true;
   }
 
   // now polygon
@@ -20,10 +23,15 @@ async function run() {
     const newestPrizeDistributionDrawId = (await getNewestPrizeDistribution(chainId)).drawId;
     console.log(`running CLI for chainId: ${chainId} and drawId ${newestPrizeDistributionDrawId}`);
     await spawnCLIProcess(chainId, POLYGON_TICKET_ADDRESS, newestPrizeDistributionDrawId, path);
+    cliToolRan = true;
   }
 
-  console.log('done!');
-  return;
+  if (!cliToolRan) {
+    core.setFailed('No draw calculator CLI run required');
+  }
+
+  console.log('done! exiting 0');
+  process.exit(0);
 }
 run();
 

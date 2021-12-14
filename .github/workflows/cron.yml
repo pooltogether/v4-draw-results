@@ -1,7 +1,7 @@
 name: Cron Run Draw Calculator CLI
 on:
   schedule:
-    - cron: "*, *, * * *" # everyday at 2pm
+    - cron: "* * * * *" # everyday at 2pm
 
 jobs:
   build:
@@ -36,6 +36,7 @@ jobs:
         run: node ./scripts/runCli.js
 
       - name: Commit files
+        if: ${{ success() }}
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
@@ -45,6 +46,7 @@ jobs:
 
       - name: Push changes
         uses: ad-m/github-push-action@master
+        if: ${{ success() }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}

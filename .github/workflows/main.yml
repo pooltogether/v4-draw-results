@@ -1,4 +1,4 @@
-name: Run Draw Calculator CLI
+name: Remotely trigger Draw Calculator CLI
 on:
   # Allows external webhook trigger
   repository_dispatch:
