@@ -38,6 +38,14 @@ run();
 
 async function checkIfRunRequired(chainId) {
   const mostRecentCommit = findMostRecentDrawCommitedForChainId(chainId);
-  const newestPrizeDistribution = await getNewestPrizeDistribution(chainId);
-  return mostRecentCommit != newestPrizeDistribution.drawId;
+  console.log('most recent commit drawId: ', mostRecentCommit);
+  const newestPrizeDistributionDrawId = (await getNewestPrizeDistribution(chainId)).drawId;
+  console.log('most recent newestPrizeDistributionDrawId drawId: ', newestPrizeDistributionDrawId);
+
+  if (mostRecentCommit != newestPrizeDistributionDrawId) {
+    console.log('checkIfRunRequired returning: ', newestPrizeDistributionDrawId);
+    return newestPrizeDistributionDrawId;
+  }
+
+  return undefined;
 }
