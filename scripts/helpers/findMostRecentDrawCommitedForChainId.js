@@ -14,5 +14,6 @@ function findMostRecentDrawCommitedForChainId(chainId) {
     return Math.max(a, b);
   });
   console.log('max draw ', maxDraw);
+  return maxDraw;
 }
 module.exports = findMostRecentDrawCommitedForChainId;
