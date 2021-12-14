@@ -1,7 +1,6 @@
 name: Run Draw Calculator CLI
 on:
- - push
-
+  - push
 
 jobs:
   build:
@@ -27,8 +26,7 @@ jobs:
         uses: bahmutov/npm-install@v1
 
       - name: Find most recent prize distribution
-        run: |
-        node ../scripts/helpers/getNewestPrizeDistribution.js
+        run: node ../scripts/helpers/getNewestPrizeDistribution.js
 
       # - name: Run CLI
       #   env:
