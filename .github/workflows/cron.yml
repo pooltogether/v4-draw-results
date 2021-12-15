@@ -36,20 +36,30 @@ jobs:
           DEBUG: ${{secrets.DEBUG}}
         run: |
           node ./scripts/runCli.js
-          echo ${{steps.runDrawCalcCL.outputs.cliToolRan}} ${{steps.runDrawCalcCL.outputs.mainnetDrawId}} ${{steps.runDrawCalcCL.outputs.mainnetChainId}}
-          echo ${{steps.runDrawCalcCL.outputs.cliToolRan}} ${{steps.runDrawCalcCL.outputs.polygonDrawId}} ${{steps.runDrawCalcCL.outputs.polygonChainId}}
-      - name: Commit files
-        if: ${{ steps.runDrawCalcCLI.outputs.cliToolRan == "true" }} # if the previous step was successful
+          echo "polygon:" ${{steps.runDrawCalcCLI.outputs.polygonCliToolRan}} ${{steps.runDrawCalcCLI.outputs.mainnetDrawId}} ${{steps.runDrawCalcCLI.outputs.mainnetChainId}}
+          echo "mainnet" ${{steps.runDrawCalcCLI.outputs.mainnetCliToolRan}} ${{steps.runDrawCalcCLI.outputs.polygonDrawId}} ${{steps.runDrawCalcCLI.outputs.polygonChainId}}
+      
+      - name: Commit files for polygon
+        if: ${{ steps.runDrawCalcCLI.outputs.polygonCliToolRan == "true" }}
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git pull
           git add .
-          git commit -m "Add draw"
+          git commit -m "Add draw for polygon draw ${{steps.runDrawCalcCLI.outputs.polygonDrawId}}"
+
+     - name: Commit files for mainnet
+        if: ${{ steps.runDrawCalcCLI.outputs.mainnetCliToolRan == "true" }}
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git pull
+          git add .
+          git commit -m "Add draw for polygon draw ${{steps.runDrawCalcCLI.outputs.mainnetDrawId}}"
 
       - name: Push changes
         uses: ad-m/github-push-action@master
-        if: ${{ steps.runDrawCalcCLI == "true" }} # if the previous step was successful
+        if: ${{ steps.runDrawCalcCLI.outputs.polygonCliToolRan == "true" }} # this could be either polygonCliToolRan or mainnetCliToolRan
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}

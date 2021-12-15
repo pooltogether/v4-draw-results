@@ -14,7 +14,7 @@ async function run() {
     console.log(`running CLI for chainId: ${chainId} and drawId ${newestPrizeDistributionDrawId}`);
     await spawnCLIProcess(chainId, MAINNET_TICKET_ADDRESS, newestPrizeDistributionDrawId, path);
     cliToolRan = true;
-    core.setOutput('cliToolRan', 'true');
+    core.setOutput('mainnetCliToolRan', 'true');
     core.setOutput('mainnetDrawId', newestPrizeDistributionDrawId);
     core.setOutput('mainnetChainId', chainId);
   }
@@ -27,7 +27,7 @@ async function run() {
     console.log(`running CLI for chainId: ${chainId} and drawId ${newestPrizeDistributionDrawId}`);
     await spawnCLIProcess(chainId, POLYGON_TICKET_ADDRESS, newestPrizeDistributionDrawId, path);
     cliToolRan = true;
-    core.setOutput('cliToolRan', 'true');
+    core.setOutput('polygonCliToolRan', 'true');
     core.setOutput('polygonDrawId', newestPrizeDistributionDrawId);
     core.setOutput('polygonChainId', chainId);
   }
