@@ -16,7 +16,7 @@
 
 This is where the results of the [draw-calculator-cli](https://github.com/pooltogether/draw-calculator-cli) are stored.
 
-The draw calculator CLI is instantiated periodically from the [cron workflow](./.github/workflows/cron.yml). This workflow checks if the most recent `drawId` for a network is greater than the last committed draw, and if so, runs the [draw-calculator-cli](https://github.com/pooltogether/draw-calculator-cli).
+The draw calculator CLI is instantiated periodically from the [cron workflow](./.github/workfdlowcron.yml). This workflow checks if the most recent `drawId` for a network is greater than the last committed draw, and if so, runs the [draw-calculator-cli](https://github.com/pooltogether/draw-calculator-cli).
 
 This data serves as the data source for the hosted [Netlify API](https://api.pooltogether.com/prizes/137/0x8141bcfbcee654c5de17c4e2b2af26b67f9b9056/draw/12/prizes.json). More information on how to use this API can be found [here](https://v4.docs.pooltogether.com/prize-api).
 
@@ -47,6 +47,15 @@ The script at `./scripts/sync.js` will fire requests for the workflow to run fro
 1. Enable Github Actions if you have not done so already.
 1. Update the constants in `./scripts/sync.js` to target this repo.
 1. Run the sync script using `yarn sync`. This may take some time. You can see the progress by viewing the workflows executing in the Actions tab in your repo.
+
+### Adding a new network
+
+After following the appropriate steps to add the network to the draw-calculator-cli, do the following:
+
+1. Add the new network RPC endpoint URL to the repo secrets.
+1. Add this under the `env` section in the [workflow cron.yaml "Run Draw Calculator CLI (if required)"]("./.github/cron.yaml") step alongside the other env variables. This makes the secret available to the workflow as it runs.
+1. Add logic to check if the CLI tool needs to be run [here]("./scripts/runCLI.js").
+1. Add a workflow step to commit prize files if they were created.
 
 ## Data Structure
 
