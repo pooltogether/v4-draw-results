@@ -55,11 +55,11 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git pull
           git add ./api/prizes/1/
-          git commit -m "Add draw for polygon draw ${{steps.runDrawCalcCLI.outputs.mainnetDrawId}}"
+          git commit -m "Add draw for mainnet draw ${{steps.runDrawCalcCLI.outputs.mainnetDrawId}}"
 
-    #   - name: Push changes
-    #     uses: ad-m/github-push-action@master
-    #     if: ${{ steps.runDrawCalcCLI.outputs.polygonCliToolRan == "true" }} # this could be either polygonCliToolRan or mainnetCliToolRan
-    #     with:
-    #       github_token: ${{ secrets.GITHUB_TOKEN }}
-    #       branch: ${{ github.ref }}
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        if: ${{ steps.runDrawCalcCLI.outputs.polygonCliToolRan == "true" }} # this could be either polygonCliToolRan or mainnetCliToolRan
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
