@@ -1,4 +1,4 @@
-const { spawn } = require('child_process').execSync;
+const spawn = require('child_process').spawn;
 
 async function spawnCLIProcess(chainId, ticket, drawId, directory) {
   console.log('spawning node process');
@@ -26,8 +26,9 @@ async function spawnCLIProcess(chainId, ticket, drawId, directory) {
     // data from standard output is here as buffers
     console.log(chunk.toString());
   });
-  child.on('close', (code) => {
-    console.log(`child process exited with code ${code}`);
+
+  await new Promise((resolve) => {
+    child.on('close', resolve);
   });
 }
 module.exports = spawnCLIProcess;
