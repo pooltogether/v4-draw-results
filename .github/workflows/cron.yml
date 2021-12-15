@@ -39,14 +39,14 @@ jobs:
           echo  ${{steps.runDrawCalcCLI.outputs.polygonCliToolRan}} ${{steps.runDrawCalcCLI.outputs.mainnetDrawId}} ${{steps.runDrawCalcCLI.outputs.mainnetChainId}}
           echo  ${{steps.runDrawCalcCLI.outputs.mainnetCliToolRan}} ${{steps.runDrawCalcCLI.outputs.polygonDrawId}} ${{steps.runDrawCalcCLI.outputs.polygonChainId}}
 
-    #   - name: Commit files for polygon
-    #     if: ${{ steps.runDrawCalcCLI.outputs.polygonCliToolRan == "true" }}
-    #     run: |
-    #       git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-    #       git config --local user.name "github-actions[bot]"
-    #       git pull
-    #       git add .
-    #       git commit -m "Add draw for polygon draw ${{steps.runDrawCalcCLI.outputs.polygonDrawId}}"
+      - name: Commit files for polygon
+        if: ${{ steps.runDrawCalcCLI.outputs.polygonCliToolRan == "true" }}
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git pull
+          git add .
+          git commit -m "Add draw for polygon draw ${{steps.runDrawCalcCLI.outputs.polygonDrawId}}"
 
     #  - name: Commit files for mainnet
     #     if: ${{ steps.runDrawCalcCLI.outputs.mainnetCliToolRan == "true" }}
