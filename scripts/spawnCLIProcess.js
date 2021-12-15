@@ -1,4 +1,4 @@
-const { spawn } = require('child_process');
+const { spawn } = require('child_process').execSync;
 
 async function spawnCLIProcess(chainId, ticket, drawId, directory) {
   console.log('spawning node process');
