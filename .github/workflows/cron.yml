@@ -41,26 +41,26 @@ jobs:
           echo  ${{steps.runDrawCalcCLI.outputs.mainnetCliToolRan}} ${{steps.runDrawCalcCLI.outputs.polygonDrawId}} ${{steps.runDrawCalcCLI.outputs.polygonChainId}}
 
       - name: Commit files for polygon
-        if: ${{ steps.runDrawCalcCLI.outputs.polygonCliToolRan == "true" }}
+        if: steps.runDrawCalcCLI.outputs.polygonCliToolRan == 'true'
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git pull
           git add ./api/prizes/137/
-          git commit -m "Add draw for polygon draw ${{steps.runDrawCalcCLI.outputs.polygonDrawId}}"
+          git commit -m "Add draw for polygon draw steps.runDrawCalcCLI.outputs.polygonDrawId"
 
       - name: Commit files for mainnet
-        if: ${{ steps.runDrawCalcCLI.outputs.mainnetCliToolRan == "true" }}
+        if: steps.runDrawCalcCLI.outputs.mainnetCliToolRan == 'true'
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git pull
           git add ./api/prizes/1/
-          git commit -m "Add draw for mainnet draw ${{steps.runDrawCalcCLI.outputs.mainnetDrawId}}"
+          git commit -m "Add draw for mainnet draw steps.runDrawCalcCLI.outputs.mainnetDrawId"
 
       - name: Push changes
         uses: ad-m/github-push-action@master
-        if: ${{ steps.runDrawCalcCLI.outputs.polygonCliToolRan == "true" }} # this could be either polygonCliToolRan or mainnetCliToolRan
+        if: steps.runDrawCalcCLI.outputs.polygonCliToolRan == 'true' # this could be either polygonCliToolRan or mainnetCliToolRan
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
