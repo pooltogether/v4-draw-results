@@ -27,7 +27,7 @@ jobs:
       - name: Install deps and build (with cache)
         uses: bahmutov/npm-install@v1
 
-      - name: Run Draw Calculator CLI if required
+      - name: Run Draw Calculator CLI (if required)
         id: runDrawCalcCLI
         env:
           ALCHEMY_MAINNET_URL: ${{secrets.ALCHEMY_MAINNET_URL}}
@@ -40,7 +40,7 @@ jobs:
           echo  ${{steps.runDrawCalcCLI.outputs.polygonCliToolRan}} ${{steps.runDrawCalcCLI.outputs.mainnetDrawId}} ${{steps.runDrawCalcCLI.outputs.mainnetChainId}}
           echo  ${{steps.runDrawCalcCLI.outputs.mainnetCliToolRan}} ${{steps.runDrawCalcCLI.outputs.polygonDrawId}} ${{steps.runDrawCalcCLI.outputs.polygonChainId}}
 
-      - name: Commit files for polygon
+      - name: Commit files for polygon (if required)
         if: steps.runDrawCalcCLI.outputs.polygonCliToolRan == 'true'
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -49,7 +49,7 @@ jobs:
           git add ./api/prizes/137/
           git commit -m "Add draw for polygon draw steps.runDrawCalcCLI.outputs.polygonDrawId"
 
-      - name: Commit files for mainnet
+      - name: Commit files for mainnet (if required)
         if: steps.runDrawCalcCLI.outputs.mainnetCliToolRan == 'true'
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -58,9 +58,9 @@ jobs:
           git add ./api/prizes/1/
           git commit -m "Add draw for mainnet draw steps.runDrawCalcCLI.outputs.mainnetDrawId"
 
-      - name: Push changes
+      - name: Push changes (if required)
         uses: ad-m/github-push-action@master
-        if: steps.runDrawCalcCLI.outputs.polygonCliToolRan == 'true' # this could be either polygonCliToolRan or mainnetCliToolRan
+        if: steps.runDrawCalcCLI.outputs.polygonCliToolRan == 'true' || steps.runDrawCalcCLI.outputs.mainnetCliToolRan == 'true'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
