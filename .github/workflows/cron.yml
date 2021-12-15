@@ -2,7 +2,7 @@ name: Cron Run Draw Calculator CLI
 on:
   schedule:
     - cron: "* 14 * * *" # everyday at 2pm
-  # push:
+  push:
 
 jobs:
   runCLI:
