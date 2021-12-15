@@ -4,7 +4,7 @@ on:
     - cron: "* * * * *" # everyday at 2pm
 
 jobs:
-  build:
+  runCLI:
     name: Run CLI if necessary
 
     runs-on: ${{ matrix.os }}
