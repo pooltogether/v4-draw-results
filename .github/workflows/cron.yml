@@ -48,14 +48,14 @@ jobs:
           git add ./api/prizes/137/
           git commit -m "Add draw for polygon draw ${{steps.runDrawCalcCLI.outputs.polygonDrawId}}"
 
-     - name: Commit files for mainnet
-        if: ${{ steps.runDrawCalcCLI.outputs.mainnetCliToolRan == "true" }}
+      - name: Commit files for polygon
+        if: ${{ steps.runDrawCalcCLI.outputs.polygonCliToolRan == "true" }}
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git pull
-          git add ./api/prizes/1/
-          git commit -m "Add draw for polygon draw ${{steps.runDrawCalcCLI.outputs.mainnetDrawId}}"
+          git add ./api/prizes/137/
+          git commit -m "Add draw for polygon draw ${{steps.runDrawCalcCLI.outputs.polygonDrawId}}"
 
     #   - name: Push changes
     #     uses: ad-m/github-push-action@master
