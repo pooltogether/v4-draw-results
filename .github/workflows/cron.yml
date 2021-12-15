@@ -35,10 +35,7 @@ jobs:
           MATICVIGIL_URL: ${{secrets.MATICVIGIL_URL}}
           MUMBAI_URL: ${{secrets.MUMBAI_URL}}
           DEBUG: ${{secrets.DEBUG}}
-        run: |
-          node ./scripts/runCli.js
-          echo  ${{steps.runDrawCalcCLI.outputs.polygonCliToolRan}} ${{steps.runDrawCalcCLI.outputs.mainnetDrawId}} ${{steps.runDrawCalcCLI.outputs.mainnetChainId}}
-          echo  ${{steps.runDrawCalcCLI.outputs.mainnetCliToolRan}} ${{steps.runDrawCalcCLI.outputs.polygonDrawId}} ${{steps.runDrawCalcCLI.outputs.polygonChainId}}
+        run: node ./scripts/runCli.js
 
       - name: Commit files for polygon (if required)
         if: steps.runDrawCalcCLI.outputs.polygonCliToolRan == 'true'
@@ -49,14 +46,14 @@ jobs:
           git add ./api/prizes/137/
           git commit -m "Add draw for polygon draw steps.runDrawCalcCLI.outputs.polygonDrawId"
 
-      - name: Commit files for mainnet (if required)
+      - name: Commit files for mainnet (if required) # this is done seperately to polygon for a different commit message
         if: steps.runDrawCalcCLI.outputs.mainnetCliToolRan == 'true'
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git pull
           git add ./api/prizes/1/
-          git commit -m "Add draw for mainnet draw steps.runDrawCalcCLI.outputs.mainnetDrawId"
+          git commit -m "Add draw for mainnet draw ${{steps.runDrawCalcCLI.outputs.mainnetDrawId}}"
 
       - name: Push changes (if required)
         uses: ad-m/github-push-action@master
