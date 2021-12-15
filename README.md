@@ -16,7 +16,7 @@
 
 This is where the results of the [draw-calculator-cli](https://github.com/pooltogether/draw-calculator-cli) are stored.
 
-The draw calculator CLI is instantiated periodically from the [cron workflow](./.github/cron.yml). This workflow checks if the most recent `drawId` for a network is greater than the last committed draw, and if so, runs the [draw-calculator-cli](https://github.com/pooltogether/draw-calculator-cli).
+The draw calculator CLI is instantiated periodically from the [cron workflow](./.github/workflows/cron.yml). This workflow checks if the most recent `drawId` for a network is greater than the last committed draw, and if so, runs the [draw-calculator-cli](https://github.com/pooltogether/draw-calculator-cli).
 
 This data serves as the data source for the hosted [Netlify API](https://api.pooltogether.com/prizes/137/0x8141bcfbcee654c5de17c4e2b2af26b67f9b9056/draw/12/prizes.json). More information on how to use this API can be found [here](https://v4.docs.pooltogether.com/prize-api).
 
