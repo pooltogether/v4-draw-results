@@ -27,26 +27,29 @@ jobs:
         uses: bahmutov/npm-install@v1
 
       - name: Run Draw Calculator CLI if required
+        id: runDrawCalcCLI
         env:
           ALCHEMY_MAINNET_URL: ${{secrets.ALCHEMY_MAINNET_URL}}
           ALCHEMY_RINKEBY_URL: ${{secrets.ALCHEMY_RINKEBY_URL}}
           MATICVIGIL_URL: ${{secrets.MATICVIGIL_URL}}
           MUMBAI_URL: ${{secrets.MUMBAI_URL}}
           DEBUG: ${{secrets.DEBUG}}
-        run: node ./scripts/runCli.js
-
+        run: |
+          node ./scripts/runCli.js
+          echo ${{steps.runDrawCalcCL.outputs.cliToolRan}} ${{steps.runDrawCalcCL.outputs.mainnetDrawId}} ${{steps.runDrawCalcCL.outputs.mainnetChainId}}
+          echo ${{steps.runDrawCalcCL.outputs.cliToolRan}} ${{steps.runDrawCalcCL.outputs.polygonDrawId}} ${{steps.runDrawCalcCL.outputs.polygonChainId}}
       - name: Commit files
-        if: ${{ success() }} # if the previous step was successful
+        if: ${{ steps.runDrawCalcCLI.outputs.cliToolRan == "true" }} # if the previous step was successful
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git pull
           git add .
-          git commit -m "Add draw ${{github.event.client_payload.drawId}} for chainId ${{github.event.client_payload.chainId}}"
+          git commit -m "Add draw"
 
       - name: Push changes
         uses: ad-m/github-push-action@master
-        if: ${{ success() }} # if the previous step was successful
+        if: ${{ steps.runDrawCalcCLI == "true" }} # if the previous step was successful
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}

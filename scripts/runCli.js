@@ -1,6 +1,7 @@
 const findMostRecentDrawCommitedForChainId = require('./helpers/findMostRecentDrawCommitedForChainId');
 const getNewestPrizeDistribution = require('./helpers/getNewestPrizeDistribution');
 const spawnCLIProcess = require('./spawnCLIProcess');
+const core = require('@actions/core');
 
 const { MAINNET_TICKET_ADDRESS, POLYGON_TICKET_ADDRESS } = require('./constants');
 async function run() {
@@ -13,6 +14,9 @@ async function run() {
     console.log(`running CLI for chainId: ${chainId} and drawId ${newestPrizeDistributionDrawId}`);
     await spawnCLIProcess(chainId, MAINNET_TICKET_ADDRESS, newestPrizeDistributionDrawId, path);
     cliToolRan = true;
+    core.setOutput('cliToolRan', 'true');
+    core.setOutput('mainnetDrawId', newestPrizeDistributionDrawId);
+    core.setOutput('mainnetChainId', chainId);
   }
 
   // now polygon
@@ -23,10 +27,13 @@ async function run() {
     console.log(`running CLI for chainId: ${chainId} and drawId ${newestPrizeDistributionDrawId}`);
     await spawnCLIProcess(chainId, POLYGON_TICKET_ADDRESS, newestPrizeDistributionDrawId, path);
     cliToolRan = true;
+    core.setOutput('cliToolRan', 'true');
+    core.setOutput('polygonDrawId', newestPrizeDistributionDrawId);
+    core.setOutput('polygonChainId', chainId);
   }
 
   if (!cliToolRan) {
-    process.exit(1);
+    core.setOutput('cliToolRan', 'false');
   }
 
   console.log('done! exiting 0');
