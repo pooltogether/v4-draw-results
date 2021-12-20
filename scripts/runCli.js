@@ -8,7 +8,7 @@ async function run() {
   const path = './api/prizes';
   let chainId = 1;
 
-  if (await checkIfRunCLIRequired(chainId)) {
+  if (await checkIfCLIRunRequired(chainId)) {
     const newestPrizeDistributionDrawId = (await getNewestPrizeDistribution(chainId)).drawId;
     console.log(`running CLI for chainId: ${chainId} and drawId ${newestPrizeDistributionDrawId}`);
     await spawnCLIProcess(chainId, MAINNET_TICKET_ADDRESS, newestPrizeDistributionDrawId, path);
@@ -21,7 +21,7 @@ async function run() {
   // now polygon
   chainId = 137;
 
-  if (await checkIfRunCLIRequired(chainId)) {
+  if (await checkIfCLIRunRequired(chainId)) {
     const newestPrizeDistributionDrawId = (await getNewestPrizeDistribution(chainId)).drawId;
     console.log(`running CLI for chainId: ${chainId} and drawId ${newestPrizeDistributionDrawId}`);
     await spawnCLIProcess(chainId, POLYGON_TICKET_ADDRESS, newestPrizeDistributionDrawId, path);

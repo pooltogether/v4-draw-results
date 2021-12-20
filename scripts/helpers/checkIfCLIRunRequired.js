@@ -1,4 +1,4 @@
-const findMostRecentDrawCommitedForChainId = require('./helpers/findMostRecentDrawCommitedForChainId');
+const findMostRecentDrawCommitedForChainId = require('./findMostRecentDrawCommitedForChainId');
 const getNewestPrizeDistribution = require('./helpers/getNewestPrizeDistribution');
 
 async function checkIfCLIRunRequired(chainId) {
