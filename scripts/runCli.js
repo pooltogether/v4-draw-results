@@ -17,7 +17,7 @@ async function run() {
 
     // need to run between these two draw Ids - create a range
     const draws = Array.from(
-      { length: mostRecentCommitedDrawId - newestPrizeDistributionDrawId + 1 },
+      { length: newestPrizeDistributionDrawId - mostRecentCommitedDrawId + 1 },
       (v, k) => k + mostRecentCommitedDrawId,
     );
     console.log('running CLI for draws: ', draws);
@@ -41,7 +41,7 @@ async function run() {
 
     // need to run between these two draw Ids - create a range
     const draws = Array.from(
-      { length: mostRecentCommitedDrawId - newestPrizeDistributionDrawId + 1 },
+      { length: newestPrizeDistributionDrawId - mostRecentCommitedDrawId + 1 },
       (v, k) => k + mostRecentCommitedDrawId,
     );
     console.log('running CLI for draws: ', draws);
