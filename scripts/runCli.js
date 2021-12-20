@@ -1,5 +1,5 @@
 const spawnCLIProcess = require('./spawnCLIProcess');
-const checkIfRunCLIRequired = require('./helpers/checkIfRunCLIRequired');
+const checkIfCLIRunRequired = require('./helpers/checkIfCLIRunRequired');
 const { MAINNET_TICKET_ADDRESS, POLYGON_TICKET_ADDRESS } = require('./constants');
 
 const core = require('@actions/core');
