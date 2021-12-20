@@ -20,6 +20,8 @@ async function run() {
       { length: mostRecentCommitedDrawId - newestPrizeDistributionDrawId + 1 },
       (v, k) => k + mostRecentCommitedDrawId,
     );
+    console.log('running CLI for draws: ', draws);
+
     draws.forEach(async (drawId) => {
       console.log(`running CLI for chainId: ${chainId} and drawId ${drawId}`);
       await spawnCLIProcess(chainId, MAINNET_TICKET_ADDRESS, drawId, path);
@@ -42,6 +44,7 @@ async function run() {
       { length: mostRecentCommitedDrawId - newestPrizeDistributionDrawId + 1 },
       (v, k) => k + mostRecentCommitedDrawId,
     );
+    console.log('running CLI for draws: ', draws);
     draws.forEach(async (drawId) => {
       console.log(`running CLI for chainId: ${chainId} and drawId ${drawId}`);
       await spawnCLIProcess(chainId, POLYGON_TICKET_ADDRESS, drawId, path);
