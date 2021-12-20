@@ -20,7 +20,7 @@ async function run() {
       { length: mostRecentCommitedDrawId - newestPrizeDistributionDrawId + 1 },
       (v, k) => k + mostRecentCommitedDrawId,
     );
-    draws.forEach((drawId) => {
+    draws.forEach(async (drawId) => {
       console.log(
         `running CLI for chainId: ${chainId} and drawId ${newestPrizeDistributionDrawId}`,
       );
@@ -44,7 +44,7 @@ async function run() {
       { length: mostRecentCommitedDrawId - newestPrizeDistributionDrawId + 1 },
       (v, k) => k + mostRecentCommitedDrawId,
     );
-    draws.forEach((drawId) => {
+    draws.forEach(async (drawId) => {
       console.log(
         `running CLI for chainId: ${chainId} and drawId ${newestPrizeDistributionDrawId}`,
       );
