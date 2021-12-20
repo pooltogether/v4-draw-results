@@ -22,10 +22,10 @@ async function run() {
     );
     console.log('running CLI for draws: ', draws);
 
-    draws.forEach(async (drawId) => {
+    for (let drawId of draws) {
       console.log(`running CLI for chainId: ${chainId} and drawId ${drawId}`);
       await spawnCLIProcess(chainId, MAINNET_TICKET_ADDRESS, drawId, path);
-    });
+    }
 
     core.setOutput('mainnetCliToolRan', 'true');
     core.setOutput('mainnetDrawId', JSON.stringify(draws));
@@ -45,10 +45,10 @@ async function run() {
       (v, k) => k + mostRecentCommitedDrawId,
     );
     console.log('running CLI for draws: ', draws);
-    draws.forEach(async (drawId) => {
+    for (let drawId of draws) {
       console.log(`running CLI for chainId: ${chainId} and drawId ${drawId}`);
       await spawnCLIProcess(chainId, POLYGON_TICKET_ADDRESS, drawId, path);
-    });
+    }
 
     core.setOutput('polygonCliToolRan', 'true');
     core.setOutput('polygonDrawId', JSON.stringify(draws));
