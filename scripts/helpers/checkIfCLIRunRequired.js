@@ -1,5 +1,5 @@
 const findMostRecentDrawCommitedForChainId = require('./findMostRecentDrawCommitedForChainId');
-const getNewestPrizeDistribution = require('./helpers/getNewestPrizeDistribution');
+const getNewestPrizeDistribution = require('./getNewestPrizeDistribution');
 
 async function checkIfCLIRunRequired(chainId) {
   console.log(`checking if draw calculator CLI needs to be run for chainId: ${chainId}`);
