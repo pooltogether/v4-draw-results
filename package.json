@@ -5,7 +5,7 @@
   },
   "dependencies": {
     "@actions/core": "^1.6.0",
-    "@pooltogether/draw-calculator-cli": "^0.1.0-beta.13",
+    "@pooltogether/draw-calculator-cli": "^0.1.0-beta.15",
     "fetch": "^1.1.0"
   }
 }
