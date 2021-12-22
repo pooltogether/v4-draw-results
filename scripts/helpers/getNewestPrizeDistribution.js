@@ -4,6 +4,8 @@ const prizeDistributionBufferMainnet =
   require('@pooltogether/v4-mainnet/deployments/mainnet/PrizeDistributionBuffer.json').address;
 const prizeDistributionBufferPolygon =
   require('@pooltogether/v4-mainnet/deployments/polygon/PrizeDistributionBuffer.json').address;
+const prizeDistributionBufferAvalanche =
+  require('@pooltogether/v4-mainnet/deployments/avalanche/PrizeDistributionBuffer.json').address;
 const ethers = require('ethers');
 
 async function getNewestPrizeDistribution(chainId) {
@@ -18,6 +20,9 @@ async function getNewestPrizeDistribution(chainId) {
   } else if (chainId == '137') {
     drawBufferAddress = prizeDistributionBufferPolygon;
     providerUrl = process.env.MATICVIGIL_URL;
+  } else if (chainId == '43114') {
+    drawBufferAddress = prizeDistributionBufferAvalanche;
+    providerUrl = process.env.AVALANCHE_URL;
   }
 
   if (drawBufferAddress == '' || providerUrl == '') {

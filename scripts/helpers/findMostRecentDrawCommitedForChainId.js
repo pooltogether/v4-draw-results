@@ -1,10 +1,18 @@
 const fs = require('fs');
+const {
+  POLYGON_PRIZE_DISTRIBUTOR_ADDRESS,
+  MAINNET_PRIZE_DISTRIBUTOR_ADDRESS,
+  AVALANCHE_PRIZE_DISTRIBUTOR_ADDRESS,
+} = require('./constants');
+
 function findMostRecentDrawCommitedForChainId(chainId) {
   let prizeDistributor = '';
   if (chainId == '1') {
-    prizeDistributor = '0xb9a179dca5a7bf5f8b9e088437b3a85ebb495efe';
+    prizeDistributor = MAINNET_PRIZE_DISTRIBUTOR_ADDRESS;
   } else if (chainId == '137') {
-    prizeDistributor = '0x8141bcfbcee654c5de17c4e2b2af26b67f9b9056';
+    prizeDistributor = POLYGON_PRIZE_DISTRIBUTOR_ADDRESS;
+  } else if (chainId == '43114') {
+    prizeDistributor = AVALANCHE_PRIZE_DISTRIBUTOR_ADDRESS;
   }
 
   const drawsPath = `${__dirname}/../../api/prizes/${chainId}/${prizeDistributor}/draw`;
