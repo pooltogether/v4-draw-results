@@ -55,8 +55,6 @@ async function run() {
     core.setOutput('polygonChainId', chainId);
   }
 
-  // add other networks here
-
   console.log('done! exiting 0');
   process.exit(0);
 }

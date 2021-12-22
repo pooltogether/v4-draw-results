@@ -44,7 +44,7 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git pull
           git add ./api/prizes/137/
-          git commit -m "Add draw for polygon draw steps.runDrawCalcCLI.outputs.polygonDrawId"
+          git commit -m "Add draw for polygon draw ${{steps.runDrawCalcCLI.outputs.polygonDrawId}}"
 
       - name: Commit files for mainnet (if required) # this is done seperately to polygon for a different commit message
         if: steps.runDrawCalcCLI.outputs.mainnetCliToolRan == 'true'
@@ -54,6 +54,15 @@ jobs:
           git pull
           git add ./api/prizes/1/
           git commit -m "Add draw for mainnet draw ${{steps.runDrawCalcCLI.outputs.mainnetDrawId}}"
+      
+      - name: Commit files for avalanche (if required) # this is done seperately to polygon for a different commit message
+      if: steps.runDrawCalcCLI.outputs.mainnetCliToolRan == 'true'
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git pull
+          git add ./api/prizes/1/
+          git commit -m "Add draw for avalanche draw ${{steps.runDrawCalcCLI.outputs.mainnetDrawId}}"
 
       - name: Push changes (if required)
         uses: ad-m/github-push-action@master
