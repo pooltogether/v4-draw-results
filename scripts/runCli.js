@@ -12,16 +12,16 @@ const {
 const core = require('@actions/core');
 
 async function run() {
-  await runForChainId(1, 'mainnetCliToolRan', 'mainnetDrawId', 'mainnetChainId');
-  await runForChainId(137, 'polygonCliToolRan', 'polygonDrawId', 'polygonChainId');
-  await runForChainId(43114, 'avalancheCliToolRan', 'avalancheDrawId', 'avalancheChainId');
+  await runForChainId(1, 'mainnetCliToolRan', 'mainnetDrawId');
+  await runForChainId(137, 'polygonCliToolRan', 'polygonDrawId');
+  await runForChainId(43114, 'avalancheCliToolRan', 'avalancheDrawId');
 
   console.log('done! exiting 0');
   process.exit(0);
 }
 run();
 
-async function runForChainId(chainId, chainIdRunBoolean, chainIdDrawIdMsg, chainIdIdentifier) {
+async function runForChainId(chainId, chainIdRunBoolean, chainIdDrawIdMsg) {
   const path = './api/prizes';
 
   if (await checkIfCLIRunRequired(chainId)) {
@@ -41,7 +41,6 @@ async function runForChainId(chainId, chainIdRunBoolean, chainIdDrawIdMsg, chain
 
     core.setOutput(chainIdRunBoolean, 'true');
     core.setOutput(chainIdDrawIdMsg, JSON.stringify(draws));
-    core.setOutput(chainIdIdentifier, chainId);
   }
 }
 
