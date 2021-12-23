@@ -3,7 +3,7 @@ const {
   POLYGON_PRIZE_DISTRIBUTOR_ADDRESS,
   MAINNET_PRIZE_DISTRIBUTOR_ADDRESS,
   AVALANCHE_PRIZE_DISTRIBUTOR_ADDRESS,
-} = require('./constants');
+} = require('../constants');
 
 function findMostRecentDrawCommitedForChainId(chainId) {
   let prizeDistributor = '';
