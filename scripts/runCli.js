@@ -12,8 +12,8 @@ const {
 const core = require('@actions/core');
 
 async function run() {
-  // await runForChainId(1, 'mainnetCliToolRan', 'mainnetDrawId');
-  // await runForChainId(137, 'polygonCliToolRan', 'polygonDrawId');
+  await runForChainId(1, 'mainnetCliToolRan', 'mainnetDrawId');
+  await runForChainId(137, 'polygonCliToolRan', 'polygonDrawId');
   await runForChainId(43114, 'avalancheCliToolRan', 'avalancheDrawId');
 
   console.log('done! exiting 0');
@@ -26,14 +26,10 @@ async function runForChainId(chainId, chainIdRunBoolean, chainIdDrawIdMsg) {
 
   if (await checkIfCLIRunRequired(chainId)) {
     const newestPrizeDistributionDrawId = (await getNewestPrizeDistribution(chainId)).drawId;
-    console.log('newestPrizeDistributionDrawId: ', newestPrizeDistributionDrawId);
-
     const mostRecentCommitedDrawIdResult = findMostRecentDrawCommitedForChainId(chainId);
     const mostRecentCommitedDrawId = parseInt(mostRecentCommitedDrawIdResult);
-    console.log('mostRecentCommitedDrawId: ', mostRecentCommitedDrawId);
 
     // need to run between these two draw Ids exclusive of the first - create a range
-
     const draws = Array.from(
       { length: newestPrizeDistributionDrawId - mostRecentCommitedDrawId },
       (v, k) => k + mostRecentCommitedDrawId + 1,
