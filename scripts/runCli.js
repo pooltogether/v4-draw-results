@@ -25,7 +25,7 @@ async function runForChainId(chainId, chainIdRunBoolean, chainIdDrawIdMsg) {
   const path = './api/prizes';
 
   if (await checkIfCLIRunRequired(chainId)) {
-    const newestPrizeDistributionDrawId = await getNewestPrizeDistribution(chainId).drawId;
+    const newestPrizeDistributionDrawId = (await getNewestPrizeDistribution(chainId)).drawId;
     console.log('newestPrizeDistributionDrawId: ', newestPrizeDistributionDrawId);
 
     const mostRecentCommitedDrawId = findMostRecentDrawCommitedForChainId(chainId);
