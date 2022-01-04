@@ -37,7 +37,7 @@ async function getNewestPrizeDistribution(chainId) {
   );
 
   const prizeDistribution = await prizeDistributionBuffer.getNewestPrizeDistribution();
-
+  console.log(`Got prize distribution ${prizeDistribution}`);
   return prizeDistribution;
 }
 module.exports = getNewestPrizeDistribution;
