@@ -25,8 +25,10 @@ async function runForChainId(chainId, chainIdRunBoolean, chainIdDrawIdMsg) {
   const path = './api/prizes';
 
   if (await checkIfCLIRunRequired(chainId)) {
-    const newestPrizeDistributionDrawId = (await getNewestPrizeDistribution(chainId)).drawId;
-    const mostRecentCommitedDrawId = findMostRecentDrawCommitedForChainId(chainId);
+    const newestPrizeDistributionDrawId = (
+      await getNewestPrizeDistribution(chainId)
+    ).drawId.toNumber();
+    const mostRecentCommitedDrawId = findMostRecentDrawCommitedForChainId(chainId).toNumber();
 
     // need to run between these two draw Ids exclusive of the first - create a range
     const draws = Array.from(
