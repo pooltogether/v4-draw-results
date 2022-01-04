@@ -32,7 +32,7 @@ async function runForChainId(chainId, chainIdRunBoolean, chainIdDrawIdMsg) {
     console.log('mostRecentCommitedDrawId: ', mostRecentCommitedDrawId);
 
     // need to run between these two draw Ids exclusive of the first - create a range
-    const drawRangeStart = newestPrizeDistributionDrawId.toNumber();
+    const drawRangeStart = newestPrizeDistributionDrawId;
     const drawRangeEnd = mostRecentCommitedDrawId.toNumber();
     const draws = Array.from(
       { length: drawRangeStart - drawRangeEnd },
