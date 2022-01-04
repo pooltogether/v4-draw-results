@@ -33,6 +33,7 @@ jobs:
           ALCHEMY_MAINNET_URL: ${{secrets.ALCHEMY_MAINNET_URL}}
           ALCHEMY_RINKEBY_URL: ${{secrets.ALCHEMY_RINKEBY_URL}}
           MATICVIGIL_URL: ${{secrets.MATICVIGIL_URL}}
+          AVALANCHE_URL: ${{secrets.AVALANCHE_URL}}
           MUMBAI_URL: ${{secrets.MUMBAI_URL}}
           DEBUG: ${{secrets.DEBUG}}
         run: node ./scripts/runCli.js
