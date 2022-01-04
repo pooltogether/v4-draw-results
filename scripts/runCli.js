@@ -13,7 +13,7 @@ const core = require('@actions/core');
 
 async function run() {
   await runForChainId(1, 'mainnetCliToolRan', 'mainnetDrawId');
-  // await runForChainId(137, 'polygonCliToolRan', 'polygonDrawId');
+  await runForChainId(137, 'polygonCliToolRan', 'polygonDrawId');
   await runForChainId(43114, 'avalancheCliToolRan', 'avalancheDrawId');
 
   console.log('done! exiting 0');
