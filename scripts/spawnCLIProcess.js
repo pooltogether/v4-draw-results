@@ -17,13 +17,11 @@ async function spawnCLIProcess(chainId, ticket, drawId, directory) {
     ],
     { cwd: process.cwd() },
   );
-  // use child.stdout.setEncoding('utf8'); if you want text chunks
+
   child.stdout.on('data', (chunk) => {
-    // data from standard output is here as buffers
     console.log(chunk.toString());
   });
   child.stderr.on('data', (chunk) => {
-    // data from standard output is here as buffers
     console.log(chunk.toString());
   });
 
