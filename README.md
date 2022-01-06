@@ -34,19 +34,14 @@ You'll need to add the following secrets to the repository (under settings/Secre
 | ALCHEMY_RINKEBY_URL | Rinkeby RPC URL   |
 | MATICVIGIL_URL      | Polygon RPC URL   |
 | MUMBAI_URL          | Mumbai RPC URL    |
-
-You'll also need a Github Personal Access Token in order to trigger the workflow remotely using the `repository_dispatch` API.
-
-The script at `./scripts/sync.js` will fire requests for the workflow to run from the genesis drawId (= 1) to the most recent drawId.
+| AVALANCHE_URL       | Avalanche RPC URL |
 
 ### Steps
 
 1. Add the environmental secrets to your Github repo as shown above.
-1. Add your Personal Access Token _and_ the other environmental variables to the `.envrc` as shown in the `.envrc.example`.
+1. Add the environmental variables to the `.envrc` as shown in the `.envrc.example`.
 1. Install the repo using `yarn`.
 1. Enable Github Actions if you have not done so already.
-1. Update the constants in `./scripts/sync.js` to target this repo.
-1. Run the sync script using `yarn sync`. This may take some time. You can see the progress by viewing the workflows executing in the Actions tab in your repo.
 
 ### Adding a new network
 
