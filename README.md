@@ -159,7 +159,10 @@ For example:
    will display all prizes for chainId = 43114 (Avalanche) for Prize Distributor (address: `0x83332f908f403ce795d90f677ce3f382fe73f3d1`) for draw 70.
 
    This is also viewable at the [Netlify API](https://api.pooltogether.com/prizes/43114/0x83332f908f403ce795d90f677ce3f382fe73f3d1/draw/70/prizes.json).
+   <<<<<<< HEAD
 
 ## Testing
 
-There are unit tests (which run in a seperate `unit_test.yaml`) workflow. These also require the RPC URL's to be added as env secrets.
+# There are unit tests (which run in a seperate `unit_test.yaml`) workflow. These also require the RPC URL's to be added as env secrets.
+
+> > > > > > > more add network instructions
