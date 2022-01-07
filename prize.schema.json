@@ -16,7 +16,7 @@
       "type": "string",
       "description": "The user's pick for this prize",
       "minLength": 1,
-      "maxLength": 42
+      "maxLength": 20
     },
     "tier": {
       "type": "number",
