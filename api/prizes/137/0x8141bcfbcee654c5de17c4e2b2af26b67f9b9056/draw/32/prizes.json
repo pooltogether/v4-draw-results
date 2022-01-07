@@ -180,12 +180,6 @@
     "amount": "9999999"
   },
   {
-    "address": "0x0f682a5dbe7491b623829a26ab7c284c1c3cddf5",
-    "pick": "50",
-    "tier": 5,
-    "amount": "9999999"
-  },
-  {
     "address": "0x0fae4c1d62ffe5ad6f528502b2bbf636b0ff4153",
     "pick": "289",
     "tier": 5,
@@ -248,18 +242,6 @@
   {
     "address": "0x16daad48d1b8e8c1af7ac7abf6bc0d01450f2db0",
     "pick": "346",
-    "tier": 5,
-    "amount": "9999999"
-  },
-  {
-    "address": "0x187dcdaac283c78f95a8c2ef3ba611b958f4f3e8",
-    "pick": "851",
-    "tier": 5,
-    "amount": "9999999"
-  },
-  {
-    "address": "0x187dcdaac283c78f95a8c2ef3ba611b958f4f3e8",
-    "pick": "3107",
     "tier": 5,
     "amount": "9999999"
   },
@@ -330,20 +312,8 @@
     "amount": "9999999"
   },
   {
-    "address": "0x1ff596052758bd991c3dc914cfc1fdeac4639084",
-    "pick": "2599",
-    "tier": 5,
-    "amount": "9999999"
-  },
-  {
     "address": "0x2140c7f76afe53c74603927973c9610bcb08c587",
     "pick": "4157",
-    "tier": 5,
-    "amount": "9999999"
-  },
-  {
-    "address": "0x225ec5e5136bdaeb58a8cada327f07d20ee347e6",
-    "pick": "447",
     "tier": 5,
     "amount": "9999999"
   },
@@ -358,30 +328,6 @@
     "pick": "2413",
     "tier": 5,
     "amount": "9999999"
-  },
-  {
-    "address": "0x238926025e84475e3182774df480021470f8f978",
-    "pick": "33",
-    "tier": 5,
-    "amount": "9999999"
-  },
-  {
-    "address": "0x238926025e84475e3182774df480021470f8f978",
-    "pick": "6648",
-    "tier": 5,
-    "amount": "9999999"
-  },
-  {
-    "address": "0x238926025e84475e3182774df480021470f8f978",
-    "pick": "7652",
-    "tier": 5,
-    "amount": "9999999"
-  },
-  {
-    "address": "0x238926025e84475e3182774df480021470f8f978",
-    "pick": "7797",
-    "tier": 3,
-    "amount": "99999999"
   },
   {
     "address": "0x2418195e26904bc830041875b3336c8d89b34259",
@@ -474,18 +420,6 @@
     "amount": "9999999"
   },
   {
-    "address": "0x2badad0bc7b2a67a29de52d077bf6bedbd0f7fa0",
-    "pick": "569",
-    "tier": 5,
-    "amount": "9999999"
-  },
-  {
-    "address": "0x2c542bb7d044ae49e93b565e8602a78f04501c58",
-    "pick": "208",
-    "tier": 5,
-    "amount": "9999999"
-  },
-  {
     "address": "0x2e4ae4d3bd0af45040b4f17e0bb7e6dc548626b1",
     "pick": "963",
     "tier": 5,
@@ -500,6 +434,12 @@
   {
     "address": "0x2e4ae4d3bd0af45040b4f17e0bb7e6dc548626b1",
     "pick": "5061",
+    "tier": 5,
+    "amount": "9999999"
+  },
+  {
+    "address": "0x2e6d486b179d99c6ff378b04981d133c1d396d8c",
+    "pick": "1119",
     "tier": 5,
     "amount": "9999999"
   },
@@ -524,6 +464,12 @@
   {
     "address": "0x31939794dc9d1fdf9adc247a6171c02dfd2269d9",
     "pick": "135",
+    "tier": 5,
+    "amount": "9999999"
+  },
+  {
+    "address": "0x31aca8a351e67696eeccf0b7af03d41ee80998eb",
+    "pick": "158",
     "tier": 5,
     "amount": "9999999"
   },
@@ -560,12 +506,6 @@
   {
     "address": "0x365f085178dda4c35b41d70860a5c875d445041a",
     "pick": "330",
-    "tier": 5,
-    "amount": "9999999"
-  },
-  {
-    "address": "0x369c651fb42d77d94935332703c4a95d2e0e2ae1",
-    "pick": "997",
     "tier": 5,
     "amount": "9999999"
   },
@@ -678,66 +618,6 @@
     "amount": "9999999"
   },
   {
-    "address": "0x4058f2d1e5851e25b6809fff874380843610c222",
-    "pick": "6489",
-    "tier": 5,
-    "amount": "9999999"
-  },
-  {
-    "address": "0x4058f2d1e5851e25b6809fff874380843610c222",
-    "pick": "14259",
-    "tier": 5,
-    "amount": "9999999"
-  },
-  {
-    "address": "0x4058f2d1e5851e25b6809fff874380843610c222",
-    "pick": "15752",
-    "tier": 5,
-    "amount": "9999999"
-  },
-  {
-    "address": "0x4058f2d1e5851e25b6809fff874380843610c222",
-    "pick": "18243",
-    "tier": 5,
-    "amount": "9999999"
-  },
-  {
-    "address": "0x4058f2d1e5851e25b6809fff874380843610c222",
-    "pick": "23272",
-    "tier": 5,
-    "amount": "9999999"
-  },
-  {
-    "address": "0x4058f2d1e5851e25b6809fff874380843610c222",
-    "pick": "25450",
-    "tier": 5,
-    "amount": "9999999"
-  },
-  {
-    "address": "0x4058f2d1e5851e25b6809fff874380843610c222",
-    "pick": "27989",
-    "tier": 5,
-    "amount": "9999999"
-  },
-  {
-    "address": "0x4058f2d1e5851e25b6809fff874380843610c222",
-    "pick": "33030",
-    "tier": 5,
-    "amount": "9999999"
-  },
-  {
-    "address": "0x4058f2d1e5851e25b6809fff874380843610c222",
-    "pick": "33404",
-    "tier": 5,
-    "amount": "9999999"
-  },
-  {
-    "address": "0x4058f2d1e5851e25b6809fff874380843610c222",
-    "pick": "33967",
-    "tier": 5,
-    "amount": "9999999"
-  },
-  {
     "address": "0x40ca27300d4c67d910b3b1cbd83cd604dbfeb770",
     "pick": "3",
     "tier": 5,
@@ -764,12 +644,6 @@
   {
     "address": "0x418190668bd8a81b74e8d0a2b3d26c6b33b0b7c6",
     "pick": "27116",
-    "tier": 5,
-    "amount": "9999999"
-  },
-  {
-    "address": "0x43b53acf95f9b7148c2eb8931d312519735d8168",
-    "pick": "2295",
     "tier": 5,
     "amount": "9999999"
   },
@@ -878,12 +752,6 @@
   {
     "address": "0x508e14e066c2391202922514ab156e44d85d3f6e",
     "pick": "453",
-    "tier": 5,
-    "amount": "9999999"
-  },
-  {
-    "address": "0x5148a649f0ca17d20aa70884e81dabf527f50f60",
-    "pick": "1313",
     "tier": 5,
     "amount": "9999999"
   },
@@ -1134,18 +1002,6 @@
     "amount": "9999999"
   },
   {
-    "address": "0x5c70052919c4cb622e0dffd774ed6a31ad43a22b",
-    "pick": "2971",
-    "tier": 5,
-    "amount": "9999999"
-  },
-  {
-    "address": "0x5c70052919c4cb622e0dffd774ed6a31ad43a22b",
-    "pick": "5315",
-    "tier": 5,
-    "amount": "9999999"
-  },
-  {
     "address": "0x5dcdf8a32e99b0dedd3c5209684a9beec4bd478e",
     "pick": "514",
     "tier": 5,
@@ -1314,12 +1170,6 @@
     "amount": "9999999"
   },
   {
-    "address": "0x662f57e7691016d6bc3c61aec1f786ee5d306e36",
-    "pick": "51",
-    "tier": 5,
-    "amount": "9999999"
-  },
-  {
     "address": "0x669a9e8dbd4dee43c61db02c0f1df2bd8f653579",
     "pick": "167",
     "tier": 5,
@@ -1364,12 +1214,6 @@
   {
     "address": "0x6e34a8f3bb110f9880d0d9260b0e83a60ee1ab7c",
     "pick": "963",
-    "tier": 5,
-    "amount": "9999999"
-  },
-  {
-    "address": "0x6ef4596795920b8e0472ee62f65ad5f78141f619",
-    "pick": "517",
     "tier": 5,
     "amount": "9999999"
   },
@@ -1464,18 +1308,6 @@
     "amount": "9999999"
   },
   {
-    "address": "0x734c687e9140bd6e85067c473059040f958256cf",
-    "pick": "100",
-    "tier": 5,
-    "amount": "9999999"
-  },
-  {
-    "address": "0x73b7c1fc8ad7197bac326fd87bfc064abeff91e2",
-    "pick": "7",
-    "tier": 5,
-    "amount": "9999999"
-  },
-  {
     "address": "0x75db28c2f008b8aa8f65195b1dfc81026e019b6a",
     "pick": "634",
     "tier": 5,
@@ -1508,12 +1340,6 @@
   {
     "address": "0x77bd5637702ad66c8bd82e2c5c5fd4c7b73dbe51",
     "pick": "17",
-    "tier": 5,
-    "amount": "9999999"
-  },
-  {
-    "address": "0x784e7d6b6dc65b182aaacf033f1d2f5f6508ae22",
-    "pick": "1208",
     "tier": 5,
     "amount": "9999999"
   },
@@ -1554,12 +1380,6 @@
     "amount": "9999999"
   },
   {
-    "address": "0x79b33876135ea1cc4ab3d4c7018d36410b074faa",
-    "pick": "2661",
-    "tier": 5,
-    "amount": "9999999"
-  },
-  {
     "address": "0x7a682cdb8e30402364aebcd0a94abe74d99af1b8",
     "pick": "122",
     "tier": 3,
@@ -1574,12 +1394,6 @@
   {
     "address": "0x7b95f1760fbdd94279063983bf02b8be789ebefd",
     "pick": "153",
-    "tier": 5,
-    "amount": "9999999"
-  },
-  {
-    "address": "0x7d4daec1b75a433994e1936292886831d3f5a0ad",
-    "pick": "2579",
     "tier": 5,
     "amount": "9999999"
   },
@@ -1638,18 +1452,6 @@
     "amount": "9999999"
   },
   {
-    "address": "0x81e8280e5d80d06ee5f879f3674ed0f622e510aa",
-    "pick": "3359",
-    "tier": 3,
-    "amount": "99999999"
-  },
-  {
-    "address": "0x81e8280e5d80d06ee5f879f3674ed0f622e510aa",
-    "pick": "4477",
-    "tier": 5,
-    "amount": "9999999"
-  },
-  {
     "address": "0x8242c9c7075f9707d4a321c2075f5eeb84ff3452",
     "pick": "768",
     "tier": 5,
@@ -1686,12 +1488,6 @@
     "amount": "9999999"
   },
   {
-    "address": "0x858d669c68397fb3303c8ce1743f705544a0df96",
-    "pick": "5",
-    "tier": 5,
-    "amount": "9999999"
-  },
-  {
     "address": "0x85a62cfa2f66af78738237fbe32df1f2835e0206",
     "pick": "164",
     "tier": 5,
@@ -1708,6 +1504,18 @@
     "pick": "1477",
     "tier": 3,
     "amount": "99999999"
+  },
+  {
+    "address": "0x88c23e161302c91dbca002b548253e2fe4cd8937",
+    "pick": "1250",
+    "tier": 5,
+    "amount": "9999999"
+  },
+  {
+    "address": "0x88c23e161302c91dbca002b548253e2fe4cd8937",
+    "pick": "3181",
+    "tier": 5,
+    "amount": "9999999"
   },
   {
     "address": "0x8963086e11bcf060b75953bbc72ea31549693855",
@@ -1770,10 +1578,16 @@
     "amount": "9999999"
   },
   {
-    "address": "0x8f3eb3aaa780f48f73d94d749a67b66ca867bae0",
-    "pick": "35",
-    "tier": 3,
-    "amount": "99999999"
+    "address": "0x8fad37dfe228d08361385cda72f72bb20975a723",
+    "pick": "1921",
+    "tier": 5,
+    "amount": "9999999"
+  },
+  {
+    "address": "0x8fad37dfe228d08361385cda72f72bb20975a723",
+    "pick": "2210",
+    "tier": 5,
+    "amount": "9999999"
   },
   {
     "address": "0x8fdd0f594e3bd176632e7e18f91bbafcdb6a916b",
@@ -1866,34 +1680,10 @@
     "amount": "9999999"
   },
   {
-    "address": "0x95cebf9eb34c37334c3b882130d64d82f3428c99",
-    "pick": "5427",
-    "tier": 5,
-    "amount": "9999999"
-  },
-  {
-    "address": "0x9824697f7c12cabada9b57842060931c48dea969",
-    "pick": "883",
-    "tier": 5,
-    "amount": "9999999"
-  },
-  {
     "address": "0x991b038faa60b6dc9109354323547a484b4fe042",
     "pick": "2578",
     "tier": 5,
     "amount": "9999999"
-  },
-  {
-    "address": "0x991db6607db175c336dda8affd8de78c077477ad",
-    "pick": "758",
-    "tier": 5,
-    "amount": "9999999"
-  },
-  {
-    "address": "0x9a62ea1c82a102001027e408a67bac31d721a5b3",
-    "pick": "2621",
-    "tier": 3,
-    "amount": "99999999"
   },
   {
     "address": "0x9aa4e6641fefd0764bfebdeda637e7782d7ed4dc",
@@ -2034,12 +1824,6 @@
     "amount": "9999999"
   },
   {
-    "address": "0xa77870644f4b496fbd5c4662dc36356b3425979c",
-    "pick": "572",
-    "tier": 5,
-    "amount": "9999999"
-  },
-  {
     "address": "0xaa7a9d80971e58641442774c373c94aafee87d66",
     "pick": "835",
     "tier": 5,
@@ -2166,12 +1950,6 @@
     "amount": "9999999"
   },
   {
-    "address": "0xb1328907b14700379905d6d733fb0b31e46f3d62",
-    "pick": "238",
-    "tier": 5,
-    "amount": "9999999"
-  },
-  {
     "address": "0xb157ba30e3467ddbc844f14f02b4ba741f1d549f",
     "pick": "1557",
     "tier": 5,
@@ -2192,12 +1970,6 @@
   {
     "address": "0xb2395949ddfede2dd9a5fc9f867b7304a98a26a3",
     "pick": "222",
-    "tier": 5,
-    "amount": "9999999"
-  },
-  {
-    "address": "0xb3487b36fbbc22edcc954398813cd7a3cd1dd327",
-    "pick": "474",
     "tier": 5,
     "amount": "9999999"
   },
@@ -2280,12 +2052,6 @@
     "amount": "9999999"
   },
   {
-    "address": "0xbe80d8c96c0d5b5aed63b370b495650f30be3724",
-    "pick": "63",
-    "tier": 5,
-    "amount": "9999999"
-  },
-  {
     "address": "0xbfeeaa7bbd649d25265439d68a394051bfb72a14",
     "pick": "693",
     "tier": 5,
@@ -2346,14 +2112,20 @@
     "amount": "9999999"
   },
   {
-    "address": "0xc716cf17bf6e549e337205ab60be4fe0d889ef40",
-    "pick": "2225",
+    "address": "0xc79cbc8400617c9908694fe2bcd1fe2f93c31ef6",
+    "pick": "1327",
     "tier": 5,
     "amount": "9999999"
   },
   {
-    "address": "0xc79cbc8400617c9908694fe2bcd1fe2f93c31ef6",
-    "pick": "1327",
+    "address": "0xc80aa78dc2ad53a0db4653de027d15e5e3ea646a",
+    "pick": "1275",
+    "tier": 5,
+    "amount": "9999999"
+  },
+  {
+    "address": "0xc80aa78dc2ad53a0db4653de027d15e5e3ea646a",
+    "pick": "8949",
     "tier": 5,
     "amount": "9999999"
   },
@@ -2410,12 +2182,6 @@
     "pick": "2200",
     "tier": 5,
     "amount": "9999999"
-  },
-  {
-    "address": "0xcc6b30531de603787a4d0305fc7ed404374cf771",
-    "pick": "641",
-    "tier": 3,
-    "amount": "99999999"
   },
   {
     "address": "0xccbf77d00462334744592d855b1819d4ded29dbc",
@@ -2550,42 +2316,6 @@
     "amount": "9999999"
   },
   {
-    "address": "0xd66f2f1d86c0c5477aa1612ca92f03297a5477b0",
-    "pick": "3271",
-    "tier": 5,
-    "amount": "9999999"
-  },
-  {
-    "address": "0xd66f2f1d86c0c5477aa1612ca92f03297a5477b0",
-    "pick": "9263",
-    "tier": 5,
-    "amount": "9999999"
-  },
-  {
-    "address": "0xd66f2f1d86c0c5477aa1612ca92f03297a5477b0",
-    "pick": "9710",
-    "tier": 5,
-    "amount": "9999999"
-  },
-  {
-    "address": "0xd66f2f1d86c0c5477aa1612ca92f03297a5477b0",
-    "pick": "13108",
-    "tier": 5,
-    "amount": "9999999"
-  },
-  {
-    "address": "0xd66f2f1d86c0c5477aa1612ca92f03297a5477b0",
-    "pick": "14980",
-    "tier": 3,
-    "amount": "99999999"
-  },
-  {
-    "address": "0xd66f2f1d86c0c5477aa1612ca92f03297a5477b0",
-    "pick": "23066",
-    "tier": 5,
-    "amount": "9999999"
-  },
-  {
     "address": "0xd79b646031ae71f77de7a50cc5f189f5c62b7a5d",
     "pick": "649",
     "tier": 5,
@@ -2700,12 +2430,6 @@
     "amount": "9999999"
   },
   {
-    "address": "0xdb0b53ad3766da8de7b9de0d98d1ce25efa6ab6d",
-    "pick": "575",
-    "tier": 5,
-    "amount": "9999999"
-  },
-  {
     "address": "0xdb382b0be159443660cc2d471b43717bbad9ff07",
     "pick": "1091",
     "tier": 5,
@@ -2784,30 +2508,6 @@
     "amount": "9999999"
   },
   {
-    "address": "0xe4e1eebf4e3bbeaae2c73dc10108ff02aa9854ca",
-    "pick": "6341",
-    "tier": 5,
-    "amount": "9999999"
-  },
-  {
-    "address": "0xe4e1eebf4e3bbeaae2c73dc10108ff02aa9854ca",
-    "pick": "8492",
-    "tier": 5,
-    "amount": "9999999"
-  },
-  {
-    "address": "0xe4e1eebf4e3bbeaae2c73dc10108ff02aa9854ca",
-    "pick": "10106",
-    "tier": 5,
-    "amount": "9999999"
-  },
-  {
-    "address": "0xe4e1eebf4e3bbeaae2c73dc10108ff02aa9854ca",
-    "pick": "10177",
-    "tier": 5,
-    "amount": "9999999"
-  },
-  {
     "address": "0xe507f2d7de97c783a60fef9f1c4a4dade2b0a989",
     "pick": "87",
     "tier": 5,
@@ -2850,6 +2550,24 @@
     "amount": "9999999"
   },
   {
+    "address": "0xe95b7ce76f1a576c1ab12ee7d16d2dffd006e777",
+    "pick": "727",
+    "tier": 5,
+    "amount": "9999999"
+  },
+  {
+    "address": "0xe95b7ce76f1a576c1ab12ee7d16d2dffd006e777",
+    "pick": "987",
+    "tier": 5,
+    "amount": "9999999"
+  },
+  {
+    "address": "0xe95b7ce76f1a576c1ab12ee7d16d2dffd006e777",
+    "pick": "1209",
+    "tier": 5,
+    "amount": "9999999"
+  },
+  {
     "address": "0xe99bb31727182cac99d5e93eee071723e821b57d",
     "pick": "8",
     "tier": 5,
@@ -2870,12 +2588,6 @@
   {
     "address": "0xed21c772a57458614ddc9a34a7027b1db271c26b",
     "pick": "2663",
-    "tier": 5,
-    "amount": "9999999"
-  },
-  {
-    "address": "0xed721300110c02e7437594f52f8127dae261ff93",
-    "pick": "598",
     "tier": 5,
     "amount": "9999999"
   },
@@ -3128,12 +2840,6 @@
   {
     "address": "0xff44611abc5c62ff3c8c61f67769330c9a466a93",
     "pick": "385",
-    "tier": 5,
-    "amount": "9999999"
-  },
-  {
-    "address": "0xff770424739a77b8990632c75ed859b74c0ef749",
-    "pick": "3383",
     "tier": 5,
     "amount": "9999999"
   },
