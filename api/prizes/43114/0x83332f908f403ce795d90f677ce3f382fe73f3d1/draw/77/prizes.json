@@ -72,6 +72,12 @@
     "amount": "999999"
   },
   {
+    "address": "0x0e41c9b548cf0545377aeeb693a6006172f1af81",
+    "pick": "3164",
+    "tier": 6,
+    "amount": "999999"
+  },
+  {
     "address": "0x126fd82f24f2c9a7f1e0030539b884f298c37bdd",
     "pick": "523",
     "tier": 6,
@@ -252,8 +258,38 @@
     "amount": "999999"
   },
   {
+    "address": "0x4efb6f1ed351526cc0a58aca0cd210dc447ec6f3",
+    "pick": "0",
+    "tier": 6,
+    "amount": "999999"
+  },
+  {
+    "address": "0x56244ba4bf3047029d3734dfe90154c70c47350e",
+    "pick": "2301",
+    "tier": 6,
+    "amount": "999999"
+  },
+  {
+    "address": "0x56244ba4bf3047029d3734dfe90154c70c47350e",
+    "pick": "12165",
+    "tier": 5,
+    "amount": "4999999"
+  },
+  {
     "address": "0x5b42939a32d32cdadf52389d20ffe2c7665745e4",
     "pick": "1065",
+    "tier": 6,
+    "amount": "999999"
+  },
+  {
+    "address": "0x5cff15dc822488b4a150736d511841e59cb0b705",
+    "pick": "635",
+    "tier": 6,
+    "amount": "999999"
+  },
+  {
+    "address": "0x5cff15dc822488b4a150736d511841e59cb0b705",
+    "pick": "1459",
     "tier": 6,
     "amount": "999999"
   },
@@ -316,6 +352,30 @@
     "pick": "2566",
     "tier": 6,
     "amount": "999999"
+  },
+  {
+    "address": "0x69d6057698327df512837d46bb55be55f07ba4a2",
+    "pick": "1538",
+    "tier": 6,
+    "amount": "999999"
+  },
+  {
+    "address": "0x69d6057698327df512837d46bb55be55f07ba4a2",
+    "pick": "6139",
+    "tier": 6,
+    "amount": "999999"
+  },
+  {
+    "address": "0x69d6057698327df512837d46bb55be55f07ba4a2",
+    "pick": "8346",
+    "tier": 6,
+    "amount": "999999"
+  },
+  {
+    "address": "0x69d6057698327df512837d46bb55be55f07ba4a2",
+    "pick": "10962",
+    "tier": 4,
+    "amount": "9999999"
   },
   {
     "address": "0x6cfac3cf77a359d7ce28c14f2d53de48981e0f04",
@@ -722,6 +782,12 @@
   {
     "address": "0x9ec0c2ca5f9f215429d91ae738eff52f6cff1a2b",
     "pick": "1745",
+    "tier": 6,
+    "amount": "999999"
+  },
+  {
+    "address": "0xa3872bb17bed808915c5594814d127864e310b1b",
+    "pick": "2651",
     "tier": 6,
     "amount": "999999"
   },
