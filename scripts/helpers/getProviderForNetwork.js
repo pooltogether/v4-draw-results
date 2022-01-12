@@ -1,4 +1,4 @@
-async function getProviderForNetwork(chainId) {
+function getProviderForNetwork(chainId) {
   let providerUrl = '';
 
   if (chainId == '1') {

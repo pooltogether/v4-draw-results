@@ -4,27 +4,32 @@ const getNewestPrizeDistribution = require('./helpers/getNewestPrizeDistribution
 const findMostRecentDrawCommitedForChainId = require('./helpers/findMostRecentDrawCommitedForChainId');
 
 const {
-  MAINNET_TICKET_ADDRESS,
-  POLYGON_TICKET_ADDRESS,
-  AVALANCHE_TICKET_ADDRESS,
+  MAINNET_USDC_TICKET_ADDRESS,
+  POLYGON_USDC_TICKET_ADDRESS,
+  AVALANCHE_USDC_TICKET_ADDRESS,
 } = require('./constants');
 
 const core = require('@actions/core');
 
 async function run() {
-  await runForChainId(1, 'mainnetCliToolRan', 'mainnetDrawId');
-  await runForChainId(137, 'polygonCliToolRan', 'polygonDrawId');
-  await runForChainId(43114, 'avalancheCliToolRan', 'avalancheDrawId');
+  await runForChainId(1, MAINNET_USDC_TICKET_ADDRESS, 'mainnetCliToolRan', 'mainnetDrawId');
+  await runForChainId(137, POLYGON_USDC_TICKET_ADDRESS, 'polygonCliToolRan', 'polygonDrawId');
+  await runForChainId(
+    43114,
+    AVALANCHE_USDC_TICKET_ADDRESS,
+    'avalancheCliToolRan',
+    'avalancheDrawId',
+  );
 
   console.log('done! exiting 0');
   process.exit(0);
 }
 run();
 
-async function runForChainId(chainId, chainIdRunBoolean, chainIdDrawIdMsg) {
+async function runForChainId(chainId, ticket, chainIdRunBoolean, chainIdDrawIdMsg) {
   const path = './api/prizes';
 
-  if (await checkIfCLIRunRequired(chainId)) {
+  if (await checkIfCLIRunRequired(chainId, ticket)) {
     const newestPrizeDistributionDrawId = (await getNewestPrizeDistribution(chainId)).drawId;
     const mostRecentCommitedDrawIdResult = findMostRecentDrawCommitedForChainId(chainId);
     const mostRecentCommitedDrawId = parseInt(mostRecentCommitedDrawIdResult);
@@ -37,23 +42,10 @@ async function runForChainId(chainId, chainIdRunBoolean, chainIdDrawIdMsg) {
     console.log('running CLI for draws: ', draws);
     for (let drawId of draws) {
       console.log(`running CLI for chainId: ${chainId} and drawId ${drawId}`);
-      await spawnCLIProcess(chainId, lookupTicketAddress(chainId), drawId, path);
+      await spawnCLIProcess(chainId, ticket, drawId, path);
     }
 
     core.setOutput(chainIdRunBoolean, 'true');
     core.setOutput(chainIdDrawIdMsg, JSON.stringify(draws));
-  }
-}
-
-function lookupTicketAddress(chainId) {
-  switch (chainId) {
-    case 1:
-      return MAINNET_TICKET_ADDRESS;
-    case 137:
-      return POLYGON_TICKET_ADDRESS;
-    case 43114:
-      return AVALANCHE_TICKET_ADDRESS;
-    default:
-      throw new Error(`unsupported chainId: ${chainId}`);
   }
 }
