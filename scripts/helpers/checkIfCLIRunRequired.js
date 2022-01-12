@@ -1,9 +1,9 @@
 const findMostRecentDrawCommitedForChainId = require('./findMostRecentDrawCommitedForChainId');
 const getNewestPrizeDistribution = require('./getNewestPrizeDistribution');
 
-async function checkIfCLIRunRequired(chainId) {
+async function checkIfCLIRunRequired(chainId, ticket) {
   console.log(`checking if draw calculator CLI needs to be run for chainId: ${chainId}`);
-  const mostRecentCommit = findMostRecentDrawCommitedForChainId(chainId);
+  const mostRecentCommit = findMostRecentDrawCommitedForChainId(chainId, ticket);
   console.log(`chainId ${chainId} most recent commit drawId:  ${mostRecentCommit}`);
 
   const newestPrizeDistributionDrawId = (await getNewestPrizeDistribution(chainId)).drawId;
@@ -12,10 +12,10 @@ async function checkIfCLIRunRequired(chainId) {
   );
 
   if (mostRecentCommit.toString() !== newestPrizeDistributionDrawId.toString()) {
-    console.log('checkIfRunRequired returning true');
+    console.log(`checkIfRunRequired for chainId ${chainId}: true`);
     return true;
   }
-  console.log('checkIfRunRequired returning false');
+  console.log(`checkIfRunRequired for chainId ${chainId}: false`);
   return false;
 }
 module.exports = checkIfCLIRunRequired;
