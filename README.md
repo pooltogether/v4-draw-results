@@ -163,6 +163,6 @@ For example:
 
 ## Testing
 
-# There are unit tests (which run in a seperate `unit_test.yaml`) workflow. These also require the RPC URL's to be added as env secrets.
+There are unit tests (which run in a seperate `unit_test.yaml`) workflow. These also require the RPC URL's to be added as env secrets.
 
-> > > > > > > more add network instructions
+
