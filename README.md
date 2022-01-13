@@ -46,6 +46,8 @@ You'll need to add the following secrets to the repository (under Settings/Secre
 
 After following the appropriate steps to [add the prize pool](https://github.com/pooltogether/draw-calculator-cli#adding-a-new-prize-pool) to the [draw-calculator-cli package](https://github.com/pooltogether/draw-calculator-cli), do the following:
 
+<<<<<<< HEAD
+
 1. Add the `prize distributor` and `ticket` addresses (**in lowercase**) associated with the new prize pool [here](./scripts/constants.js)
 1. Add logic to check if the CLI tool needs to be run [here](./scripts/runCLI.js). For example:
 
@@ -77,7 +79,12 @@ After following the appropriate steps to [add the network](https://github.com/po
 
 1. Add the new network RPC endpoint URL to the repo secrets as described above.
 1. Add this under the `env` section in the [workflow cron.yaml "Run Draw Calculator CLI (if required)"]("./.github/workflows/cron.yaml") step alongside the other env variables. This makes the secret available to the NodeJS program as it runs.
-1. Follow the instructions for adding a [prize pool](#adding-a-new-prize-pool)
+1. # Follow the instructions for adding a [prize pool](#adding-a-new-prize-pool)
+1. Add the new network RPC endpoint URL to the repo secrets.
+1. Add this under the `env` section in the [workflow cron.yaml "Run Draw Calculator CLI (if required)"]("./.github/cron.yaml") step alongside the other env variables. This makes the secret available to the workflow as it runs.
+1. Add a workflow step to commit prize files if they were created.
+1. Add logic to check if the CLI tool needs to be run [here]("./scripts/runCLI.js").
+1. Create the file directory for the new network (as below) with an empty `.gitkeep` for the `drawId` _BEFORE_ the genesis drawId for that network. For example: the genesis `drawId` for the Avalanche network was 67, populate `api/prizes/43114/0x83332f908f403ce795d90f677ce3f382fe73f3d1/66` with a `.gitkeep` file. This is required since the script which checks if a draw-calculator-cli requires a starting point.
 
 ## Data Structure
 
@@ -159,10 +166,7 @@ For example:
    will display all prizes for chainId = 43114 (Avalanche) for Prize Distributor (address: `0x83332f908f403ce795d90f677ce3f382fe73f3d1`) for draw 70.
 
    This is also viewable at the [Netlify API](https://api.pooltogether.com/prizes/43114/0x83332f908f403ce795d90f677ce3f382fe73f3d1/draw/70/prizes.json).
-   <<<<<<< HEAD
 
 ## Testing
 
 There are unit tests (which run in a seperate `unit_test.yaml`) workflow. These also require the RPC URL's to be added as env secrets.
-
-
