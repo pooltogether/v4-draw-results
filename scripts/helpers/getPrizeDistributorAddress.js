@@ -8,6 +8,8 @@ const {
 } = require('../constants');
 
 function getPrizeDistributorAddress(chainId, ticket) {
+  console.log(`getting prize distributor address for chainId: ${chainId} and ticket: ${ticket}`);
+
   if (chainId == '1' && ticket == MAINNET_USDC_TICKET_ADDRESS) {
     return MAINNET_USDC_PRIZE_DISTRIBUTOR_ADDRESS;
   } else if (chainId == '137' && ticket == POLYGON_USDC_TICKET_ADDRESS) {
