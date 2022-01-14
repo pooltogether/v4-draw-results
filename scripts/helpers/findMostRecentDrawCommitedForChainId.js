@@ -3,6 +3,10 @@ const path = require('path');
 const getPrizeDistributorAddress = require('./getPrizeDistributorAddress');
 
 function findMostRecentDrawCommitedForChainId(chainId, ticket) {
+  console.log(
+    `in findMostRecentDrawCommitedForChainId for chainId: ${chainId} and ticket: ${ticket}`,
+  );
+
   const prizeDistributor = getPrizeDistributorAddress(chainId, ticket);
   const drawsPath = `${__dirname}/../../api/prizes/${chainId}/${prizeDistributor}/draw`;
   const draws = fs.readdirSync(path.resolve(drawsPath));
