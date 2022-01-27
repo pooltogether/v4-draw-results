@@ -10,8 +10,11 @@ function getProviderForNetwork(chainId) {
   }
 
   if (providerUrl == '') {
-    throw new Error('Chain ID not supported');
+    const e = new Error('Chain ID not supported');
+    e.code = 'CHAIN_ID_NOT_SUPPORTED';
+    throw e
   }
   return providerUrl;
 }
+
 module.exports = getProviderForNetwork;
