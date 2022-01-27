@@ -41,6 +41,7 @@ jobs:
       - name: Comment Error
         continue-on-error: true
         uses: actions/github-script@v5
+        if: steps.runDrawCalculatorCLI.outputs.exitcode == 9
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
@@ -48,7 +49,7 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: steps.runDrawCalculatorCLI.outputs.stdout
+              body: 'Unavailable Retry Error'
             })
       - name: Retry Draw Calculator
         if: steps.runDrawCalculatorCLI.outputs.exitcode == 2
