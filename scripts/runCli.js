@@ -20,8 +20,7 @@ async function run() {
     'avalancheCliToolRan',
     'avalancheDrawId',
   );
-
-  console.log('done! exiting 0');
+  console.log('Exit: 0');
   process.exit(0);
 }
 run();
