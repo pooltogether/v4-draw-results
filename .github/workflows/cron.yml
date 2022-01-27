@@ -1,12 +1,11 @@
-name: Cron Run Draw Calculator CLI
+name: CronJob
 on:
   schedule:
     - cron: "0 23 * * *" # everyday at 11pm UTC
   push:
 jobs:
   runCLI:
-    name: Run CLI if necessary
-
+    name: DrawCalculator CLI
     runs-on: ${{ matrix.os }}
     strategy:
       max-parallel: 1
@@ -37,8 +36,8 @@ jobs:
           DEBUG: ${{secrets.DEBUG}}
         uses: nick-invision/retry@v2
         with:
-          timeout_seconds: 15
-          max_attempts: 3
+          timeout_seconds: 2500000
+          max_attempts: 2
           retry_on: error
           command: node ./scripts/runCli.js
       - name: Commit files for polygon (if required)
