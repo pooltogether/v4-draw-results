@@ -38,11 +38,8 @@ jobs:
         continue-on-error: true
         with:
           run_command: node ./scripts/runCli.js
-      - name: Retry Draw Calculator
-        if: steps.runDrawCalculatorCLI.outputs.exitcode == 2
-        id: retryDrawCalculatorCLI
-        run: node ./scripts/runCli.js
-      - uses: actions/github-script@v5
+      - name: Comment Error
+        uses: actions/github-script@v5
         if: steps.runDrawCalculatorCLI.outputs.exitcode == 9
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
@@ -53,6 +50,10 @@ jobs:
               repo: context.repo.repo,
               body: steps.runDrawCalculatorCLI.outputs.stdout
             })
+      - name: Retry Draw Calculator
+        if: steps.runDrawCalculatorCLI.outputs.exitcode == 2
+        id: retryDrawCalculatorCLI
+        run: node ./scripts/runCli.js
       - name: Commit files for polygon (if required)
         if: steps.runDrawCalculatorCLI.outputs.polygonCliToolRan == 'true'
         run: |
