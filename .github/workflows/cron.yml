@@ -27,6 +27,7 @@ jobs:
 
       - name: Run Draw Calculator CLI (if required)
         id: runDrawCalculatorCLI
+        continue-on-error: true
         env:
           ALCHEMY_MAINNET_URL: ${{secrets.ALCHEMY_MAINNET_URL}}
           ALCHEMY_RINKEBY_URL: ${{secrets.ALCHEMY_RINKEBY_URL}}
@@ -35,12 +36,11 @@ jobs:
           MUMBAI_URL: ${{secrets.MUMBAI_URL}}
           DEBUG: ${{secrets.DEBUG}}
         uses: maddog2050/executable-wrapper@v1
-        continue-on-error: true
         with:
           run_command: node ./scripts/runCli.js
       - name: Comment Error
+        continue-on-error: true
         uses: actions/github-script@v5
-        if: steps.runDrawCalculatorCLI.outputs.exitcode == 9
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
