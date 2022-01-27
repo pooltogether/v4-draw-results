@@ -36,10 +36,7 @@ jobs:
           DEBUG: ${{secrets.DEBUG}}
         uses: maddog2050/executable-wrapper@v1
         with:
-          timeout_seconds: 2500000
-          max_attempts: 2
-          retry_on: error
-          command: node ./scripts/runCli.js
+          run_command: node ./scripts/runCli.js
       - if: steps.runDrawCalculatorCLI.outputs.exitcode == '2'
         run: node ./scripts/runCli.js
       - uses: actions/github-script@v5
