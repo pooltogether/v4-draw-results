@@ -40,7 +40,7 @@ jobs:
       - if: steps.runDrawCalculatorCLI.outputs.exitcode == '2'
         run: node ./scripts/runCli.js
       - uses: actions/github-script@v5
-        if: steps.runDrawCalculatorCLI.outputs.exitcode == '9'
+        if: steps.runDrawCalculatorCLI.outputs.exitcode == 9
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
@@ -48,38 +48,38 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: steps.tflint.outputs.stdout
+              body: steps.runDrawCalculatorCLI.outputs.stdout
             })
       - name: Commit files for polygon (if required)
-        if: steps.runDrawCalcCLI.outputs.polygonCliToolRan == 'true'
+        if: steps.runDrawCalculatorCLI.outputs.polygonCliToolRan == 'true'
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git pull
           git add ./api/prizes/137/
-          git commit -m "Add draw for polygon draw ${{steps.runDrawCalcCLI.outputs.polygonDrawId}}"
+          git commit -m "Add draw for polygon draw ${{steps.runDrawCalculatorCLI.outputs.polygonDrawId}}"
 
       - name: Commit files for mainnet (if required) # this is done seperately to polygon for a different commit message
-        if: steps.runDrawCalcCLI.outputs.mainnetCliToolRan == 'true'
+        if: steps.runDrawCalculatorCLI.outputs.mainnetCliToolRan == 'true'
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git pull
           git add ./api/prizes/1/
-          git commit -m "Add draw for mainnet draw ${{steps.runDrawCalcCLI.outputs.mainnetDrawId}}"
+          git commit -m "Add draw for mainnet draw ${{steps.runDrawCalculatorCLI.outputs.mainnetDrawId}}"
 
       - name: Commit files for avalanche (if required) # this is done seperately to polygon for a different commit message
-        if: steps.runDrawCalcCLI.outputs.avalancheCliToolRan == 'true'
+        if: steps.runDrawCalculatorCLI.outputs.avalancheCliToolRan == 'true'
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git pull
           git add ./api/prizes/43114/
-          git commit -m "Add draw for avalanche draw ${{steps.runDrawCalcCLI.outputs.avalancheDrawId}}"
+          git commit -m "Add draw for avalanche draw ${{steps.runDrawCalculatorCLI.outputs.avalancheDrawId}}"
 
       - name: Push changes (if required)
         uses: ad-m/github-push-action@master
-        if: steps.runDrawCalcCLI.outputs.polygonCliToolRan == 'true' || steps.runDrawCalcCLI.outputs.mainnetCliToolRan == 'true'
+        if: steps.runDrawCalculatorCLI.outputs.polygonCliToolRan == 'true' || steps.runDrawCalculatorCLI.outputs.mainnetCliToolRan == 'true'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
