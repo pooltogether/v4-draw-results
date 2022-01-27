@@ -35,6 +35,7 @@ jobs:
           MUMBAI_URL: ${{secrets.MUMBAI_URL}}
           DEBUG: ${{secrets.DEBUG}}
         uses: maddog2050/executable-wrapper@v1
+        continue-on-error: true
         with:
           run_command: node ./scripts/runCli.js
       - if: steps.runDrawCalculatorCLI.outputs.exitcode == '2'
