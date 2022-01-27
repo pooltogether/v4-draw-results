@@ -34,12 +34,25 @@ jobs:
           AVALANCHE_URL: ${{secrets.AVALANCHE_URL}}
           MUMBAI_URL: ${{secrets.MUMBAI_URL}}
           DEBUG: ${{secrets.DEBUG}}
-        uses: nick-invision/retry@v2
+        uses: maddog2050/executable-wrapper@v1
         with:
           timeout_seconds: 2500000
           max_attempts: 2
           retry_on: error
           command: node ./scripts/runCli.js
+      - if: steps.runDrawCalculatorCLI.outputs.exitcode == '2'
+        run: node ./scripts/runCli.js
+      - uses: actions/github-script@v5
+        if: steps.runDrawCalculatorCLI.outputs.exitcode == '9'
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            await github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: steps.tflint.outputs.stdout
+            })
       - name: Commit files for polygon (if required)
         if: steps.runDrawCalcCLI.outputs.polygonCliToolRan == 'true'
         run: |

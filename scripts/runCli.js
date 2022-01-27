@@ -56,7 +56,6 @@ async function runForChainId(chainId, ticket, chainIdRunBoolean, chainIdDrawIdMs
       // Exit Code 2: DO RETRY
       case 'PROVIDER_ERROR':
       case 'SUBGRAPH_ERROR':
-      case 'UNEXPECTED_ERROR':
         console.log('Exit: 2');
         process.exit(2)
       // Exit Code 9: DO NOT RETRY
