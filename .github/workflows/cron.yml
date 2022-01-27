@@ -3,7 +3,6 @@ on:
   schedule:
     - cron: "0 23 * * *" # everyday at 11pm UTC
   push:
-
 jobs:
   runCLI:
     name: Run CLI if necessary
@@ -28,7 +27,7 @@ jobs:
         uses: bahmutov/npm-install@v1
 
       - name: Run Draw Calculator CLI (if required)
-        id: runDrawCalcCLI
+        id: runDrawCalculatorCLI
         env:
           ALCHEMY_MAINNET_URL: ${{secrets.ALCHEMY_MAINNET_URL}}
           ALCHEMY_RINKEBY_URL: ${{secrets.ALCHEMY_RINKEBY_URL}}
@@ -36,8 +35,12 @@ jobs:
           AVALANCHE_URL: ${{secrets.AVALANCHE_URL}}
           MUMBAI_URL: ${{secrets.MUMBAI_URL}}
           DEBUG: ${{secrets.DEBUG}}
-        run: node ./scripts/runCli.js
-
+        uses: nick-invision/retry@v2
+        with:
+          timeout_seconds: 15
+          max_attempts: 3
+          retry_on: error
+          command: node ./scripts/runCli.js
       - name: Commit files for polygon (if required)
         if: steps.runDrawCalcCLI.outputs.polygonCliToolRan == 'true'
         run: |
