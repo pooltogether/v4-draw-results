@@ -26,6 +26,7 @@ jobs:
         uses: bahmutov/npm-install@v1
 
       - name: Run Draw Calculator CLI (if required)
+        uses: maddog2050/executable-wrapper@v1
         id: runDrawCalculatorCLI
         continue-on-error: true
         env:
@@ -35,26 +36,30 @@ jobs:
           AVALANCHE_URL: ${{secrets.AVALANCHE_URL}}
           MUMBAI_URL: ${{secrets.MUMBAI_URL}}
           DEBUG: ${{secrets.DEBUG}}
-        uses: maddog2050/executable-wrapper@v1
         with:
           run_command: node ./scripts/runCli.js
       - name: Comment Error
-        continue-on-error: true
+        id: commentCalculatorError
         uses: actions/github-script@v5
+        continue-on-error: true
         if: steps.runDrawCalculatorCLI.outputs.exitcode == 9
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             await github.rest.issues.createComment({
               issue_number: 11,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: 'Unavailable Retry Error'
+              body: 'Draw Calculator failed on an unexpected error'
             })
       - name: Retry Draw Calculator
+        uses: nick-invision/retry@v2
         if: steps.runDrawCalculatorCLI.outputs.exitcode == 2
         id: retryDrawCalculatorCLI
-        run: node ./scripts/runCli.js
+        with:
+          timeout_seconds: 2500000 # 25 minutes
+          max_attempts: 2
+          retry_on: error
+          command: node ./scripts/runCli.js
       - name: Commit files for polygon (if required)
         if: steps.runDrawCalculatorCLI.outputs.polygonCliToolRan == 'true'
         run: |
