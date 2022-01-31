@@ -53,20 +53,24 @@ async function runForChainId(chainId, ticket, chainIdRunBoolean, chainIdDrawIdMs
   } catch (error) {
     console.log('Error: ', error);
     switch (error.code) {
-      // Exit Code 2: DO RETRY
+      // Exit Code 1: RETRY
       case 'PROVIDER_ERROR':
       case 'SUBGRAPH_ERROR':
-        console.log('Exit: 2');
-        process.exit(2)
-      // Exit Code 9: DO NOT RETRY
+        core.setOutput('errorcode', error.code);
+        console.log('Exit: 1');
+        process.exit(1)
+      // Exit Code 2: DO NOT RETRY
       case 'NETWORK_ERROR':
-      case 'CHAIN_ID_NOT_SUPPORTED':
-          console.log('Exit: 9');
-          process.exit(9)
+        case 'CHAIN_ID_NOT_SUPPORTED':
+          core.setOutput('errorcode', error.code);
+          console.log('Exit: 2');
+          process.exit(2)
+      // Exit Code 3: Unknown Error
       case 'UNEXPECTED_ERROR':
       default:
-        console.log('Exit: 1');
-        process.exit(1);
+        core.setOutput('errorcode', error.code);
+        console.log('Exit: 3');
+        process.exit(3);
     }
   }
 
