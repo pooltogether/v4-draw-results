@@ -64,7 +64,7 @@ jobs:
         with:
           run_command: node ./scripts/runCli.js
       - name: Comment Error
-        id: commentCalculatorError
+        id: commentCalculatorErrorRetry
         if: steps.runDrawCalculatorCLI.outputs.exitcode == 2 || steps.runDrawCalculatorCLI.outputs.exitcode == 9
         uses: actions/github-script@v5
         env:
