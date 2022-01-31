@@ -57,7 +57,7 @@ jobs:
       # The error is expected to resolve itself (API failure and/or timeout)
       # during the second retry.
       - name: Run Draw Calculator CLI
-        id: runDrawCalculatorCLI
+        id: runDrawCalculatorCLIRetry
         if: steps.runDrawCalculatorCLI.outputs.exitcode == 2
         uses: maddog2050/executable-wrapper@v1
         continue-on-error: true
