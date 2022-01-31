@@ -29,6 +29,9 @@ jobs:
       - name: Install Dependencies (with cache)
         id: installDependencies
         uses: bahmutov/npm-install@v1
+      # Draw Calculator 1st Attempt
+      # When the CLI complex with exit Code 9 a new issue and comment
+      # is created to log the unrecoverable error state.
       - name: Run Draw Calculator CLI
         id: runDrawCalculatorCLI
         uses: maddog2050/executable-wrapper@v1
@@ -40,23 +43,42 @@ jobs:
         uses: actions/github-script@v5
         continue-on-error: true
         if: steps.runDrawCalculatorCLI.outputs.exitcode == 9
+        env:
+          exitCode: ${{ steps.runDrawCalculatorCLI.outputs.exitcode }}
         with:
           script: |
-            await github.rest.issues.createComment({
-              issue_number: 11,
+            await github.rest.issues.create({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: 'Draw Calculator failed on an unexpected error'
+              title: `Draw Calculator Failed: Exit Code ${process.env.exitCode}`
             })
-      - name: Retry Draw Calculator
-        uses: nick-invision/retry@v2
+      # Draw Calculator 2nd Attempt
+      # When the CLI completes with exit Code 2 retry the calculations.
+      # The error is expected to resolve itself (API failure and/or timeout)
+      # during the second retry.
+      - name: Run Draw Calculator CLI
+        id: runDrawCalculatorCLI
         if: steps.runDrawCalculatorCLI.outputs.exitcode == 2
-        id: retryDrawCalculatorCLI
+        uses: maddog2050/executable-wrapper@v1
+        continue-on-error: true
         with:
-          timeout_seconds: 2500000 # 25 minutes
-          max_attempts: 1
-          retry_on: error
-          command: node ./scripts/runCli.js
+          run_command: node ./scripts/runCli.js
+      - name: Comment Error
+        id: commentCalculatorError
+        if: steps.runDrawCalculatorCLI.outputs.exitcode == 2 || steps.runDrawCalculatorCLI.outputs.exitcode == 9
+        uses: actions/github-script@v5
+        env:
+          exitCode: ${{ steps.runDrawCalculatorCLI.outputs.exitcode }}
+        continue-on-error: true
+        with:
+          script: |
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `Draw Calculator Failed: Exit Code ${process.env.exitCode}`
+            })
+      # Git Commit
+      # TODO: Use actions/github-script@v5 to complete commits
       - name: Commit files for polygon (if required)
         if: steps.runDrawCalculatorCLI.outputs.polygonCliToolRan == 'true'
         run: |
