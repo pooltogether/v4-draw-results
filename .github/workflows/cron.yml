@@ -41,7 +41,7 @@ jobs:
         id: commentCalculatorError
         uses: actions/github-script@v5
         continue-on-error: true
-        if: steps.runDrawCalculatorCLI.outputs.exitcode == 2 steps.runDrawCalculatorCLI.outputs.exitcode == 3
+        if: steps.runDrawCalculatorCLI.outputs.exitcode == 2 || steps.runDrawCalculatorCLI.outputs.exitcode == 3
         env:
           exitCode: ${{ steps.runDrawCalculatorCLI.outputs.exitcode }}
           errorCode: ${{ steps.runDrawCalculatorCLI.outputs.errorcode }}
