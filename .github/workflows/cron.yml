@@ -44,7 +44,7 @@ jobs:
         if: steps.runDrawCalculatorCLI.outputs.exitcode == 2 || steps.runDrawCalculatorCLI.outputs.exitcode == 3
         env:
           exitCode: ${{ steps.runDrawCalculatorCLI.outputs.exitcode }}
-          errorCode: ${{ steps.runDrawCalculatorCLI.outputs.errorcode }}
+          errorcode: ${{ steps.runDrawCalculatorCLI.outputs.errorcode }}
         with:
           script: |
             await github.rest.issues.create({
@@ -68,7 +68,7 @@ jobs:
         uses: actions/github-script@v5
         env:
           exitCode: ${{ steps.runDrawCalculatorCLI.outputs.exitcode }}
-          errorCode: ${{ steps.runDrawCalculatorCLI.outputs.errorcode }}
+          errorcode: ${{ steps.runDrawCalculatorCLI.outputs.errorcode }}
         continue-on-error: true
         with:
           script: |
