@@ -87,7 +87,6 @@ jobs:
           git pull
           git add ./api/prizes/137/
           git commit -m "Add draw for polygon draw ${{steps.runDrawCalculatorCLI.outputs.polygonDrawId}}"
-
       - name: Commit files for mainnet (if required) # this is done seperately to polygon for a different commit message
         if: steps.runDrawCalculatorCLI.outputs.mainnetCliToolRan == 'true'
         run: |
@@ -96,7 +95,6 @@ jobs:
           git pull
           git add ./api/prizes/1/
           git commit -m "Add draw for mainnet draw ${{steps.runDrawCalculatorCLI.outputs.mainnetDrawId}}"
-
       - name: Commit files for avalanche (if required) # this is done seperately to polygon for a different commit message
         if: steps.runDrawCalculatorCLI.outputs.avalancheCliToolRan == 'true'
         run: |
@@ -105,7 +103,6 @@ jobs:
           git pull
           git add ./api/prizes/43114/
           git commit -m "Add draw for avalanche draw ${{steps.runDrawCalculatorCLI.outputs.avalancheDrawId}}"
-
       - name: Push changes (if required)
         uses: ad-m/github-push-action@master
         if: steps.runDrawCalculatorCLI.outputs.polygonCliToolRan == 'true' || steps.runDrawCalculatorCLI.outputs.mainnetCliToolRan == 'true'
