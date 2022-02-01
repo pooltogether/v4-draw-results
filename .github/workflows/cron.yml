@@ -3,6 +3,13 @@ on:
   schedule:
     - cron: "0 23 * * *" # everyday at 11pm UTC
   push:
+env:
+  ALCHEMY_MAINNET_URL: ${{secrets.ALCHEMY_MAINNET_URL}}
+  ALCHEMY_RINKEBY_URL: ${{secrets.ALCHEMY_RINKEBY_URL}}
+  MATICVIGIL_URL: ${{secrets.MATICVIGIL_URL}}
+  AVALANCHE_URL: ${{secrets.AVALANCHE_URL}}
+  MUMBAI_URL: ${{secrets.MUMBAI_URL}}
+  DEBUG: ${{secrets.DEBUG}}
 jobs:
   runCLI:
     name: DrawCalculator CLI
@@ -27,13 +34,6 @@ jobs:
 
       - name: Run Draw Calculator CLI (if required)
         id: runDrawCalculatorCLI
-        env:
-          ALCHEMY_MAINNET_URL: ${{secrets.ALCHEMY_MAINNET_URL}}
-          ALCHEMY_RINKEBY_URL: ${{secrets.ALCHEMY_RINKEBY_URL}}
-          MATICVIGIL_URL: ${{secrets.MATICVIGIL_URL}}
-          AVALANCHE_URL: ${{secrets.AVALANCHE_URL}}
-          MUMBAI_URL: ${{secrets.MUMBAI_URL}}
-          DEBUG: ${{secrets.DEBUG}}
         uses: nick-invision/retry@v2
         with:
           timeout_seconds: 2500000
