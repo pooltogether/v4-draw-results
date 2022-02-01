@@ -19,57 +19,93 @@ jobs:
       matrix:
         node: ["16.9.0"]
         os: [ubuntu-latest]
-
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
-
       - name: Use Node ${{ matrix.node }}
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node }}
-
-      - name: Install deps and build (with cache)
+      - name: Install Dependencies (with cache)
+        id: installDependencies
         uses: bahmutov/npm-install@v1
-
-      - name: Run Draw Calculator CLI (if required)
+      # Draw Calculator 1st Attempt
+      # When the CLI completes with exit Code 2 or 3 a new issue is created to log the unrecoverable error state.
+      - name: Run Draw Calculator CLI
         id: runDrawCalculatorCLI
-        uses: nick-invision/retry@v2
+        uses: maddog2050/executable-wrapper@v1
+        continue-on-error: true
         with:
-          timeout_seconds: 2500000
-          max_attempts: 2
-          retry_on: error
-          command: node ./scripts/runCli.js
+          run_command: node ./scripts/runCli.js
+      - name: Comment Error
+        id: commentCalculatorError
+        uses: actions/github-script@v5
+        continue-on-error: true
+        if: steps.runDrawCalculatorCLI.outputs.exitcode == 2 || steps.runDrawCalculatorCLI.outputs.exitcode == 3
+        env:
+          exitCode: ${{ steps.runDrawCalculatorCLI.outputs.exitcode }}
+          errorcode: ${{ steps.runDrawCalculatorCLI.outputs.errorcode }}
+        with:
+          script: |
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `Draw Calculator Failed: Exit Code ${process.env.exitCode} (${process.env.errorcode})`
+            })
+      # Draw Calculator 2nd Attempt
+      # When the CLI completes with exit Code 1 start RETRY
+      # The error is expected to resolve itself (API failure and/or timeout) during the second retry.
+      - name: Run Draw Calculator CLI
+        id: runDrawCalculatorCLIRetry
+        if: steps.runDrawCalculatorCLI.outputs.exitcode == 1
+        uses: maddog2050/executable-wrapper@v1
+        continue-on-error: true
+        with:
+          run_command: node ./scripts/runCli.js
+      - name: Comment Error
+        id: commentCalculatorErrorRetry
+        if: steps.runDrawCalculatorCLIRetry.outputs.exitcode == 1 || steps.runDrawCalculatorCLIRetry.outputs.exitcode == 2 || steps.runDrawCalculatorCLIRetry.outputs.exitcode == 3
+        uses: actions/github-script@v5
+        env:
+          exitCode: ${{ steps.runDrawCalculatorCLI.outputs.exitcode }}
+          errorcode: ${{ steps.runDrawCalculatorCLI.outputs.errorcode }}
+        continue-on-error: true
+        with:
+          script: |
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `Draw Calculator Failed: Exit Code ${process.env.exitCode} (${process.env.errorcode})`
+            })
+      # Git Commit
+      # TODO: Use actions/github-script@v5 to complete commits
       - name: Commit files for polygon (if required)
-        if: steps.runDrawCalcCLI.outputs.polygonCliToolRan == 'true'
+        if: steps.runDrawCalculatorCLI.outputs.polygonCliToolRan == 'true'
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git pull
           git add ./api/prizes/137/
-          git commit -m "Add draw for polygon draw ${{steps.runDrawCalcCLI.outputs.polygonDrawId}}"
-
+          git commit -m "Add draw for polygon draw ${{steps.runDrawCalculatorCLI.outputs.polygonDrawId}}"
       - name: Commit files for mainnet (if required) # this is done seperately to polygon for a different commit message
-        if: steps.runDrawCalcCLI.outputs.mainnetCliToolRan == 'true'
+        if: steps.runDrawCalculatorCLI.outputs.mainnetCliToolRan == 'true'
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git pull
           git add ./api/prizes/1/
-          git commit -m "Add draw for mainnet draw ${{steps.runDrawCalcCLI.outputs.mainnetDrawId}}"
-
+          git commit -m "Add draw for mainnet draw ${{steps.runDrawCalculatorCLI.outputs.mainnetDrawId}}"
       - name: Commit files for avalanche (if required) # this is done seperately to polygon for a different commit message
-        if: steps.runDrawCalcCLI.outputs.avalancheCliToolRan == 'true'
+        if: steps.runDrawCalculatorCLI.outputs.avalancheCliToolRan == 'true'
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git pull
           git add ./api/prizes/43114/
-          git commit -m "Add draw for avalanche draw ${{steps.runDrawCalcCLI.outputs.avalancheDrawId}}"
-
+          git commit -m "Add draw for avalanche draw ${{steps.runDrawCalculatorCLI.outputs.avalancheDrawId}}"
       - name: Push changes (if required)
         uses: ad-m/github-push-action@master
-        if: steps.runDrawCalcCLI.outputs.polygonCliToolRan == 'true' || steps.runDrawCalcCLI.outputs.mainnetCliToolRan == 'true'
+        if: steps.runDrawCalculatorCLI.outputs.polygonCliToolRan == 'true' || steps.runDrawCalculatorCLI.outputs.mainnetCliToolRan == 'true'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
