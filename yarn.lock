@@ -650,10 +650,10 @@
     "@pooltogether/owner-manager-contracts" "1.1.0"
     "@pooltogether/yield-source-interface" "1.3.0"
 
-"@pooltogether/draw-calculator-cli@^0.1.0-beta.18":
-  version "0.1.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@pooltogether/draw-calculator-cli/-/draw-calculator-cli-0.1.0-beta.18.tgz#5703e40f1da9cbef6dbe8070f0839c337f8eb528"
-  integrity sha512-BNmVDa9Lbo3FOd5UbBJVaUnVw+nh7O8Nik0wHJRc6I4fm5uCrhShfSly+JHUoWmO14PvE4IMZMGcShgC8gUyZg==
+"@pooltogether/draw-calculator-cli@^0.1.0-beta.19":
+  version "0.1.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@pooltogether/draw-calculator-cli/-/draw-calculator-cli-0.1.0-beta.19.tgz#43bd2fd8078e962d7e68ab43600556c3d4514e7a"
+  integrity sha512-CVa5hTRjiALf38SfoTZmSFvCXfI1aUzdeUY9fe2KFcN/Ok0Bq/MkAAfIGRj6Nl1r+8AxX0xwim1gnlQfdRPB7g==
   dependencies:
     "@pooltogether/draw-calculator-js" "^1.0.3-beta.1"
     "@pooltogether/prize-api-schema" "^1.0.0-beta.1"
