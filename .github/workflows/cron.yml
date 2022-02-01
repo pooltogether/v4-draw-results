@@ -81,6 +81,7 @@ jobs:
       # TODO: Use actions/github-script@v5 to complete commits
       - name: Commit files for polygon (if required)
         if: steps.runDrawCalculatorCLI.outputs.polygonCliToolRan == 'true'
+        continue-on-error: true
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
@@ -89,6 +90,7 @@ jobs:
           git commit -m "Add draw for polygon draw ${{steps.runDrawCalculatorCLI.outputs.polygonDrawId}}"
       - name: Commit files for mainnet (if required) # this is done seperately to polygon for a different commit message
         if: steps.runDrawCalculatorCLI.outputs.mainnetCliToolRan == 'true'
+        continue-on-error: true
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
@@ -97,6 +99,7 @@ jobs:
           git commit -m "Add draw for mainnet draw ${{steps.runDrawCalculatorCLI.outputs.mainnetDrawId}}"
       - name: Commit files for avalanche (if required) # this is done seperately to polygon for a different commit message
         if: steps.runDrawCalculatorCLI.outputs.avalancheCliToolRan == 'true'
+        continue-on-error: true
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
