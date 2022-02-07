@@ -2,11 +2,10 @@ const cp = require('child_process');
 const spawn = require('child_process').spawn;
 
 async function spawnCLIProcess(chainId, ticket, drawId, directory) {
-  console.log('spawning node process');
   const child = spawn(
     'node',
     [ 
-      './node_modules/@pooltogether/draw-calculator-cli/dist/index.js',
+      './node_modules/@pooltogether/v4-cli/dist/index.js',
       '-c',
       chainId,
       '-t',

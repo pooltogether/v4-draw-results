@@ -61,7 +61,7 @@ async function runForChainId(chainId, ticket, chainIdRunBoolean, chainIdDrawIdMs
         process.exit(1)
       // Exit Code 2: DO NOT RETRY
       case 'NETWORK_ERROR':
-        case 'CHAIN_ID_NOT_SUPPORTED':
+      case 'CHAIN_ID_NOT_SUPPORTED':
           core.setOutput('errorcode', error.code);
           console.log('Exit: 2');
           process.exit(2)

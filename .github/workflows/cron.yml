@@ -41,7 +41,7 @@ jobs:
         id: commentCalculatorError
         uses: actions/github-script@v5
         continue-on-error: true
-        if: steps.runDrawCalculatorCLI.outputs.exitcode == 2 || steps.runDrawCalculatorCLI.outputs.exitcode == 3
+        if: steps.runDrawCalculatorCLI.outputs.exitcode == 1
         env:
           exitCode: ${{ steps.runDrawCalculatorCLI.outputs.exitcode }}
           errorcode: ${{ steps.runDrawCalculatorCLI.outputs.errorcode }}
@@ -57,14 +57,14 @@ jobs:
       # The error is expected to resolve itself (API failure and/or timeout) during the second retry.
       - name: Run Draw Calculator CLI
         id: runDrawCalculatorCLIRetry
-        if: steps.runDrawCalculatorCLI.outputs.exitcode == 1
+        if: steps.runDrawCalculatorCLI.outputs.exitcode == 42
         uses: maddog2050/executable-wrapper@v1
         continue-on-error: true
         with:
           run_command: node ./scripts/runCli.js
       - name: Comment Error
         id: commentCalculatorErrorRetry
-        if: steps.runDrawCalculatorCLIRetry.outputs.exitcode == 1 || steps.runDrawCalculatorCLIRetry.outputs.exitcode == 2 || steps.runDrawCalculatorCLIRetry.outputs.exitcode == 3
+        if: steps.runDrawCalculatorCLIRetry.outputs.exitcode == 1
         uses: actions/github-script@v5
         env:
           exitCode: ${{ steps.runDrawCalculatorCLI.outputs.exitcode }}
