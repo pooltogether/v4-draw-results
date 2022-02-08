@@ -39,12 +39,12 @@ jobs:
       # Draw Calculator 1st Attempt
       # When the CLI completes with exit Code 2 or 3 a new issue is created to log the unrecoverable error state.
       - name: Test PTV4 drawPrizes
-        id: compute
+        id: computeDrawPrizes
         run: |
           ptv4 compute drawPrizes --chainId 1 --drawId 65 --outDir ./temp --ticket 0xdd4d117723C257CEe402285D3aCF218E9A8236E1
         continue-on-error: true
       - name: Test PTV4 
-        id: compute
+        id: computePoolPrizes
         run: |
           ptv4 compute poolPrizes --chainId 1  --outDir ./temp --ticket 0xdd4d117723C257CEe402285D3aCF218E9A8236E1
           ptv4 compute poolPrizes --chainId 137  --outDir ./temp --ticket 0x6a304dFdb9f808741244b6bfEe65ca7B3b3A6076
