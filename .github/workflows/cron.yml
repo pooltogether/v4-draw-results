@@ -32,11 +32,15 @@ jobs:
       - name: Install Dependencies (with cache)
         id: installDependencies
         uses: bahmutov/npm-install@v1
+      - name: Install PoolTogether V4 CLI
+        run: |
+          yarn global add @pooltogether/v4-cli
+          echo "$(yarn global bin)" >> $GITHUB_PATH
       # Draw Calculator 1st Attempt
       # When the CLI completes with exit Code 2 or 3 a new issue is created to log the unrecoverable error state.
       - name: Run Draw Calculator CLI
         id: runDrawCalculatorCLI
-        run: yarn _ptv4 compute networkPrizes -o ./api/prizes
+        run: ptv4 compute networkPrizes -o ./api/prizes
         continue-on-error: true
       # Git Commit
       # TODO: Use actions/github-script@v5 to complete commits
