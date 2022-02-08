@@ -37,14 +37,14 @@ jobs:
           useLockFile: false
       - name: Install PoolTogether V4 CLI
         run: |
-          yarn global add @pooltogether/v4-cli@0.1.0-beta.14
+          yarn global add @pooltogether/v4-cli@0.1.0-beta.15
           echo "$(yarn global bin)" >> $GITHUB_PATH
       # Draw Calculator 1st Attempt
       # When the CLI completes with exit Code 2 or 3 a new issue is created to log the unrecoverable error state.
       - name: Test PTV4 drawPrizes
         id: computeDrawPrizes
         run: |
-          ptv4 compute drawPrizes --c 1 -d 65 -0 ./temp -t 0xdd4d117723C257CEe402285D3aCF218E9A8236E1
+          ptv4 compute drawPrizes -c 1 -d 65 -0 ./temp -t 0xdd4d117723C257CEe402285D3aCF218E9A8236E1
         continue-on-error: true
       - name: Test PTV4 
         id: computePoolPrizes
