@@ -41,7 +41,8 @@ jobs:
       - name: Test PTV4 drawPrizes
         id: computeDrawPrizes
         run: |
-          ptv4 compute drawPrizes --chainId 1 --drawId 65 --outDir ./temp --ticket 0xdd4d117723C257CEe402285D3aCF218E9A8236E1
+          ptv4 compute drawPrizes --c 1 -d 65 -0 ./temp -t 0xdd4d117723C257CEe402285D3aCF218E9A8236E1
+          yarn _ptv4 compute drawPrizes --c 1 -d 65 -0 ./temp -t 0xdd4d117723C257CEe402285D3aCF218E9A8236E1
         continue-on-error: true
       - name: Test PTV4 
         id: computePoolPrizes
