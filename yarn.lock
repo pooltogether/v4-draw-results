@@ -561,10 +561,10 @@
   resolved "https://registry.yarnpkg.com/@pooltogether/utilities/-/utilities-0.3.8.tgz#f4fa0e9618c97a152e637575560ee226d9e9752d"
   integrity sha512-+9+Lw7IP6B1wvLXK/Dwi8SPkPetaCd4ayr6fS+xWwJup9xdMZmyRR+sc3VwwF/1whu5GmfhZe2X0OV6FTcXWKw==
 
-"@pooltogether/v4-cli@^0.1.0-beta.9":
-  version "0.1.0-beta.9"
-  resolved "https://registry.yarnpkg.com/@pooltogether/v4-cli/-/v4-cli-0.1.0-beta.9.tgz#c4a063cc130a6bb8dad1fd3a984474fec4da77a3"
-  integrity sha512-QJbGCVCWARkdl7+G1q/KUzYcK10dnQ7hT0Sd8mAye6qG1z/0zz2mhaqfumj4r7qkyQn239X8vCplCHajoA2Afg==
+"@pooltogether/v4-cli@^0.1.0-beta.10":
+  version "0.1.0-beta.10"
+  resolved "https://registry.yarnpkg.com/@pooltogether/v4-cli/-/v4-cli-0.1.0-beta.10.tgz#1414dc4bc1f5b90e2fb677a176c6ca5481122431"
+  integrity sha512-uKIayBimXKcayAf+YlbJlQF5lbxQ5YjL13p0A0xso+p+qo25wLKLNCHMb9PWgkyRTOf/SR77QApnE3quJa0aGQ==
   dependencies:
     "@ethersproject/bignumber" "^5.5.0"
     "@ethersproject/contracts" "^5.5.0"
