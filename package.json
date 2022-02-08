@@ -7,7 +7,7 @@
   "dependencies": {
     "@actions/core": "^1.6.0",
     "@pooltogether/draw-calculator-cli": "^0.1.0-beta.19",
-    "@pooltogether/v4-cli": "^0.1.0-beta.4",
+    "@pooltogether/v4-cli": "^0.1.0-beta.5",
     "cross-spawn": "^7.0.3"
   },
   "devDependencies": {

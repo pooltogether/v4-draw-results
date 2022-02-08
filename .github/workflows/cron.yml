@@ -36,7 +36,7 @@ jobs:
         uses: maddog2050/executable-wrapper@v1
         continue-on-error: true
         with:
-          run_command: yarn _ptv4 compute allDrawPrizes -c 1 -t 0xdd4d117723C257CEe402285D3aCF218E9A8236E1 -o ./api/prizes
+          run_command: yarn _ptv4 compute networkPrizes -o ./api/prizes
       # Git Commit
       # TODO: Use actions/github-script@v5 to complete commits
       - name: Commit files for polygon (if required)
