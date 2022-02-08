@@ -36,47 +36,7 @@ jobs:
         uses: maddog2050/executable-wrapper@v1
         continue-on-error: true
         with:
-          run_command: node ./scripts/runCli.js
-      - name: Comment Error
-        id: commentCalculatorError
-        uses: actions/github-script@v5
-        continue-on-error: true
-        if: steps.runDrawCalculatorCLI.outputs.exitcode == 1
-        env:
-          exitCode: ${{ steps.runDrawCalculatorCLI.outputs.exitcode }}
-          errorcode: ${{ steps.runDrawCalculatorCLI.outputs.errorcode }}
-        with:
-          script: |
-            await github.rest.issues.create({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              title: `Draw Calculator Failed: Exit Code ${process.env.exitCode} (${process.env.errorcode})`
-            })
-      # Draw Calculator 2nd Attempt
-      # When the CLI completes with exit Code 1 start RETRY
-      # The error is expected to resolve itself (API failure and/or timeout) during the second retry.
-      - name: Run Draw Calculator CLI
-        id: runDrawCalculatorCLIRetry
-        if: steps.runDrawCalculatorCLI.outputs.exitcode == 42
-        uses: maddog2050/executable-wrapper@v1
-        continue-on-error: true
-        with:
-          run_command: node ./scripts/runCli.js
-      - name: Comment Error
-        id: commentCalculatorErrorRetry
-        if: steps.runDrawCalculatorCLIRetry.outputs.exitcode == 1
-        uses: actions/github-script@v5
-        env:
-          exitCode: ${{ steps.runDrawCalculatorCLI.outputs.exitcode }}
-          errorcode: ${{ steps.runDrawCalculatorCLI.outputs.errorcode }}
-        continue-on-error: true
-        with:
-          script: |
-            await github.rest.issues.create({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              title: `Draw Calculator Failed: Exit Code ${process.env.exitCode} (${process.env.errorcode})`
-            })
+          run_command: ptv4 compute allDrawPrizes -c 1 -t 0xdd4d117723C257CEe402285D3aCF218E9A8236E1 -outDir ./api/prizes
       # Git Commit
       # TODO: Use actions/github-script@v5 to complete commits
       - name: Commit files for polygon (if required)

@@ -1,17 +1,18 @@
-const cp = require('child_process');
-const spawn = require('child_process').spawn;
+const spawn = require('cross-spawn');
 
 async function spawnCLIProcess(chainId, ticket, drawId, directory) {
+  console.log('spawning node process');
+  console.log(__dirname, 'dirrr')
   const child = spawn(
     'node',
     [ 
-      './node_modules/@pooltogether/v4-cli/dist/index.js',
+      './node_modules/.bin/ptv4',
+      'compute',
+      'allDrawPrizes',
       '-c',
       chainId,
       '-t',
       ticket,
-      '-d',
-      drawId,
       '-o',
       directory,
     ],
