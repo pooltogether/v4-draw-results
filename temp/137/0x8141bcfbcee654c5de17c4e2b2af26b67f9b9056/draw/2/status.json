@@ -1,0 +1,11 @@
+{
+  "status": "FAILURE",
+  "createdAt": 1644351098559,
+  "updatedAt": 1644351098582,
+  "runtime": 23,
+  "error": {
+    "reason": "could not detect network",
+    "code": "NETWORK_ERROR",
+    "event": "noNetwork"
+  }
+}
