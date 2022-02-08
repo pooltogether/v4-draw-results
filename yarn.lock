@@ -932,12 +932,13 @@
   resolved "https://registry.yarnpkg.com/@pooltogether/utilities/-/utilities-0.3.8.tgz#f4fa0e9618c97a152e637575560ee226d9e9752d"
   integrity sha512-+9+Lw7IP6B1wvLXK/Dwi8SPkPetaCd4ayr6fS+xWwJup9xdMZmyRR+sc3VwwF/1whu5GmfhZe2X0OV6FTcXWKw==
 
-"@pooltogether/v4-cli@^0.1.0-beta.3":
-  version "0.1.0-beta.3"
-  resolved "https://registry.yarnpkg.com/@pooltogether/v4-cli/-/v4-cli-0.1.0-beta.3.tgz#c381d1d9b08cb4f765a45e4f4b5b97df884c1de9"
-  integrity sha512-LTqRFRcexpEvrH9aATugLo/zlzC2tfHhYxs/yORJHgGWKcqS1nYAfLI8zcCBV6kRKsPsvCQy+Ml4HHGs+x+w6Q==
+"@pooltogether/v4-cli@^0.1.0-beta.4":
+  version "0.1.0-beta.4"
+  resolved "https://registry.yarnpkg.com/@pooltogether/v4-cli/-/v4-cli-0.1.0-beta.4.tgz#4b5d3b6b641d062fdf1b089442a6d77f21c9bd55"
+  integrity sha512-Fweo0eiC/vC6v6LHrsc44qKh46gsxoaNlMM+a9PEiYAnEbnqpzrRgqcDhh8SvVFuPGRUiGaaR6akixlzJCOJmg==
   dependencies:
     "@ethersproject/bignumber" "^5.5.0"
+    "@ethersproject/contracts" "^5.5.0"
     "@ethersproject/providers" "^5.5.3"
     "@oclif/core" "^1"
     "@oclif/plugin-help" "^5"
@@ -949,6 +950,7 @@
     graphql "^16.3.0"
     graphql-request "^4.0.0"
     piscina "^3.2.0"
+    spawn-promise "^0.1.8"
 
 "@pooltogether/v4-client-js@^0.10.2":
   version "0.10.2"
@@ -1336,6 +1338,11 @@ cliui@^7.0.2:
     string-width "^4.2.0"
     strip-ansi "^6.0.0"
     wrap-ansi "^7.0.0"
+
+co@^4.6.0:
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/co/-/co-4.6.0.tgz#6ea6bdf3d853ae54ccb8e47bfa0bf3f9031fb184"
+  integrity sha1-bqa989hTrlTMuOR7+gvz+QMfsYQ=
 
 color-convert@^1.9.0:
   version "1.9.3"
@@ -2417,6 +2424,13 @@ slash@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/slash/-/slash-3.0.0.tgz#6539be870c165adbd5240220dbe361f1bc4d4634"
   integrity sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==
+
+spawn-promise@^0.1.8:
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/spawn-promise/-/spawn-promise-0.1.8.tgz#a5bea98814c48f52cbe02720e7fe2d6fc3b5119a"
+  integrity sha512-pTkEOFxvYLq9SaI1d8bwepj0yD9Yyz65+4e979YZLv/L3oYPxZpDTabcm6e+KIZniGK9mQ+LGrwB5s1v2z67nQ==
+  dependencies:
+    co "^4.6.0"
 
 sprintf-js@~1.0.2:
   version "1.0.3"
