@@ -7,15 +7,13 @@ env:
   ETHEREUM_MAINNET_RPC_URL: ${{secrets.ETHEREUM_MAINNET_RPC_URL}}
   POLYGON_MAINNET_RPC_URL: ${{secrets.POLYGON_MAINNET_RPC_URL}}
   AVALANCHE_MAINNET_RPC_URL: ${{secrets.AVALANCHE_MAINNET_RPC_URL}}
-  ALCHEMY_MAINNET_URL: ${{secrets.ALCHEMY_MAINNET_URL}}
-  ALCHEMY_RINKEBY_URL: ${{secrets.ALCHEMY_RINKEBY_URL}}
-  MATICVIGIL_URL: ${{secrets.MATICVIGIL_URL}}
-  AVALANCHE_URL: ${{secrets.AVALANCHE_URL}}
-  MUMBAI_URL: ${{secrets.MUMBAI_URL}}
+  ETHEREUM_RINKEBY_RPC_URL: ${{secrets.ETHEREUM_RINKEBY_RPC_URL}}
+  POLYGON_MUMBAI_RPC_URL: ${{secrets.POLYGON_MUMBAI_RPC_URL}}
+  AVALANCHE_FUJI_RPC_URL: ${{secrets.AVALANCHE_FUJI_RPC_URL}}
   DEBUG: ${{secrets.DEBUG}}
 jobs:
   runCLI:
-    name: DrawCalculator CLI
+    name: PrizePoolNetwork Prizes Computation 
     runs-on: ${{ matrix.os }}
     strategy:
       max-parallel: 1
@@ -29,39 +27,62 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node }}
-      - name: Install Dependencies (with cache)
+      - name: Install Dependencies
         id: installDependencies
         uses: bahmutov/npm-install@v1
         with:
           install-command: yarn
-          useLockFile: false
       - name: Install PoolTogether V4 CLI
         run: |
-          npm install -g @pooltogether/v4-cli@0.1.0-beta.31
+          npm install -g @pooltogether/v4-cli@0.1.0
           echo "$(npm -g bin)" >> $GITHUB_PATH
-      # Draw Calculator 1st Attempt
-      # When the CLI completes with exit Code 2 or 3 a new issue is created to log the unrecoverable error state.
+      # -------------------------------------------------------- #
+      # Ethereum Mainnet (USDC)
+      # -------------------------------------------------------- #
       - name: Ethereum Draw Prizes
         id: drawPrizesEthereumMainnet
         uses: maddog2050/executable-wrapper@v1
         continue-on-error: true
         with:
           run_command: ptv4 compute poolPrizes -o ./api/prizes -t 0xdd4d117723C257CEe402285D3aCF218E9A8236E1 -c 1
+      # -------------------------------------------------------- #
+      # Polygon Mainnet (USDC)
+      # -------------------------------------------------------- #
       - name: Polygon Draw Prizes
         id: drawPrizesPolygonMainnet
         uses: maddog2050/executable-wrapper@v1
         continue-on-error: true
         with:
           run_command: ptv4 compute poolPrizes -o ./api/prizes -t 0x6a304dFdb9f808741244b6bfEe65ca7B3b3A6076 -c 137
-      - name: Avalance Draw Prizes
+      # -------------------------------------------------------- #
+      # Avalanche Mainnet (USDC)
+      # -------------------------------------------------------- #
+      - name: Avalanche Draw Prizes
         id: drawPrizesAvalancheMainnet
         uses: maddog2050/executable-wrapper@v1
         continue-on-error: true
         with:
           run_command: ptv4 compute poolPrizes -o ./api/prizes -t 0xb27f379c050f6ed0973a01667458af6ecebc1d90 -c 43114
+      # -------------------------------------------------------- #
+      # Comment Error
+      # -------------------------------------------------------- #
+      - name: Comment Error
+        id: commentError
+        if: steps.drawPrizesEthereumMainnet.outputs.exitcode == 1 || steps.drawPrizesPolygonMainnet.outputs.exitcode == 1 || steps.drawPrizesAvalancheMainnet.outputs.exitcode == 1
+        uses: actions/github-script@v5
+        continue-on-error: true
+        with:
+          script: |
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `Draw Calculator Failed: Exit Code ${process.env.exitCode} (${process.env.errorcode})`
+            })
+      # -------------------------------------------------------- #
       # Git Commit
       # TODO: Use actions/github-script@v5 to complete commits
-      - name: Commit files for Ethhereum (if required) # this is done seperately to polygon for a different commit message
+      # -------------------------------------------------------- #
+      - name: Commit Ethereum
         if: steps.drawPrizesEthereumMainnet.outputs.runStatus == 'true'
         continue-on-error: true
         run: |
@@ -70,7 +91,7 @@ jobs:
           git pull
           git add ./api/prizes/1/
           git commit -m "Add draw for mainnet draw ${{steps.drawPrizesEthereumMainnet.outputs.drawIds}}"
-      - name: Commit files for Polygon (if required)
+      - name: Commit Polygon
         if: steps.drawPrizesPolygonMainnet.outputs.runStatus == 'true'
         continue-on-error: true
         run: |
@@ -79,7 +100,7 @@ jobs:
           git pull
           git add ./api/prizes/137/
           git commit -m "Add draw for polygon draw ${{steps.drawPrizesPolygonMainnet.outputs.drawIds}}"
-      - name: Commit files for Avalanche (if required) # this is done seperately to polygon for a different commit message
+      - name: Commit Avlanche
         if: steps.drawPrizesAvalancheMainnet.outputs.runStatus == 'true'
         continue-on-error: true
         run: |
@@ -88,9 +109,12 @@ jobs:
           git pull
           git add ./api/prizes/43114/
           git commit -m "Add draw for avalanche draw ${{steps.drawPrizesAvalancheMainnet.outputs.drawIds}}"
+      # -------------------------------------------------------- #
+      # Push Draw Prizes Computation
+      # -------------------------------------------------------- #
       - name: Push changes (if required)
         uses: ad-m/github-push-action@master
-        if: steps.drawPrizesEthereumMainnet.outputs.runStatus == 'true' || steps.drawPrizesPolygonMainnet.outputs.runStatus == 'true'
+        if: steps.drawPrizesEthereumMainnet.outputs.runStatus == 'true' || steps.drawPrizesPolygonMainnet.outputs.runStatus == 'true' || steps.drawPrizesAvalancheMainnet.outputs.runStatus == 'true'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
