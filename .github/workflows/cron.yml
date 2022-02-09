@@ -37,7 +37,7 @@ jobs:
           useLockFile: false
       - name: Install PoolTogether V4 CLI
         run: |
-          npm install -g @pooltogether/v4-cli@0.1.0-beta.29
+          npm install -g @pooltogether/v4-cli@0.1.0-beta.30
           echo "$(npm -g bin)" >> $GITHUB_PATH
       # Draw Calculator 1st Attempt
       # When the CLI completes with exit Code 2 or 3 a new issue is created to log the unrecoverable error state.
@@ -62,35 +62,35 @@ jobs:
       # Git Commit
       # TODO: Use actions/github-script@v5 to complete commits
       - name: Commit files for Ethhereum (if required) # this is done seperately to polygon for a different commit message
-        if: steps.drawPrizesEthereumMainnet.outputs.1-run-status == 'true'
+        if: steps.drawPrizesEthereumMainnet.outputs.runStatus == 'true'
         continue-on-error: true
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git pull
           git add ./api/prizes/1/
-          git commit -m "Add draw for mainnet draw ${{steps.drawPrizesEthereumMainnet.outputs.1-draw-ids}}"
+          git commit -m "Add draw for mainnet draw ${{steps.drawPrizesEthereumMainnet.outputs.drawIds}}"
       - name: Commit files for Polygon (if required)
-        if: steps.drawPrizesPolygonMainnet.outputs.137-run-status == 'true'
+        if: steps.drawPrizesPolygonMainnet.outputs.runStatus == 'true'
         continue-on-error: true
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git pull
           git add ./api/prizes/137/
-          git commit -m "Add draw for polygon draw ${{steps.drawPrizesPolygonMainnet.outputs.137-draw-ids}}"
+          git commit -m "Add draw for polygon draw ${{steps.drawPrizesPolygonMainnet.outputs.drawIds}}"
       - name: Commit files for Avalanche (if required) # this is done seperately to polygon for a different commit message
-        if: steps.drawPrizesAvalancheMainnet.outputs.43114-run-status == 'true'
+        if: steps.drawPrizesAvalancheMainnet.outputs.runStatus == 'true'
         continue-on-error: true
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git pull
           git add ./api/prizes/43114/
-          git commit -m "Add draw for avalanche draw ${{steps.drawPrizesAvalancheMainnet.outputs.43114-draw-ids}}"
+          git commit -m "Add draw for avalanche draw ${{steps.drawPrizesAvalancheMainnet.outputs.drawIds}}"
       - name: Push changes (if required)
         uses: ad-m/github-push-action@master
-        if: steps.drawPrizesEthereumMainnet.outputs.1-run-status == 'true' || steps.drawPrizesPolygonMainnet.outputs.137-run-status == 'true'
+        if: steps.drawPrizesEthereumMainnet.outputs.runStatus == 'true' || steps.drawPrizesPolygonMainnet.outputs.runStatus == 'true'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
