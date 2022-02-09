@@ -6,6 +6,7 @@
   },
   "dependencies": {
     "@actions/core": "^1.6.0",
+    "@pooltogether/v4-client-js": "^0.10.2",
     "cross-spawn": "^7.0.3"
   },
   "devDependencies": {
