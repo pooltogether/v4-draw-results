@@ -62,14 +62,14 @@ jobs:
       # Git Commit
       # TODO: Use actions/github-script@v5 to complete commits
       - name: Commit files for Ethhereum (if required) # this is done seperately to polygon for a different commit message
-      if: steps.drawPrizesEthereumMainnet.outputs.1-run-status == 'true'
-      continue-on-error: true
-      run: |
-        git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        git config --local user.name "github-actions[bot]"
-        git pull
-        git add ./api/prizes/1/
-        git commit -m "Add draw for mainnet draw ${{steps.drawPrizesEthereumMainnet.outputs.1-draw-ids}}"
+        if: steps.drawPrizesEthereumMainnet.outputs.1-run-status == 'true'
+        continue-on-error: true
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git pull
+          git add ./api/prizes/1/
+          git commit -m "Add draw for mainnet draw ${{steps.drawPrizesEthereumMainnet.outputs.1-draw-ids}}"
       - name: Commit files for Polygon (if required)
         if: steps.drawPrizesPolygonMainnet.outputs.137-run-status == 'true'
         continue-on-error: true
@@ -90,7 +90,7 @@ jobs:
           git commit -m "Add draw for avalanche draw ${{steps.drawPrizesAvalancheMainnet.outputs.43114-draw-ids}}"
       - name: Push changes (if required)
         uses: ad-m/github-push-action@master
-        if: steps.runDrawCalculatorCLI.outputs.1-run-status == 'true' || steps.runDrawCalculatorCLI.outputs.mainnetCliToolRan == 'true'
+        if: steps.drawPrizesEthereumMainnet.outputs.1-run-status == 'true' || steps.drawPrizesPolygonMainnet.outputs.137-run-status == 'true'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
