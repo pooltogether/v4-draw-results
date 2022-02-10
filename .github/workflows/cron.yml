@@ -100,7 +100,7 @@ jobs:
           git pull
           git add ./api/prizes/137/
           git commit -m "Add draw for polygon draw ${{steps.drawPrizesPolygonMainnet.outputs.drawIds}}"
-      - name: Commit Avlanche
+      - name: Commit Avalanche
         if: steps.drawPrizesAvalancheMainnet.outputs.runStatus == 'true'
         continue-on-error: true
         run: |
