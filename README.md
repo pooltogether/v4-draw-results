@@ -19,7 +19,7 @@ This repository serves as a layer above the [v4-cli](https://github.com/pooltoge
 
 The CLI is instantiated periodically from the [cron workflow](./.github/workflows/cron.yml). This workflow checks if the most recent `drawId` for a network is greater than the last committed `drawId`, and if so, runs the [v4-cli](https://github.com/pooltogether/v4-cli).
 
-This data serves as the data source for the hosted [Netlify API](https://api.pooltogether.com/prizes/137/0x8141bcfbcee654c5de17c4e2b2af26b67f9b9056/draw/12/prizes.json). More information on how to use this API can be found [here](https://v4.docs.pooltogether.com/prize-api).
+This data serves as the data source for the hosted [Netlify API](https://api.pooltogether.com/prizes/137/0x8141bcfbcee654c5de17c4e2b2af26b67f9b9056/draw/12/prizes.json). More information on how to use this API can be found [here](https://dev.pooltogether.com/protocol/api/prize-api).
 
 ## Adding a new Prize Pool
 
