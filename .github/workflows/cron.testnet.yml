@@ -1,0 +1,84 @@
+name: CronJob
+on:
+  schedule:
+    - cron: "0 20,21 * * *" # everyday at 8pm and 9 pm UTC
+  push:
+env:
+  ETHEREUM_MAINNET_RPC_URL: ${{secrets.ETHEREUM_MAINNET_RPC_URL}}
+  POLYGON_MAINNET_RPC_URL: ${{secrets.POLYGON_MAINNET_RPC_URL}}
+  AVALANCHE_MAINNET_RPC_URL: ${{secrets.AVALANCHE_MAINNET_RPC_URL}}
+  ETHEREUM_RINKEBY_RPC_URL: ${{secrets.ETHEREUM_RINKEBY_RPC_URL}}
+  POLYGON_MUMBAI_RPC_URL: ${{secrets.POLYGON_MUMBAI_RPC_URL}}
+  AVALANCHE_FUJI_RPC_URL: ${{secrets.AVALANCHE_FUJI_RPC_URL}}
+  DEBUG: ${{secrets.DEBUG}}
+jobs:
+  runCLI:
+    name: PrizePoolNetwork Prizes Computation
+    runs-on: ${{ matrix.os }}
+    strategy:
+      max-parallel: 1
+      matrix:
+        node: ["16.9.0"]
+        os: [ubuntu-latest]
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+      - name: Use Node ${{ matrix.node }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node }}
+      - name: Install Dependencies
+        id: installDependencies
+        uses: bahmutov/npm-install@v1
+        with:
+          install-command: yarn
+      - name: Install PoolTogether V4 CLI
+        run: |
+          npm install -g @pooltogether/v4-cli@0.1.6
+          echo "$(npm -g bin)" >> $GITHUB_PATH
+      # -------------------------------------------------------- #
+      # Optimism Kovan (USDC)
+      # -------------------------------------------------------- #
+      - name: Optimism Kovan Draw Prizes
+        id: drawPrizesOptimismKovan
+        uses: maddog2050/executable-wrapper@v1
+        continue-on-error: true
+        with:
+          run_command: ptv4 compute poolPrizes -o ./api/testnet/prizes -t 0x5E5b54cd73872ba3103cd95A58067A7079d0259b -c 69
+      # -------------------------------------------------------- #
+      # Comment Error
+      # -------------------------------------------------------- #
+      - name: Comment Error
+        id: commentError
+        if: steps.drawPrizesOptimismKovan.outputs.exitcode == 1
+        uses: actions/github-script@v5
+        continue-on-error: true
+        with:
+          script: |
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `Draw Calculator Failed: Exit Code ${process.env.exitCode} (${process.env.errorcode})`
+            })
+      # -------------------------------------------------------- #
+      # Git Commit
+      # TODO: Use actions/github-script@v5 to complete commits
+      # -------------------------------------------------------- #
+      - name: Commit Optimism Kovan
+        if: steps.drawPrizesOptimismKovan.outputs.runStatus == 'true'
+        continue-on-error: true
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git pull
+          git add ./api/testnet/prizes/69/
+          git commit -m "Add draw for Optimism Kovan draw ${{steps.drawPrizesOptimismKovan.outputs.drawIds}}"
+      # -------------------------------------------------------- #
+      # Push Draw Prizes Computation
+      # -------------------------------------------------------- #
+      - name: Push changes (if required)
+        uses: ad-m/github-push-action@master
+        if: steps.drawPrizesOptimismKovan.outputs.runStatus == 'true'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
