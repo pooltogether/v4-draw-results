@@ -44,7 +44,7 @@ jobs:
         uses: maddog2050/executable-wrapper@v1
         continue-on-error: true
         with:
-          run_command: ptv4 compute poolPrizes -o ./api/testnet/prizes -t 0x5E5b54cd73872ba3103cd95A58067A7079d0259b -c 69
+          run_command: ptv4 compute poolPrizes -o ./api/testnet/prizes -t 0x2540Be4EE62A5E01F27491044AeBb9C2c95A550A -c 69
       # -------------------------------------------------------- #
       # Comment Error
       # -------------------------------------------------------- #
