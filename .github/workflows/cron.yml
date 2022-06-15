@@ -34,7 +34,7 @@ jobs:
           install-command: yarn
       - name: Install PoolTogether V4 CLI
         run: |
-          npm install -g @pooltogether/v4-cli@0.1.6
+          npm install -g @pooltogether/v4-cli@0.1.7-beta.3
           echo "$(npm -g bin)" >> $GITHUB_PATH
       # -------------------------------------------------------- #
       # Ethereum Mainnet (USDC)
