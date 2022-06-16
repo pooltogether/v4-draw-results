@@ -73,7 +73,7 @@ jobs:
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git pull
-          git add ./api/testnet/prizes/69/
+          git add ./api/prizes/69/
           git commit -m "Add draw for Optimism Kovan draw ${{steps.drawPrizesOptimismKovan.outputs.drawIds}}"
       # -------------------------------------------------------- #
       # Push Draw Prizes Computation
