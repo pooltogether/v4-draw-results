@@ -1,0 +1,4568 @@
+[
+  {
+    "address": "0x003b3f59176c740c5455fa4c189a4586bc503d48",
+    "pick": "177",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x00c787897ae95aa606cc82bee22c346e89e834a3",
+    "pick": "1883",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x0148107d2b0fc3e90e8ac427a9058beaffc5dd79",
+    "pick": "2115",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x0148107d2b0fc3e90e8ac427a9058beaffc5dd79",
+    "pick": "28025",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x014a15f1ddc10d5f82f705b6dfcdbe2ca79a4c61",
+    "pick": "10117",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x014a15f1ddc10d5f82f705b6dfcdbe2ca79a4c61",
+    "pick": "15217",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x0168529623eeed11e3053d4d9b6d6d5b61ce0810",
+    "pick": "2486",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x0168529623eeed11e3053d4d9b6d6d5b61ce0810",
+    "pick": "6907",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x01eec1d5f3ef3ba8d70e63e7db014d3602ec856a",
+    "pick": "4618",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x020bf6c3166dcca9f5efd5ba14652d62c6c5d422",
+    "pick": "8065",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x020bf6c3166dcca9f5efd5ba14652d62c6c5d422",
+    "pick": "8296",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x02644f812f889f7c55365c908c913c645803e8cd",
+    "pick": "418",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x03f7773c308d9e3792f786590f1eefcabc3681fd",
+    "pick": "7801",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x03f7773c308d9e3792f786590f1eefcabc3681fd",
+    "pick": "9684",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x04aad8b81276b06de3d44588ca02e061f2ecf3a3",
+    "pick": "7000",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x0509458c9342e8b8e3bef56d1ac8f7c49a1d76f7",
+    "pick": "1139",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x073dd4d4b9eb612937a3b3a789f4147fc880ecae",
+    "pick": "206",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x073dd4d4b9eb612937a3b3a789f4147fc880ecae",
+    "pick": "3674",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x074b567d8ab26b4166e4e269b9cf420c68856967",
+    "pick": "4079",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x07c2a1f93da07abf116d8ff12ce5ed82a5fc88e6",
+    "pick": "13102",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x088a12fc8e23359534a5863f6d96b9c8a486578b",
+    "pick": "2630",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x08f53326d22840242dae403d62c866eb80c4251a",
+    "pick": "41",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x08f53326d22840242dae403d62c866eb80c4251a",
+    "pick": "2990",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x097a877ef27b1d7d0c63d10db3eefc3753aaca7c",
+    "pick": "206",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x0a57779517f95ca97818191f09e2011cd00e7d0c",
+    "pick": "8009",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x0a57779517f95ca97818191f09e2011cd00e7d0c",
+    "pick": "8672",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x0a57779517f95ca97818191f09e2011cd00e7d0c",
+    "pick": "12169",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x0a57779517f95ca97818191f09e2011cd00e7d0c",
+    "pick": "18310",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x0acaa7e46a164d1b371326416b2d555cb13faa28",
+    "pick": "1648",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x0c046c51bfb441b0db5ca4b0bb0178057715a54f",
+    "pick": "1154",
+    "tier": 3,
+    "amount": "9999999"
+  },
+  {
+    "address": "0x0ce54130c12b04e783473f98866f8736bda0b24a",
+    "pick": "2712",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x0ce54130c12b04e783473f98866f8736bda0b24a",
+    "pick": "11313",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x0ce76aa8ece20a7441d11251f2f87b3fb9636462",
+    "pick": "1311",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x0d180ac28693990f40e57b8925c554f9a9277a2a",
+    "pick": "4161",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x0d180ac28693990f40e57b8925c554f9a9277a2a",
+    "pick": "4683",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x0d180ac28693990f40e57b8925c554f9a9277a2a",
+    "pick": "19527",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x0d180ac28693990f40e57b8925c554f9a9277a2a",
+    "pick": "22689",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x0d6195d67c583cecfecdc352280c6a1ccecee0fd",
+    "pick": "4370",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x0dbd7cf8bec5f83d02d07ff09fe077e3897cdba7",
+    "pick": "836",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x0e41c9b548cf0545377aeeb693a6006172f1af81",
+    "pick": "42",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x0e8b9dfb95be9e677f8b7dc598517a458f0d2b06",
+    "pick": "8221",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x0e9dd59448f53fa240dfd7a217f58d4d5efaff16",
+    "pick": "39615",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x0e9dd59448f53fa240dfd7a217f58d4d5efaff16",
+    "pick": "45837",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x0f0468b6996377bb37a4627eb3926ec9e4c34f66",
+    "pick": "6872",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x0f0468b6996377bb37a4627eb3926ec9e4c34f66",
+    "pick": "16033",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x0f40a1082ef660b4596e2e79bab42aad4af539ed",
+    "pick": "5456",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x0fe585932a823afdb341a2aea7d17dec4bed4950",
+    "pick": "4279",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x10328bb8e388095a1026f465bc75f709f6a1170c",
+    "pick": "1645",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x10328bb8e388095a1026f465bc75f709f6a1170c",
+    "pick": "7246",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x118e809d6f0571ed0c60ed876131e07fc3c0b3f6",
+    "pick": "10254",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x11c7e667fc946b2ae3db2de8987f39b608775ec5",
+    "pick": "1008",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x13375a3901b4397d6bb59d634417cbb7de2394bc",
+    "pick": "5015",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x134fd89319f1fd0c8f2b5ab6e03ec5b9d55a8946",
+    "pick": "7060",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x13712a5b8b92b629824df347a1670df5afaff263",
+    "pick": "14113",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x13712a5b8b92b629824df347a1670df5afaff263",
+    "pick": "15697",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x13712a5b8b92b629824df347a1670df5afaff263",
+    "pick": "33319",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x13712a5b8b92b629824df347a1670df5afaff263",
+    "pick": "42077",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x141bce81a0ed9d03a667f089c1a21787b0561446",
+    "pick": "182",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x145f23feb5fc4d8baba7f3e73601603326401329",
+    "pick": "6984",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x14c90b59f95b9405113dfedbae88fdd20c29ee36",
+    "pick": "20272",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x14c90b59f95b9405113dfedbae88fdd20c29ee36",
+    "pick": "22519",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x14c90b59f95b9405113dfedbae88fdd20c29ee36",
+    "pick": "35598",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x14c90b59f95b9405113dfedbae88fdd20c29ee36",
+    "pick": "48840",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x14c90b59f95b9405113dfedbae88fdd20c29ee36",
+    "pick": "64852",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x14c90b59f95b9405113dfedbae88fdd20c29ee36",
+    "pick": "66907",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x14c90b59f95b9405113dfedbae88fdd20c29ee36",
+    "pick": "67333",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x14c90b59f95b9405113dfedbae88fdd20c29ee36",
+    "pick": "72120",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x14c90b59f95b9405113dfedbae88fdd20c29ee36",
+    "pick": "99270",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x14c90b59f95b9405113dfedbae88fdd20c29ee36",
+    "pick": "112759",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x14c90b59f95b9405113dfedbae88fdd20c29ee36",
+    "pick": "130715",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x14c90b59f95b9405113dfedbae88fdd20c29ee36",
+    "pick": "130967",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x159310c3d671e5277ae29e10f023f42589701191",
+    "pick": "7082",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x159310c3d671e5277ae29e10f023f42589701191",
+    "pick": "50865",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x166e58ea56399d5809fffe195196554e9934bff7",
+    "pick": "435",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x166e58ea56399d5809fffe195196554e9934bff7",
+    "pick": "26038",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x16f6965651143a140f1f5f213e378bc4683cef9b",
+    "pick": "11811",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x16f6965651143a140f1f5f213e378bc4683cef9b",
+    "pick": "17324",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x16f6965651143a140f1f5f213e378bc4683cef9b",
+    "pick": "24650",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x1734b3ceb8377a3c87a43ff176285cde1f41e975",
+    "pick": "3497",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x1734b3ceb8377a3c87a43ff176285cde1f41e975",
+    "pick": "4124",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x17e5e6afafeedf3d1c7872477e00388e8f434df6",
+    "pick": "2881",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x186cb7ca01339c2f56fdd7e99c525c4437ea1598",
+    "pick": "9444",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x186cb7ca01339c2f56fdd7e99c525c4437ea1598",
+    "pick": "11635",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x1960f09ed516496af3d9f77c8272d4daf2e4e661",
+    "pick": "1114",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x1991edeae85d31272a9a1b6301b675f436487ada",
+    "pick": "2340",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x19ace68d12111318a16b736f8d64051e854049bb",
+    "pick": "23",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x19ea9301b7a47bd0a329723398d75013e7e9ced7",
+    "pick": "7552",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x1a4f123ecf66d18bd7a8e03f3ebc1d2e437cfd75",
+    "pick": "10330",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x1a6a79666decd8db8e9155b2e8411be8f8f08d51",
+    "pick": "3851",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x1a6a79666decd8db8e9155b2e8411be8f8f08d51",
+    "pick": "5438",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x1a6a79666decd8db8e9155b2e8411be8f8f08d51",
+    "pick": "7161",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x1a7dab7288f8c4d213b26dddd84185cf1d735026",
+    "pick": "5960",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x1b163814ea70a2435a6e19d4b605822e8d3ebeeb",
+    "pick": "1281",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x1b1df64c59d6eea61a90094afbf930d90caf8a5e",
+    "pick": "5863",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x1b1df64c59d6eea61a90094afbf930d90caf8a5e",
+    "pick": "7074",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x1b1df64c59d6eea61a90094afbf930d90caf8a5e",
+    "pick": "8475",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x1be2dad87834d707a82124081c7ae86d869a989c",
+    "pick": "5748",
+    "tier": 2,
+    "amount": "50000000"
+  },
+  {
+    "address": "0x1c405f5b760bf97832fc84723dcf6f1f0944a946",
+    "pick": "5263",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x1c8a9eb8de32dd5315518e2ff3431427823fe49e",
+    "pick": "3614",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x1d0155bbb3f7af12f455c882beef21f9597312e6",
+    "pick": "4584",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x1d0155bbb3f7af12f455c882beef21f9597312e6",
+    "pick": "6611",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x1d0155bbb3f7af12f455c882beef21f9597312e6",
+    "pick": "8244",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x1e099ee2c144bd75cec2ee7c79b40f373ba086ff",
+    "pick": "11922",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x1e099ee2c144bd75cec2ee7c79b40f373ba086ff",
+    "pick": "50361",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x1e099ee2c144bd75cec2ee7c79b40f373ba086ff",
+    "pick": "53835",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x1e79b045dc29eae9fdc69673c9dcd7c53e5e159d",
+    "pick": "74",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x1f480a6b97bc8663548288155268ee5566fe77b3",
+    "pick": "1",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x2004e60f61d5c8490f2a20379a90c4f630a22517",
+    "pick": "25813",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x2004e60f61d5c8490f2a20379a90c4f630a22517",
+    "pick": "80463",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x2004e60f61d5c8490f2a20379a90c4f630a22517",
+    "pick": "99356",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x2004e60f61d5c8490f2a20379a90c4f630a22517",
+    "pick": "106899",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x2004e60f61d5c8490f2a20379a90c4f630a22517",
+    "pick": "107062",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x2024f13b2fdb7957feb422af38edd5218e79ce05",
+    "pick": "32692",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x2024f13b2fdb7957feb422af38edd5218e79ce05",
+    "pick": "35646",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x2024f13b2fdb7957feb422af38edd5218e79ce05",
+    "pick": "42091",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x2024f13b2fdb7957feb422af38edd5218e79ce05",
+    "pick": "64718",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x2024f13b2fdb7957feb422af38edd5218e79ce05",
+    "pick": "77353",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x203230b80c6da09b2db0927f4302ea103526aa47",
+    "pick": "1961",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x206acff1309e24f25a5decb909501f3922e6b570",
+    "pick": "2507",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x2353062d7666d5570406ab13d51c1af13fede8d6",
+    "pick": "1678",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x23dea5b106b49dfa2638d57142d18f2ff4ef738e",
+    "pick": "1483",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x245178c3482674d16f12f47ed69914d9ac6b302d",
+    "pick": "1851",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x247c0f2d83934996b44a237bb9503a554eda34e7",
+    "pick": "3087",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x24a8dfe3a993f7d02cede188c484a0e394ae41e8",
+    "pick": "4979",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x250b4848320809dcefdeb49c3f641e02549a9f69",
+    "pick": "580",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x2552617a27f17a55886f7dd9655fb79d1dc7804c",
+    "pick": "774",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x2552617a27f17a55886f7dd9655fb79d1dc7804c",
+    "pick": "1141",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x256c1374502c2c1df37f226f15b07eaa6cd09f3b",
+    "pick": "1932",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x256c1374502c2c1df37f226f15b07eaa6cd09f3b",
+    "pick": "7529",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x25ce162063cb8f7ab068d5dae666db6130b710ee",
+    "pick": "140",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x280785c77db87eae60803fa37cc5f46782228775",
+    "pick": "659",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x2a6d25c18c88fb893f8b47dea31a6e6779d6c304",
+    "pick": "264",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x2a7d165dfb723cea385b9859a40c5465a5573488",
+    "pick": "2311",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x2a7d165dfb723cea385b9859a40c5465a5573488",
+    "pick": "4031",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x2a84947a0bd2b6914816ec3e3b247d58f26fa91c",
+    "pick": "1872",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x2adf67914166a5e5dbddfe598976e22a394d2556",
+    "pick": "9085",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x2b1ab50c891cf08ed56d090c5b929ba1e1b6e9ec",
+    "pick": "2553",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x2c1cb4478b1b04daee8cbed25dcf404be6479cfd",
+    "pick": "252",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x2e4ae4d3bd0af45040b4f17e0bb7e6dc548626b1",
+    "pick": "1659",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x2e4ae4d3bd0af45040b4f17e0bb7e6dc548626b1",
+    "pick": "34291",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x2e4ae4d3bd0af45040b4f17e0bb7e6dc548626b1",
+    "pick": "36058",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x2edf127962052aed55e7517477c4ee3ac339e263",
+    "pick": "2202",
+    "tier": 3,
+    "amount": "9999999"
+  },
+  {
+    "address": "0x30fc9d86149c9241fdd5450748f8cb6734e1fdef",
+    "pick": "415",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x3110d27c232226325e6d6a0de339e01c7628aad2",
+    "pick": "2898",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x318918b1d1301de527a3803b3f4f898c163fd819",
+    "pick": "6383",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x318918b1d1301de527a3803b3f4f898c163fd819",
+    "pick": "11534",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x318918b1d1301de527a3803b3f4f898c163fd819",
+    "pick": "16830",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x318918b1d1301de527a3803b3f4f898c163fd819",
+    "pick": "32772",
+    "tier": 3,
+    "amount": "9999999"
+  },
+  {
+    "address": "0x318918b1d1301de527a3803b3f4f898c163fd819",
+    "pick": "48452",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x318918b1d1301de527a3803b3f4f898c163fd819",
+    "pick": "52530",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x318918b1d1301de527a3803b3f4f898c163fd819",
+    "pick": "61839",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x31d447ccf5ed1905287ca964b72f5fef01682944",
+    "pick": "6618",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x31d447ccf5ed1905287ca964b72f5fef01682944",
+    "pick": "16012",
+    "tier": 3,
+    "amount": "9999999"
+  },
+  {
+    "address": "0x31d946acb293137cdb503d1da0d40d41b4b54946",
+    "pick": "10828",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x320937d2ab6706deb8bd9518775e99ea51fa8d6c",
+    "pick": "9608",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x3248f72e8c4c730718fce2b6f396e6ab4b12549d",
+    "pick": "5354",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x32cabe8e433deba493a0b573a698127bdd80693b",
+    "pick": "6699",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x32cabe8e433deba493a0b573a698127bdd80693b",
+    "pick": "12038",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x3335dfa65ec7365cca52474bb34aad833167cc27",
+    "pick": "1360",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x335ef08cd54a7e8e97798aa069b0cddd53042a02",
+    "pick": "5142",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x335ef08cd54a7e8e97798aa069b0cddd53042a02",
+    "pick": "9153",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x339aea0df2bf60a461ca840d6f739888663836a1",
+    "pick": "2384",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x339aea0df2bf60a461ca840d6f739888663836a1",
+    "pick": "4291",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x33d835ba506684273a1d1d07f2f64d63de389150",
+    "pick": "545",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x347cfacff72561ea1cb7a042b71cb11908ad3175",
+    "pick": "6499",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x34c782901ec5cbfa5748c4b3064909da42111f35",
+    "pick": "6259",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x34c782901ec5cbfa5748c4b3064909da42111f35",
+    "pick": "7061",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x34c782901ec5cbfa5748c4b3064909da42111f35",
+    "pick": "8416",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x35ac1fca4d919e864e2fdf10297cf09939ef5a4d",
+    "pick": "4445",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x365f085178dda4c35b41d70860a5c875d445041a",
+    "pick": "1886",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x365f085178dda4c35b41d70860a5c875d445041a",
+    "pick": "3989",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x36d193164fc9827b08746981dc5c0f8d7a062f54",
+    "pick": "3517",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x3734ac31544d081b78503c6348d6dc310c7dadc7",
+    "pick": "18648",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x379bcab35b7cc0c231ef363a82fb1a9150e2e32a",
+    "pick": "9929",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x380e1c91c7d7e205e51ba305e7d45a3ea92d1f5e",
+    "pick": "6060",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x3817edaff61037affba78eb7f8d177a14602564f",
+    "pick": "99",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x3817edaff61037affba78eb7f8d177a14602564f",
+    "pick": "4465",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x3817edaff61037affba78eb7f8d177a14602564f",
+    "pick": "5905",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x38525d42e6541402ccc0264b9094e1908a8949ba",
+    "pick": "3440",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x38742d8717c57dc7ba97e2df7a61e26c3412ffdd",
+    "pick": "6994",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x388189bfbc2851d1e0ba6c0ebfcd99bf3fb29c0b",
+    "pick": "9816",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x38f624878e52b11e6886c1c63abcfb4abee13925",
+    "pick": "1160",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x39548715c6ec2fc4c3164485a5fc17793402e2ed",
+    "pick": "7169",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x398b35a941c488c7d5e95088585f3e6e0a691d1f",
+    "pick": "3887",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x398b35a941c488c7d5e95088585f3e6e0a691d1f",
+    "pick": "5177",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x3994537274f3ff3eefc413e0d669b05d6446d46b",
+    "pick": "2410",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x39f082609c0d35e4edd5827f4fcd532b9cac2cda",
+    "pick": "2814",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x3a2db3b6087a228764a9d2f9f575db1028a8157e",
+    "pick": "13738",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x3a5d2660b57b10705e6812eedcbb36dd0ce63b07",
+    "pick": "17864",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x3ad43ae22c720757c34b5f076eac6c23369437a5",
+    "pick": "5425",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x3ad43ae22c720757c34b5f076eac6c23369437a5",
+    "pick": "12550",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x3ad43ae22c720757c34b5f076eac6c23369437a5",
+    "pick": "17183",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x3af3212c70b2edc6141454333a581b26ec3a52f9",
+    "pick": "924",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x3af3ed9f499700a267ed6355715f9d3338c7fa0f",
+    "pick": "250",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x3b7e36e449c705eff181d487326fee73e85f8ef2",
+    "pick": "2081",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x3bc1158e5bce8c10e5da0edfbb94b261eec46a76",
+    "pick": "2085",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x3bd5c0fa5cd894732a75295866315ed58bb76d4f",
+    "pick": "5016",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x3c1b7fb5d708ee1dc91f199fd9c2d8f3dba6c41d",
+    "pick": "10",
+    "tier": 3,
+    "amount": "9999999"
+  },
+  {
+    "address": "0x3c1b7fb5d708ee1dc91f199fd9c2d8f3dba6c41d",
+    "pick": "22610",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x3c1b7fb5d708ee1dc91f199fd9c2d8f3dba6c41d",
+    "pick": "23427",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x3c1b7fb5d708ee1dc91f199fd9c2d8f3dba6c41d",
+    "pick": "29668",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x3c1b7fb5d708ee1dc91f199fd9c2d8f3dba6c41d",
+    "pick": "34953",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x3c1b7fb5d708ee1dc91f199fd9c2d8f3dba6c41d",
+    "pick": "36972",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x3c1b7fb5d708ee1dc91f199fd9c2d8f3dba6c41d",
+    "pick": "38722",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x3c1b7fb5d708ee1dc91f199fd9c2d8f3dba6c41d",
+    "pick": "40544",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x3ce8da131722bbe54a4329f66c6efe19515673e8",
+    "pick": "22251",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x3ce8da131722bbe54a4329f66c6efe19515673e8",
+    "pick": "48462",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x3ce8da131722bbe54a4329f66c6efe19515673e8",
+    "pick": "63932",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x3ce8da131722bbe54a4329f66c6efe19515673e8",
+    "pick": "70326",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x3df6bc88dcb253e783b9c0736332c8367615477c",
+    "pick": "3031",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x3f9749097763609dab51491a2d84bd879cdf47e1",
+    "pick": "3495",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x3fc3e6514fd4925f55fb3ae17bbfbca2eb126608",
+    "pick": "3124",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x3fd23c8dd84609d08de3528387bd761e3fa49c9b",
+    "pick": "16299",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x3fd23c8dd84609d08de3528387bd761e3fa49c9b",
+    "pick": "35605",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x3fd23c8dd84609d08de3528387bd761e3fa49c9b",
+    "pick": "42574",
+    "tier": 3,
+    "amount": "9999999"
+  },
+  {
+    "address": "0x3fed71848b74b9f3ff26544cad368c082cb31961",
+    "pick": "16112",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x3fed71848b74b9f3ff26544cad368c082cb31961",
+    "pick": "20467",
+    "tier": 3,
+    "amount": "9999999"
+  },
+  {
+    "address": "0x3fed71848b74b9f3ff26544cad368c082cb31961",
+    "pick": "40790",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x3fed71848b74b9f3ff26544cad368c082cb31961",
+    "pick": "46907",
+    "tier": 3,
+    "amount": "9999999"
+  },
+  {
+    "address": "0x40a31bcae389bcecef842527253361f32b6bac01",
+    "pick": "23",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x40e2db53e8a0f266af6d316da09cc718e74a177c",
+    "pick": "61",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x419049532f91cb1f2ad8213693a1c4a88d3f7cc6",
+    "pick": "8276",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x41cd2ae6cd5e14d56d9685c1a11985b0ce692847",
+    "pick": "110",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x426116891341f96b87161c797c76ae3a81d10c85",
+    "pick": "5768",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x42e059464f3ba130da6abafee7ad2efe17467e35",
+    "pick": "1679",
+    "tier": 3,
+    "amount": "9999999"
+  },
+  {
+    "address": "0x42fc15501884fb655285ac93df972aef68731b37",
+    "pick": "527",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x432a9abbea3f871cf2cb0dffa7c0b68631f93d92",
+    "pick": "266",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x43d1f6d5ff45aa0f7cb8da7a8da2aabf852e33a9",
+    "pick": "3523",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x446cb5ff89b333d31df3fd0c28b5215405ad4667",
+    "pick": "3041",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x4488f4d1ada1ff4f457a755c11caf6e227d33417",
+    "pick": "5567",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x4511bbef15bc4abb8c19283918222bba9b024b9c",
+    "pick": "10828",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x460db856e8a73a53b6f16f2e7a4ce85527e83501",
+    "pick": "1211",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x47e5271c2f41c91bf29fd46f5e55e5777f1c6365",
+    "pick": "265",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x47f0b74ac15590386d9c07507f978cb77dee8abf",
+    "pick": "198",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x4990c372d56c1b8633f0d846deb4bb7bc727633f",
+    "pick": "3033",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x49973b948f76f241fcaa64c9a3c1dfd1fe161168",
+    "pick": "889",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x4a02fee77597792cf4db0e862ed4e9ae783f0374",
+    "pick": "5469",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x4a219e9f193347542d4ab38985c1b448f61ee15e",
+    "pick": "9617",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x4cbc59793ad698cd02ccbf08c470ec4c01a43be1",
+    "pick": "1316",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x4d86310660118864548e5e1cb75136fbdae96fd7",
+    "pick": "490",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x4df37cc3c48ec3eb689c8bf0d91249ce2506f73b",
+    "pick": "1330",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x4ec64bf5e19b8afa560f38e742518b21afcb66c7",
+    "pick": "7287",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x4f60ee74fc75531432435d73e5c8392951ddb5f5",
+    "pick": "3780",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x4f8eb5edc53177f41f98f104d6aba8675739007c",
+    "pick": "449",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x50a04fe653128f057ebbc5deba505355133caa3d",
+    "pick": "471",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x50c25a4f9d19c8f704f2e5d77c00f9cbe6dbb357",
+    "pick": "11",
+    "tier": 1,
+    "amount": "99999998"
+  },
+  {
+    "address": "0x50c25a4f9d19c8f704f2e5d77c00f9cbe6dbb357",
+    "pick": "3191",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x50c25a4f9d19c8f704f2e5d77c00f9cbe6dbb357",
+    "pick": "3552",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x512d7c3dea407c3d559f3b9197061e130888e79c",
+    "pick": "6",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x5136e623126d3572933fbafe59ae97f13dd9687a",
+    "pick": "767",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x51ce763ff27dc371688cb290229bb5c8d6d19080",
+    "pick": "145",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x522f40353e44e48deae266a71944dc82b59a9696",
+    "pick": "4189",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x52a427699a5d5cd5165c7973c0073b403f6b7fb3",
+    "pick": "4897",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x5333c1d733794e02f34d5f0d88c65d03fd2e4db1",
+    "pick": "6382",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x540c44ff7b71f2487cd11aaf53aec1a85bfe8f7a",
+    "pick": "8968",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x5448aba4801eac44c7a6efd60b8954c6f3e09e5e",
+    "pick": "2398",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x5463d7bc530d6f319a243dd075a1937e132c5524",
+    "pick": "4267",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x54af1f1f239ab77a50320bf572fe7f09d6cfbbf1",
+    "pick": "1522",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x559524b8d5af5292e4ca30b30ea3dc8261e1dea4",
+    "pick": "2161",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x559524b8d5af5292e4ca30b30ea3dc8261e1dea4",
+    "pick": "4783",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x559524b8d5af5292e4ca30b30ea3dc8261e1dea4",
+    "pick": "8760",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x55f238b443184a1bc03deea42eea3099be7a7baf",
+    "pick": "8",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x56203888f752bb091b1fce4f8ea6fda6cd330daa",
+    "pick": "2773",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x56a07d0745785682950742ab55247330c80b5a5d",
+    "pick": "1445",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x5721d09950b781f21ae6c40e9d0b9642b0d36ebb",
+    "pick": "8971",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x5796de06976bf28058c5a344e6db3521a47ab9f8",
+    "pick": "8044",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x5796de06976bf28058c5a344e6db3521a47ab9f8",
+    "pick": "12035",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x58217d427cb9e28cdee1a963b6f74af7a9518b15",
+    "pick": "6073",
+    "tier": 3,
+    "amount": "9999999"
+  },
+  {
+    "address": "0x58834aac37488f86958ec5b173908cbc35795949",
+    "pick": "2641",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x593bd163fa42118415c1567664599245ce4ba6da",
+    "pick": "1245",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x595368da646d0ad85f5b473de49383a6bfb9bff6",
+    "pick": "3226",
+    "tier": 3,
+    "amount": "9999999"
+  },
+  {
+    "address": "0x59c4257443a82ce32a2d1bde29fe08731efbfa05",
+    "pick": "3025",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x59ef72f40c051d30ab9f2ad08dc65a285f0e9b34",
+    "pick": "3376",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x59fe726543cfd6c1f198f6080009ecc648a33920",
+    "pick": "336",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x5a403b9d72f52bc494b2188d3534645cb692b77d",
+    "pick": "5050",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x5a872919133bfe715ecb7fc6a12ee2b59768168f",
+    "pick": "5757",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x5a872919133bfe715ecb7fc6a12ee2b59768168f",
+    "pick": "30977",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x5bf607bd04439afc73e615a0929a9410d1897aa9",
+    "pick": "2531",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x5bf607bd04439afc73e615a0929a9410d1897aa9",
+    "pick": "5324",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x5c14b681334cf37ba721b710dfd039b210fe3e9a",
+    "pick": "7423",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x5c14b681334cf37ba721b710dfd039b210fe3e9a",
+    "pick": "10872",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x5c14b681334cf37ba721b710dfd039b210fe3e9a",
+    "pick": "11710",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x5c619cc34192378c0e2baa49e3fc5ca443b595f6",
+    "pick": "834",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x5d400a75e7c4a64df89d834f23e1f8b6c2570e9d",
+    "pick": "744",
+    "tier": 3,
+    "amount": "9999999"
+  },
+  {
+    "address": "0x5df8d08dd50105b4271d5ad07d094ace85cf0ee6",
+    "pick": "0",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x5e01d9928ea32d1d3ae2f3263b6ec6c165dc2d76",
+    "pick": "1499",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x5e01d9928ea32d1d3ae2f3263b6ec6c165dc2d76",
+    "pick": "5202",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x5e83024a947030e6ae3a9472db7643e6bd7cc977",
+    "pick": "1243",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x5eeebe3c5dcdf05f833de98a9fd1e39d86da2634",
+    "pick": "4101",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x5f02df5195171c37b01e2e1d6df68e4fa20c15c4",
+    "pick": "5461",
+    "tier": 2,
+    "amount": "50000000"
+  },
+  {
+    "address": "0x5f35582aecda39720a50b745389a5155132d6e01",
+    "pick": "5240",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x5f370fc6a9fa3bd387c94423f122351051577b96",
+    "pick": "4986",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x5fba038ea4143795bdda265d07037ea7b53b7da2",
+    "pick": "1759",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x604379bb4aa95bf09be29fc725c076898543edba",
+    "pick": "4401",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x605d576bf789c1ca372c7161b603c0e60c317059",
+    "pick": "35",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x606e697a20ad2a1deac287a1679087037279ff1f",
+    "pick": "10272",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x606e697a20ad2a1deac287a1679087037279ff1f",
+    "pick": "14867",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x60a8f2c35a2924021c41ccac77673e355e22c211",
+    "pick": "411",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x60a8f2c35a2924021c41ccac77673e355e22c211",
+    "pick": "731",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x60a8f2c35a2924021c41ccac77673e355e22c211",
+    "pick": "18458",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x60a8f2c35a2924021c41ccac77673e355e22c211",
+    "pick": "20413",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x60cea5db2eef39c58e5f5237c12afd7937356bb6",
+    "pick": "33",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x611949625689dc20bd0b2f8f4a0c0d9f2f0136db",
+    "pick": "6226",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x611dcd191690a60a4ed50021505882762c316bc0",
+    "pick": "1516",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x611dcd191690a60a4ed50021505882762c316bc0",
+    "pick": "4548",
+    "tier": 3,
+    "amount": "9999999"
+  },
+  {
+    "address": "0x611dcd191690a60a4ed50021505882762c316bc0",
+    "pick": "9727",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x6146fa97072825981cd6648bb99ca5661a0b798b",
+    "pick": "2325",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x61e493b937386422e13ef325094e29a45f5f4f8c",
+    "pick": "1242",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x61e493b937386422e13ef325094e29a45f5f4f8c",
+    "pick": "5222",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x61f14946961984cc73f3c01e3d245b6a8d06c579",
+    "pick": "4621",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x625ac6a8682944bf9491f48d25f165990fafdd08",
+    "pick": "4759",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x6275f14403b9b0f863735c1226e30b1c851f4d64",
+    "pick": "914",
+    "tier": 3,
+    "amount": "9999999"
+  },
+  {
+    "address": "0x6275f14403b9b0f863735c1226e30b1c851f4d64",
+    "pick": "6510",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x6275f14403b9b0f863735c1226e30b1c851f4d64",
+    "pick": "10972",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x632acb00de4cb80af456a4c3c8ccdd15656959b9",
+    "pick": "41323",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x633e99df176d63c1109dab56566f09508169ebff",
+    "pick": "11737",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x645a5c974c2528ceed1b5fb9cded7784ae2620f0",
+    "pick": "355",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x64974bcdb6e3cca6035804d80550bc7dfbdc6cfe",
+    "pick": "23028",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x650748ea7f4b10e7230333c1590d8f107a2e7e63",
+    "pick": "1294",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x659c1ffcdb00fc4dfde97257c68b7b1408be85a0",
+    "pick": "631",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x65bd6b75f144d03356b72834b7b2c3b0b52200a4",
+    "pick": "1491",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x65bd6b75f144d03356b72834b7b2c3b0b52200a4",
+    "pick": "6321",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x6606ea60933340ca500b1ecad3e7227c2ab72f55",
+    "pick": "610",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x6622ba5b4fec399b88d4bdcab09936491ea3781a",
+    "pick": "428",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x6622ba5b4fec399b88d4bdcab09936491ea3781a",
+    "pick": "11461",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x6622ba5b4fec399b88d4bdcab09936491ea3781a",
+    "pick": "37552",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x6622ba5b4fec399b88d4bdcab09936491ea3781a",
+    "pick": "41873",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x6623ebda8d8d678c826625d07389558ca6b081d5",
+    "pick": "424",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x6692a5d1f0c6551a34c8d98b73bd71e1b315b3f6",
+    "pick": "1362",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x686b7e7fb58248f3beb35649617dec1fc7315379",
+    "pick": "10772",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x688b15986ead1307ee27cdbae12c22c24225951f",
+    "pick": "2494",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x68a58ef1a05096fa164043d88004d2002f1b89c0",
+    "pick": "814",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x69363a092d7044f7f6b94ac290542b1fde0641a0",
+    "pick": "746",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x6a4d2b37f83d6dfc1bc781abb3689b8c29966fbf",
+    "pick": "1013",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x6ae03d1d3a9b161ec264c76ad73999ee25abec5a",
+    "pick": "6833",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x6ae03d1d3a9b161ec264c76ad73999ee25abec5a",
+    "pick": "20487",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x6cb52ada919636586cc5251952ffb5494dc09787",
+    "pick": "3949",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x6fe2eeee24effe3bb78b3474e38185bbdb3b68ab",
+    "pick": "229",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x6fe2eeee24effe3bb78b3474e38185bbdb3b68ab",
+    "pick": "3561",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x7089788e52bad986a4bc07acd9e81b906a3d44ca",
+    "pick": "5",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x7092fdbc448698461a3ae98488c35568f368e0ad",
+    "pick": "1349",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x7092fdbc448698461a3ae98488c35568f368e0ad",
+    "pick": "4995",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x70eb207be21b66c28e4fd93d49c8a1eb5836545a",
+    "pick": "10698",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x71683bbe18013648fc57c6df5bf6429b595c4005",
+    "pick": "506",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x731408413fe68baa28b4ca7093d47fe422c9a724",
+    "pick": "28",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x731408413fe68baa28b4ca7093d47fe422c9a724",
+    "pick": "4841",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x7428ea6462eb8736a0bf80d482eeb02c2ce1e4fc",
+    "pick": "9195",
+    "tier": 3,
+    "amount": "9999999"
+  },
+  {
+    "address": "0x74626517362acc49f72686f9b4a981683d41d6c5",
+    "pick": "6800",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x74f8fd6b9ff5f25e733c153e67645740b3674354",
+    "pick": "3319",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x74f9fbafd7590e7bd888508589436c84cab9e694",
+    "pick": "934",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x75b885a11f7868aa0802b96f3fac806b42144981",
+    "pick": "3077",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x777fe2d67415bdc23364b9e3845883301a329d13",
+    "pick": "2039",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x77bbd6648102052553683c3f36b0a325ff086242",
+    "pick": "74",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x77c84d9ff6f2999861e2017f4e38908ebb6a7566",
+    "pick": "11832",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x77e3023b8dc005ac149ecd4fbf2149d061670a50",
+    "pick": "7",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x78bfa2a0241804733c58091d431b5a840d9d6f73",
+    "pick": "5352",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x793c034a17afe27e282ea80536bcb114fd68de98",
+    "pick": "2613",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x7a56dbcbb4ba1c920e802f8af07430de46af3145",
+    "pick": "6271",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x7a56dbcbb4ba1c920e802f8af07430de46af3145",
+    "pick": "22334",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x7a56dbcbb4ba1c920e802f8af07430de46af3145",
+    "pick": "30555",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x7a56dbcbb4ba1c920e802f8af07430de46af3145",
+    "pick": "31767",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x7b95f1760fbdd94279063983bf02b8be789ebefd",
+    "pick": "4454",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x7de9898d7e4be413555ca360410ac66bf4228640",
+    "pick": "201",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x7fb3b59100e6783a53e120ecd862acd689a245bb",
+    "pick": "6",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x7ff69b9b1a0d9c20bae1c47d0784c0782e43a2ff",
+    "pick": "3423",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x7ff69b9b1a0d9c20bae1c47d0784c0782e43a2ff",
+    "pick": "4901",
+    "tier": 2,
+    "amount": "50000000"
+  },
+  {
+    "address": "0x7ff69b9b1a0d9c20bae1c47d0784c0782e43a2ff",
+    "pick": "23849",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x7ff69b9b1a0d9c20bae1c47d0784c0782e43a2ff",
+    "pick": "32448",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x7fffb725f8688becbaaa61e2f9b4e689f3de8730",
+    "pick": "1527",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x7fffb725f8688becbaaa61e2f9b4e689f3de8730",
+    "pick": "3770",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x80658e3657882cfa73fff0eb20c92aa5e948230c",
+    "pick": "1855",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x80658e3657882cfa73fff0eb20c92aa5e948230c",
+    "pick": "26380",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x80658e3657882cfa73fff0eb20c92aa5e948230c",
+    "pick": "38946",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x80658e3657882cfa73fff0eb20c92aa5e948230c",
+    "pick": "48046",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x81405eb584a364b7375e4c66b335da15acbbaa51",
+    "pick": "36",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x8148e4bd8f81a477a21f2142edbaf4e0329911cf",
+    "pick": "859",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x8148e4bd8f81a477a21f2142edbaf4e0329911cf",
+    "pick": "7733",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x8148e4bd8f81a477a21f2142edbaf4e0329911cf",
+    "pick": "10512",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x81831cc81a5e4ea48da346b853808b3fa5f3f2b3",
+    "pick": "2700",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x82921f4dacbb7a75b3e66d29c331ac589a869e4f",
+    "pick": "727",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x82b62aea7dd3609dbc6cf5ca3157dae5ec202093",
+    "pick": "7487",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x834374e98175524ffecdcc73e344a8123896d29a",
+    "pick": "795",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x83de1603df0249c0155e30c636598fee5e11dbdc",
+    "pick": "24230",
+    "tier": 3,
+    "amount": "9999999"
+  },
+  {
+    "address": "0x83de1603df0249c0155e30c636598fee5e11dbdc",
+    "pick": "40898",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x84a63fe72b485eaca6785f8ebb1f9e94fb4f2ade",
+    "pick": "8986",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x84a63fe72b485eaca6785f8ebb1f9e94fb4f2ade",
+    "pick": "10756",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x84c6c8f6e578759dac1fb0b103b846f4c1c5e305",
+    "pick": "3271",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x86f102cd5fdd18d78f24b8a1140a38221f0944d9",
+    "pick": "1123",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x875385f8099fae7e2c1a45cc5144ceb61529ed3e",
+    "pick": "16083",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x875385f8099fae7e2c1a45cc5144ceb61529ed3e",
+    "pick": "27692",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x875385f8099fae7e2c1a45cc5144ceb61529ed3e",
+    "pick": "32420",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x875385f8099fae7e2c1a45cc5144ceb61529ed3e",
+    "pick": "35832",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x877d6210f0527491849d31edca8f7f7256408e6b",
+    "pick": "4368",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x87927198ebd48ee312dacd7d84208240eb8deb24",
+    "pick": "31800",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x87927198ebd48ee312dacd7d84208240eb8deb24",
+    "pick": "33549",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x88551735b92033102fde93cbd48271055eda2158",
+    "pick": "749",
+    "tier": 3,
+    "amount": "9999999"
+  },
+  {
+    "address": "0x88959364ec2fb18b723572d9ae9163c6fc4739a8",
+    "pick": "228",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x88a2cd766343514c74ec1b252164baf597d57230",
+    "pick": "10684",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x88a2cd766343514c74ec1b252164baf597d57230",
+    "pick": "13255",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x8904ffc6aa039db5941de11309a42372f3f7d2fd",
+    "pick": "53332",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x8904ffc6aa039db5941de11309a42372f3f7d2fd",
+    "pick": "58863",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x8904ffc6aa039db5941de11309a42372f3f7d2fd",
+    "pick": "77960",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x8904ffc6aa039db5941de11309a42372f3f7d2fd",
+    "pick": "89099",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x8904ffc6aa039db5941de11309a42372f3f7d2fd",
+    "pick": "106677",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x8904ffc6aa039db5941de11309a42372f3f7d2fd",
+    "pick": "115237",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x8904ffc6aa039db5941de11309a42372f3f7d2fd",
+    "pick": "120411",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x897d24557116f39440fab68feb0ed97bbbeaeeed",
+    "pick": "2371",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x89b69a16a963f161fce35becec4bf893f1c038c8",
+    "pick": "6040",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x8ac29cd5d9ce3ab16ce1902323c762a22972f330",
+    "pick": "379",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x8ac29cd5d9ce3ab16ce1902323c762a22972f330",
+    "pick": "510",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x8bde47593d3a6c07f726281dd80b68a8a27a40a3",
+    "pick": "4970",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x8c32d03522edc1697d0db33b4d32e6b7c0d21e65",
+    "pick": "233",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x8c8475bf4664a6286708f1c1015c998bb92dc2cd",
+    "pick": "1864",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x8ca9477aca99eaa8719a42bb782f1fa97503a9ca",
+    "pick": "183",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x8cec4c3e88ac724d664ef6f0eb53d3d93656ba8c",
+    "pick": "1232",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x8cf5641c19fb4e152aa89816d7b0c47f0801f681",
+    "pick": "223",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x8cf5641c19fb4e152aa89816d7b0c47f0801f681",
+    "pick": "2853",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x8df68cd876173fc5de3054151e878f2645e02c01",
+    "pick": "1054",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x8e2406f2e029041e0e181988085e1c7a2281b413",
+    "pick": "3762",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x8e43ac0e463016a6087efccb86406c9ebd8022b3",
+    "pick": "473",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x8e49d2574042611cf30551e90d37d7b2c08b7028",
+    "pick": "19093",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x8e9598bab89853fd7431d01da6baab8122eefa26",
+    "pick": "2672",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x8ed532c96c11debfaa765102c2f3fcadeed33082",
+    "pick": "4767",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x8fd05d5a31124b0c93052e7bde7f0d30d6f0df61",
+    "pick": "8619",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x8fd05d5a31124b0c93052e7bde7f0d30d6f0df61",
+    "pick": "8762",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x8feebfa4ac7af314d90a0c17c3f91c800cfde44b",
+    "pick": "3011",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x8feebfa4ac7af314d90a0c17c3f91c800cfde44b",
+    "pick": "18757",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x903db971036439c3b8950bd601e386141f628bd1",
+    "pick": "8614",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x9059d2db7be916314f0e474aaf7ba81b8bc784b3",
+    "pick": "9656",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x9059d2db7be916314f0e474aaf7ba81b8bc784b3",
+    "pick": "9982",
+    "tier": 2,
+    "amount": "50000000"
+  },
+  {
+    "address": "0x905e0f438cc1aae570a84c1a62a156ba5c1bb345",
+    "pick": "572",
+    "tier": 1,
+    "amount": "99999998"
+  },
+  {
+    "address": "0x915dfe99d1ef2428918edc26855c458cd4a51bb9",
+    "pick": "2016",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x91aba0a39b3f5b79e0793097f412d706d1c9eda6",
+    "pick": "2550",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x91fefdf345077ef86193ef972bb9df801b8fb162",
+    "pick": "26667",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x9249f2c06c7d69b3b4418fb416900c271f93764a",
+    "pick": "2543",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x9249f2c06c7d69b3b4418fb416900c271f93764a",
+    "pick": "4675",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x9249f2c06c7d69b3b4418fb416900c271f93764a",
+    "pick": "5700",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x92a27f87cf6363fea05563fff0dfa8a4c809b5c8",
+    "pick": "1",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x92e00d08aa8885ae37a968cc069da1ce1f9b9f16",
+    "pick": "935",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x92e00d08aa8885ae37a968cc069da1ce1f9b9f16",
+    "pick": "5286",
+    "tier": 3,
+    "amount": "9999999"
+  },
+  {
+    "address": "0x92fa6f69720be01509d7b2f0813ebf194f3e47b3",
+    "pick": "5248",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x93100c6082321d7369d3d61ea5ffff0c697631d1",
+    "pick": "10378",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x93100c6082321d7369d3d61ea5ffff0c697631d1",
+    "pick": "27450",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x93ef03ccebb712e838a5234981460b5cd83657f6",
+    "pick": "1092",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x93fa66ade14c1842cf9530647a0e7d6d4f5b2d62",
+    "pick": "590",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x968e134be5f22ff7fe5062e39bf17d8cb2071da0",
+    "pick": "10814",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x96a77560146501eaeb5e6d5b7d8dd1ed23defa23",
+    "pick": "209",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x981b3bfcc5a237b4d63ff036a11033d745eb3dd1",
+    "pick": "210",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x98ded64cc4493896e0610d45813c3bb025df280a",
+    "pick": "3617",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x990af26009d8f3921e0c72ccd804b99ba23d7454",
+    "pick": "187",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x995514150da40cc16dc536d1deb566af0978999a",
+    "pick": "1723",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x995514150da40cc16dc536d1deb566af0978999a",
+    "pick": "2912",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x9992183b268b198dfd84e1fe0969562dc0646ada",
+    "pick": "25560",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x9992183b268b198dfd84e1fe0969562dc0646ada",
+    "pick": "53435",
+    "tier": 3,
+    "amount": "9999999"
+  },
+  {
+    "address": "0x9992183b268b198dfd84e1fe0969562dc0646ada",
+    "pick": "73524",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x9992183b268b198dfd84e1fe0969562dc0646ada",
+    "pick": "76380",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x9992183b268b198dfd84e1fe0969562dc0646ada",
+    "pick": "80841",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x9992183b268b198dfd84e1fe0969562dc0646ada",
+    "pick": "82246",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x99e21d2cd8c1d82f0b41d0d267fe708ea3a09694",
+    "pick": "1874",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x99e21d2cd8c1d82f0b41d0d267fe708ea3a09694",
+    "pick": "2205",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x99e5f58fbb54d8ef015943e930dd1f091a0fb573",
+    "pick": "832",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x9a456152e0da127c30a49357a461f4c3f80bd630",
+    "pick": "711",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x9aa4e6641fefd0764bfebdeda637e7782d7ed4dc",
+    "pick": "7040",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x9aa4e6641fefd0764bfebdeda637e7782d7ed4dc",
+    "pick": "17066",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x9aced317b49d3c937f2821a9438fbbc4728000c9",
+    "pick": "1306",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x9aced317b49d3c937f2821a9438fbbc4728000c9",
+    "pick": "1580",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x9aced317b49d3c937f2821a9438fbbc4728000c9",
+    "pick": "3662",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x9be06a9f5299752c5c56e280b2c1985267fe098a",
+    "pick": "57",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x9c877a64f5fbc2b33ea49081282422fd79efb7df",
+    "pick": "31",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x9c877a64f5fbc2b33ea49081282422fd79efb7df",
+    "pick": "1292",
+    "tier": 1,
+    "amount": "99999998"
+  },
+  {
+    "address": "0x9ccb5270f3d978f2252cbfcbad3d3705f412b2f4",
+    "pick": "258",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x9cdbddf646a86ec987394c807defed498dbc7df4",
+    "pick": "1282",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x9cdbddf646a86ec987394c807defed498dbc7df4",
+    "pick": "2101",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x9cdbddf646a86ec987394c807defed498dbc7df4",
+    "pick": "2679",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x9d0a5d44ae1968c894a3be4fa4d90a520f18c1b8",
+    "pick": "8311",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x9d0a5d44ae1968c894a3be4fa4d90a520f18c1b8",
+    "pick": "10130",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x9d0c24e335474f7fa45e8dc21cf58cbb367fe5ef",
+    "pick": "7694",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x9d3e31a947efed1be5fe43aa09b6ddd238d956e2",
+    "pick": "3490",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x9d6e1a083fcdc7bd4c6873bb7c9728a3da814240",
+    "pick": "3296",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x9dc03477a733c1d580d0fa76e9dcffdbda9c89b0",
+    "pick": "9880",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x9e329032878c1a52cf78ce4e499d29c40232a375",
+    "pick": "2434",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x9e5f0512a524bdce6cceb19aa6fb2460103d1724",
+    "pick": "1999",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0x9e5f0512a524bdce6cceb19aa6fb2460103d1724",
+    "pick": "2123",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0x9fc4b7d5b008541ba24afd0322b0c8b3aed379b7",
+    "pick": "4313",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xa0b038b22ce84eae04acdb4cf8d9a4612efad033",
+    "pick": "353",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xa0b038b22ce84eae04acdb4cf8d9a4612efad033",
+    "pick": "831",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0xa15ea0f634a467169825540ca12d8b47b927b7ab",
+    "pick": "265",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0xa17574a42b5ec99b4c668ea04ca828a43b25045d",
+    "pick": "2358",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0xa249837c5ef8341d448f49876012a1fe588da86c",
+    "pick": "2855",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xa36df1a4835083573b59af2fbcafe91a3a580554",
+    "pick": "539",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xa37b8ce965d9a3f2b9df5cffe5626e6c68215b01",
+    "pick": "870",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xa3b91a1f8f003dd44ff13c39a69d6c002efca4e4",
+    "pick": "783",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xa3b91a1f8f003dd44ff13c39a69d6c002efca4e4",
+    "pick": "888",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xa3dadc0f3467fb44dc4106b87a2e5b5bc4cf92a3",
+    "pick": "4606",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0xa4cecbfc553335fbf0fddff8b5bff583f6e1c11f",
+    "pick": "562",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0xa55d4c835fd42691bc0ea5dee8a8848dbd7ecd0f",
+    "pick": "6841",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xa55d4c835fd42691bc0ea5dee8a8848dbd7ecd0f",
+    "pick": "8806",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xa56f6ab0a795f164f57213a9cf7ba678233125da",
+    "pick": "1014",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xa56f6ab0a795f164f57213a9cf7ba678233125da",
+    "pick": "3236",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xa56f6ab0a795f164f57213a9cf7ba678233125da",
+    "pick": "4068",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0xa580a81c881869cc4763968754683f764754902a",
+    "pick": "3132",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xa588225fb90901992ae962cc4f88f8b8cbabaa73",
+    "pick": "10982",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0xa62aad0ab5d6ad431af2bfc9807c615810379d8a",
+    "pick": "143",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xa687f26a891d34939b3dcc2e263d6c206f92fd63",
+    "pick": "8869",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xa6d190085592a9ddd9aef3d3966982c250a53886",
+    "pick": "3259",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xa7329fd51b2dc832f92a1ec5e05cc35d4d1a095e",
+    "pick": "18405",
+    "tier": 3,
+    "amount": "9999999"
+  },
+  {
+    "address": "0xa7329fd51b2dc832f92a1ec5e05cc35d4d1a095e",
+    "pick": "27899",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xa73acde92736d19a5eddcfe1ebcd8543508dec22",
+    "pick": "2752",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0xa74fd5d35fa091e2b452d8d5e3f58b76cd1d6305",
+    "pick": "4552",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xa8174c34b13b71b3b2262c82365903bb858af4e4",
+    "pick": "63",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0xa83293e1dd3cd51787cd44a57b1682707f6c9772",
+    "pick": "68248",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xa83293e1dd3cd51787cd44a57b1682707f6c9772",
+    "pick": "109152",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xa83293e1dd3cd51787cd44a57b1682707f6c9772",
+    "pick": "124195",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xa83293e1dd3cd51787cd44a57b1682707f6c9772",
+    "pick": "147576",
+    "tier": 3,
+    "amount": "9999999"
+  },
+  {
+    "address": "0xa83293e1dd3cd51787cd44a57b1682707f6c9772",
+    "pick": "152586",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0xa83293e1dd3cd51787cd44a57b1682707f6c9772",
+    "pick": "176233",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xa83293e1dd3cd51787cd44a57b1682707f6c9772",
+    "pick": "182574",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xa9f8275ec69918e26e936be48c1418fe533d0a5a",
+    "pick": "2588",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xa9f8275ec69918e26e936be48c1418fe533d0a5a",
+    "pick": "7920",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xa9f8275ec69918e26e936be48c1418fe533d0a5a",
+    "pick": "20854",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xa9f8275ec69918e26e936be48c1418fe533d0a5a",
+    "pick": "51186",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xaa8a19d6bf655bfa3c448248ad2482d05bab6f98",
+    "pick": "4896",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0xab5a193a11f779fe105e8edf9815a0b514b013ca",
+    "pick": "2999",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xab6dc3f226b98b67063e7414ba196744209a65bc",
+    "pick": "1829",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xacd77844ef97c59a7f8b417bb595811016ce1a22",
+    "pick": "2189",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xad0181368d5ed9cc035d1bfe877b04db037e07bb",
+    "pick": "3571",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xad0181368d5ed9cc035d1bfe877b04db037e07bb",
+    "pick": "4329",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xad10466e63ed5039b8f4bd409e42404278e9e761",
+    "pick": "8413",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xadc12cc6a97a81c656bcdedfaf6bbd16a36cb9b3",
+    "pick": "865",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xafa4d9b35ff0b4dc94d5f17b6dac3017df6f1a5c",
+    "pick": "1506",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xafd6cf66d4258f6426b6343f54c7dd0bfac9be25",
+    "pick": "2064",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xb08acb5e09919195336209032ea4037135c380c7",
+    "pick": "43",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xb157ba30e3467ddbc844f14f02b4ba741f1d549f",
+    "pick": "51180",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xb157ba30e3467ddbc844f14f02b4ba741f1d549f",
+    "pick": "52800",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xb157ba30e3467ddbc844f14f02b4ba741f1d549f",
+    "pick": "53953",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xb157ba30e3467ddbc844f14f02b4ba741f1d549f",
+    "pick": "62336",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xb157ba30e3467ddbc844f14f02b4ba741f1d549f",
+    "pick": "68443",
+    "tier": 3,
+    "amount": "9999999"
+  },
+  {
+    "address": "0xb157ba30e3467ddbc844f14f02b4ba741f1d549f",
+    "pick": "80943",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0xb157ba30e3467ddbc844f14f02b4ba741f1d549f",
+    "pick": "89744",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xb18ba0e065d4355e53a7b13a9aad2bebb4004d82",
+    "pick": "802",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0xb1ab970c53943329cdbbed182b4e7549ecc5cacb",
+    "pick": "310",
+    "tier": 3,
+    "amount": "9999999"
+  },
+  {
+    "address": "0xb1d07281de5758968417b85c9cdc6c8abdee97ca",
+    "pick": "7830",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xb2395949ddfede2dd9a5fc9f867b7304a98a26a3",
+    "pick": "4781",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xb29701548b27e4f897041d551ef9a4ba25fa88bf",
+    "pick": "11835",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xb37b3b78022e6964fe80030c9161525880274010",
+    "pick": "12162",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xb37b3b78022e6964fe80030c9161525880274010",
+    "pick": "18308",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xb37b3b78022e6964fe80030c9161525880274010",
+    "pick": "37802",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xb37b3b78022e6964fe80030c9161525880274010",
+    "pick": "38168",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xb37b3b78022e6964fe80030c9161525880274010",
+    "pick": "39558",
+    "tier": 3,
+    "amount": "9999999"
+  },
+  {
+    "address": "0xb37b3b78022e6964fe80030c9161525880274010",
+    "pick": "46716",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xb3cf7fdb63e065f37730daf6635dbd981dc4ba79",
+    "pick": "292",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0xb3e002a19d84b61751236b088d38eb1fcf75145a",
+    "pick": "44",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0xb3e7e79cea7958c4b05ca6a39acae2d814bc2542",
+    "pick": "1088",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xb4011753221e622583f04ed759c55a6fd9e41c47",
+    "pick": "15724",
+    "tier": 3,
+    "amount": "9999999"
+  },
+  {
+    "address": "0xb4011753221e622583f04ed759c55a6fd9e41c47",
+    "pick": "17626",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xb4011753221e622583f04ed759c55a6fd9e41c47",
+    "pick": "40950",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xb4011753221e622583f04ed759c55a6fd9e41c47",
+    "pick": "59914",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xb4011753221e622583f04ed759c55a6fd9e41c47",
+    "pick": "100889",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xb4011753221e622583f04ed759c55a6fd9e41c47",
+    "pick": "114883",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0xb4011753221e622583f04ed759c55a6fd9e41c47",
+    "pick": "140908",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xb548600434eb84a02e07f7e51a42c8715f33c362",
+    "pick": "176",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xb5cb1581413438532c68fcd94610863a4545531d",
+    "pick": "4455",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xb6fa0d615dd0338825e10da7efa069977c974d8c",
+    "pick": "11623",
+    "tier": 2,
+    "amount": "50000000"
+  },
+  {
+    "address": "0xb71440fbfad9c0b601c1633b21318619aa3691de",
+    "pick": "499",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0xb80a27b0ae1e98420c69f6a4cd96fa5f75cc094c",
+    "pick": "901",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xb80a27b0ae1e98420c69f6a4cd96fa5f75cc094c",
+    "pick": "10505",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xb80a27b0ae1e98420c69f6a4cd96fa5f75cc094c",
+    "pick": "11742",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xb83e6272d4274bbe3b7a493911556fb86ac7654b",
+    "pick": "127",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xb861f027226c1bf9fce5a2fdc62f44db2575f043",
+    "pick": "6813",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0xb86fb57f612ee18dc3f772e40ab5bb87b450219c",
+    "pick": "2512",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xba73fd92c2a8c16eaad6ee8f4a31004a6bc4aad6",
+    "pick": "2277",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xba94a228765ffe3fdd63e28edd05409ea9f3e24b",
+    "pick": "2312",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xbb416feca6c36a13e7848eaeab0099d02a3440b4",
+    "pick": "18058",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xbb416feca6c36a13e7848eaeab0099d02a3440b4",
+    "pick": "20968",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xbb416feca6c36a13e7848eaeab0099d02a3440b4",
+    "pick": "43108",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0xbb416feca6c36a13e7848eaeab0099d02a3440b4",
+    "pick": "59260",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xbb416feca6c36a13e7848eaeab0099d02a3440b4",
+    "pick": "59870",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xbb7724d5fc4af70489b66d13b4f19361b1e31457",
+    "pick": "5362",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0xbbd2363c6f7d6817888de6065235f5ef59bf1a4a",
+    "pick": "3763",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xbcbdbd97396f05d0499abe8db78b735733ffc468",
+    "pick": "4415",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xbd7e27b693fac6dc5fb06c5bef43f19af9446798",
+    "pick": "1364",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xbe4abf58bb808d193128de2891819d18dd21b8c9",
+    "pick": "3085",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xbeb9b48f31d885e852d41c1053aa1874db0dd467",
+    "pick": "19048",
+    "tier": 3,
+    "amount": "9999999"
+  },
+  {
+    "address": "0xbf0909c67f8ba396e99d49065b14b613699836c5",
+    "pick": "4102",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xbf5b9bd197e9dbf3f2ce58e5b1c35b1bf383b5cc",
+    "pick": "1626",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xbf7da6d800d46c15af87c415c5311ed1e1dd888a",
+    "pick": "1874",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0xbf7da6d800d46c15af87c415c5311ed1e1dd888a",
+    "pick": "13599",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xc07157bd29a4536092836532332dd59e50343b62",
+    "pick": "261",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xc0deaf6bd3f0c6574a6a625ef2f22f62a5150eab",
+    "pick": "1548",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xc0deaf6bd3f0c6574a6a625ef2f22f62a5150eab",
+    "pick": "2063",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xc0deaf6bd3f0c6574a6a625ef2f22f62a5150eab",
+    "pick": "5378",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xc0fe73a5fca255f0f7f55f03261dff7772658ed7",
+    "pick": "1095",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xc0fe73a5fca255f0f7f55f03261dff7772658ed7",
+    "pick": "2234",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xc2323e5e40a0ce806165cd82e35d46030e2b7b26",
+    "pick": "4409",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xc2323e5e40a0ce806165cd82e35d46030e2b7b26",
+    "pick": "7096",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xc23d06db7cfcfd253bebeef3e023bdfaf8584854",
+    "pick": "2680",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xc2620e2c2ba5e85c33b5da107eaa058a99f58a80",
+    "pick": "8448",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xc26c9350a33101c2e170594cc262c5bb33cee3e9",
+    "pick": "9255",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xc3b3ae99b98c291311055c342f667b7af76efeeb",
+    "pick": "1186",
+    "tier": 3,
+    "amount": "9999999"
+  },
+  {
+    "address": "0xc3ff3e7792d992c4b0e444caa469bad68b5ddf68",
+    "pick": "508",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xc4616e92a26750fda8249dcd1896b8c4d4b02827",
+    "pick": "883",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xc4616e92a26750fda8249dcd1896b8c4d4b02827",
+    "pick": "8703",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xc48016dd6fbabfdafc5752b51c0e8acf7aef9c57",
+    "pick": "858",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xc48ff8f351dc017e6903faa1dd6dd41a2cbd766d",
+    "pick": "2572",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xc4d8508ef5eabc435e1fa08b54eb0f4656d5072b",
+    "pick": "605",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xc4ed1cacf39ae3c89833535804a7b9c62a6f4985",
+    "pick": "1357",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xc500636dc859fc3ad9d22d6c514cd750126e5c9a",
+    "pick": "3647",
+    "tier": 1,
+    "amount": "99999998"
+  },
+  {
+    "address": "0xc60cd6320d15a1ddee294a3ea8d496e9e5f5d702",
+    "pick": "11",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xc6b4a4db97cc81c20616b95a6351bba3adb93f24",
+    "pick": "1540",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xc76a448f303808ef2d2839b806af2198ea987f30",
+    "pick": "3228",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xc84badde9a579345b012ac9214005a08064f9e4d",
+    "pick": "916",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0xc87158be3c28d725043291e42ea960eebae681af",
+    "pick": "1337",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0xc8b503ebbc763e51f519e7684753ec2ec8700f53",
+    "pick": "540",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xc945f3ea949c6491fb81b33591cc590f4ec6b584",
+    "pick": "1378",
+    "tier": 3,
+    "amount": "9999999"
+  },
+  {
+    "address": "0xc950ef7a8c331bbb662e3b34edc566c2b33d6a70",
+    "pick": "1055",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0xca451c0ca3fc6e117ec622a785f615791e5a61aa",
+    "pick": "5341",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xca7a7ea3e838fa00fff5b62510f0e3623ae6606d",
+    "pick": "8748",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0xcb0209f368ec0d67cfd70a5f8b868cd9bcb1242c",
+    "pick": "977",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0xcb0209f368ec0d67cfd70a5f8b868cd9bcb1242c",
+    "pick": "1340",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xcb114e5d92b24941a02f3064cae309ae14fe7e27",
+    "pick": "6507",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xcb78c8a711af7a8070843c7fd98b857a99363115",
+    "pick": "155",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xcc53d7923af8d511b6db53643df7d1ffb34a680e",
+    "pick": "2262",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xccbc0048ea26ce7d0c2495194d91e7e5ffb7af75",
+    "pick": "11724",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xcd118d9938e3b16d80e807bba189a7b2e9e6c051",
+    "pick": "6929",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xcde6c35346ed315259c41156771f6bb05845cece",
+    "pick": "10301",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xce84ef39bac143084969bba51a06bdff375f257e",
+    "pick": "21473",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xce84ef39bac143084969bba51a06bdff375f257e",
+    "pick": "79365",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0xcf19316519de7f5b31679e2c414eeb4630a6b5c6",
+    "pick": "11129",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xcf3e7693aa8fe9dd865c22d5993631a72f57dfcd",
+    "pick": "10710",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xd0214b7e8a7821a5cb07024bc00d64ece8cc1067",
+    "pick": "2525",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xd0214b7e8a7821a5cb07024bc00d64ece8cc1067",
+    "pick": "12364",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xd02ae906edc339872b8300020fc4411c4f4036e1",
+    "pick": "4970",
+    "tier": 3,
+    "amount": "9999999"
+  },
+  {
+    "address": "0xd02ae906edc339872b8300020fc4411c4f4036e1",
+    "pick": "9544",
+    "tier": 3,
+    "amount": "9999999"
+  },
+  {
+    "address": "0xd02e1802d7a861d21340352f85b3d96cd7315949",
+    "pick": "3746",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0xd0d8fd83f0cf255875ba13cdce6fd02e85be72b8",
+    "pick": "4586",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xd1c04737c664b1baae54021fdbd22b9841c5d9dc",
+    "pick": "7568",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0xd1f0d3afe14525812ca4446305fe3a86245ccace",
+    "pick": "16",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xd2779d41912992f59c26a6cebf0f6d009ea32bd6",
+    "pick": "2700",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xd2779d41912992f59c26a6cebf0f6d009ea32bd6",
+    "pick": "9471",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xd36cb04ab123648338925a02d05fc37d4bfce816",
+    "pick": "7071",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xd3ea7b3e5390219dacbefe6b80cccd4765c3bd40",
+    "pick": "3464",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xd41cfdc23228a117102e8b6853f1baa0c4faa5b7",
+    "pick": "2734",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xd41cfdc23228a117102e8b6853f1baa0c4faa5b7",
+    "pick": "5976",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0xd4894780896f6596389c18d84c1bffd1b84ae057",
+    "pick": "6468",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0xd61f253da7009c71a6b864cbba6db36dbe457f8e",
+    "pick": "2900",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xd63521c4026045e445f954b84927a80ff17d9b2e",
+    "pick": "849",
+    "tier": 3,
+    "amount": "9999999"
+  },
+  {
+    "address": "0xd63521c4026045e445f954b84927a80ff17d9b2e",
+    "pick": "4487",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0xd6b97060bbb11c41a03aa4d8be482d08532995ee",
+    "pick": "390",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xd6b97060bbb11c41a03aa4d8be482d08532995ee",
+    "pick": "1525",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xd6b97060bbb11c41a03aa4d8be482d08532995ee",
+    "pick": "5152",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0xd70804463bb2760c3384fc87bbe779e3d91bab3a",
+    "pick": "2745",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xd7e51f1ec5d5e5861d9dd70257d2947f436197b6",
+    "pick": "4307",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xd8175789725d8c4cd911f059385658ab4d9b9847",
+    "pick": "8177",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xd872b7d4889ab1c7de5a17a7877ca641ad2c3f72",
+    "pick": "1166",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xd917eb4dcfccf91e6496702bc6309d5a59eef713",
+    "pick": "285",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xd975dfdd52dafc17a58574c6d8d184d65340cced",
+    "pick": "2153",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xdb288fbb1699440fa85a6317a1c439946cc0ae18",
+    "pick": "1378",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xdb288fbb1699440fa85a6317a1c439946cc0ae18",
+    "pick": "14073",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xdb5a159e47d1636b93b0699dd6d01f8420905308",
+    "pick": "761",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0xdb5a1b058000813d9dbec9676587315ca7e7bcbe",
+    "pick": "1262",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xdb6ba870344d764555adc7a544f6524c0ddeeaac",
+    "pick": "4480",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xdb7d45974bce9cbfaab6db7153ada204b2ea632c",
+    "pick": "2402",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xdbc22e349725458855ea68b811ade01911517cde",
+    "pick": "1262",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xdce43ad9827e53b11b70ea98badae73639f5c33d",
+    "pick": "1039",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xdd459a97276594d449bc6ed0f5f3f4cf7c121557",
+    "pick": "2824",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0xdd459a97276594d449bc6ed0f5f3f4cf7c121557",
+    "pick": "5553",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xdd459a97276594d449bc6ed0f5f3f4cf7c121557",
+    "pick": "9350",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0xdd45ca901067d65860b54d4310e37371cd92fb09",
+    "pick": "1884",
+    "tier": 3,
+    "amount": "9999999"
+  },
+  {
+    "address": "0xddb98fa7a0538ef1f6a89cb4ada07b10956aa748",
+    "pick": "13195",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xddd165f1e9168a9b62d465c462c4abbf0a944e73",
+    "pick": "2333",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xddd165f1e9168a9b62d465c462c4abbf0a944e73",
+    "pick": "6911",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xde560114f7b8fa68be26a72cda1839e7bd5d4926",
+    "pick": "5885",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xded0e76f559e39ff5dff607b0d58dcf86b0b58d9",
+    "pick": "7918",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xded0e76f559e39ff5dff607b0d58dcf86b0b58d9",
+    "pick": "8417",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xdf75c2a58d6f85284abf0413c18888770fa1f668",
+    "pick": "11597",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0xdfcfe23bb32b25d3972d27aed60660c1a9ddbab6",
+    "pick": "337",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xe0e7b7c5ae92fe94d2ae677d81214d6ad7a11c27",
+    "pick": "591",
+    "tier": 3,
+    "amount": "9999999"
+  },
+  {
+    "address": "0xe12261cfcbcc48c6141ea57d349008617b4250fb",
+    "pick": "5992",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xe12acf95757fc5269d5d0c4ddacef8b80fff7466",
+    "pick": "3163",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0xe12acf95757fc5269d5d0c4ddacef8b80fff7466",
+    "pick": "4611",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xe259ee56f5d07b346a9015da08b8de01e31798f5",
+    "pick": "1126",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xe2661e663045be89990120d5cf87fd4b3ce6b6a8",
+    "pick": "250",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xe269f15f201cafb61769b944c566bb6c70597050",
+    "pick": "328",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xe2e4ea76a5b5f07c20ce2828a768821c43c6706c",
+    "pick": "7864",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xe3ee44776a84c3afd746e1bad63dee742b997ad5",
+    "pick": "8208",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xe3ee44776a84c3afd746e1bad63dee742b997ad5",
+    "pick": "11952",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xe4767b1aa4003b0cb2777206b56b0f5c33ba1175",
+    "pick": "3153",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xe48dd2a322a7ebfdaa9680fd2e8cec27cbb7a765",
+    "pick": "436",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xe493a6ff589c4e63c73546d9eabb06e2695e782f",
+    "pick": "1313",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0xe493a6ff589c4e63c73546d9eabb06e2695e782f",
+    "pick": "3107",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xe5342f9398e3dd38afb3eb0c1e60d607512004cf",
+    "pick": "1207",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xe5510b4a1abfa1056950ca1f9f1ca8a9ec21b2a3",
+    "pick": "13735",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xe573cdfaf64f557cba2dac9ec45548c734105f9d",
+    "pick": "10857",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xe614e406c4494353cbd8843e6843a1f9a2859956",
+    "pick": "474",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xe61c04911cbdc722ffdad88880bf2a4c4e71d85c",
+    "pick": "7743",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xe61c04911cbdc722ffdad88880bf2a4c4e71d85c",
+    "pick": "11935",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0xe61c04911cbdc722ffdad88880bf2a4c4e71d85c",
+    "pick": "14245",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xe61c04911cbdc722ffdad88880bf2a4c4e71d85c",
+    "pick": "18024",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xe6764b8361d7272b6a8b28ff1720160288a317b8",
+    "pick": "2105",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xe82fb1c8e3e902e272ddd593d60af0ced1be6cf3",
+    "pick": "2389",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xe8ad17958a091bcdf2ef253396c24dc4fa16c010",
+    "pick": "5168",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xe96c02c0dfa5901917406c5bcdc77f61e6090655",
+    "pick": "57",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xea31d6d7552ef0be821cf7d6b50971266cf09144",
+    "pick": "216",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xea31d6d7552ef0be821cf7d6b50971266cf09144",
+    "pick": "756",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xea4a44c793ddd0c97ed0153ddcf293028a3c01c9",
+    "pick": "4787",
+    "tier": 3,
+    "amount": "9999999"
+  },
+  {
+    "address": "0xeb63e07b983d08860295895bbeb3094758d894a5",
+    "pick": "912",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xece9396469d7cd916d8473707acc054123a95ff2",
+    "pick": "1481",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0xee73ef25cc3cc06475e22bea6aa830bba9661b71",
+    "pick": "4167",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xeec2d3701acaf2689c229fab93a80e42e83e2088",
+    "pick": "12600",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0xef79d7b479e83f05122dc788707b4abdd415aee8",
+    "pick": "862",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xefb9fd723b3a074aaf1febd3e24fc65eb1130946",
+    "pick": "52",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xf026941540e63e3d5d614d1aaae5119da96cc95f",
+    "pick": "1347",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xf071d9345de07d5c9b2470a3e6f179a81adccae6",
+    "pick": "728",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0xf0b4011711173686249d3b4232032dcc7da7fe4b",
+    "pick": "67",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xf0e3e5cba62df1883acaa79bda50c048fb0339b3",
+    "pick": "2964",
+    "tier": 3,
+    "amount": "9999999"
+  },
+  {
+    "address": "0xf1286c7cf71f32f96dc85a3014224b37dd9dba41",
+    "pick": "9975",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xf14dc3341c44ed1009ce5833534068855b201667",
+    "pick": "2128",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xf191cb45372f113d6e2783bc4e0a11a8fb838df7",
+    "pick": "5988",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0xf1b8955183adf74c5d0c09f3454e455072a542df",
+    "pick": "2565",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0xf24c92223dbcd0f423d9f02da96fdd2ddfd6f594",
+    "pick": "2114",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xf2f22ecb8d7e5aa6ddb5824eef3593f508452cad",
+    "pick": "1154",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xf37226cde14d795d1afbc8521fdb1bb44b06e77a",
+    "pick": "5831",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xf37226cde14d795d1afbc8521fdb1bb44b06e77a",
+    "pick": "9982",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0xf3af09b8314d865abc41dab8f1efcaf1053831f0",
+    "pick": "16048",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xf402b2ea9f87b2b5f7daaf17a30d202dfd295a8a",
+    "pick": "15029",
+    "tier": 3,
+    "amount": "9999999"
+  },
+  {
+    "address": "0xf402b2ea9f87b2b5f7daaf17a30d202dfd295a8a",
+    "pick": "23500",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0xf41804ef7b3f3d0f3dbb3f6c3fd45ade4d51539d",
+    "pick": "4814",
+    "tier": 3,
+    "amount": "9999999"
+  },
+  {
+    "address": "0xf41804ef7b3f3d0f3dbb3f6c3fd45ade4d51539d",
+    "pick": "7482",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xf41804ef7b3f3d0f3dbb3f6c3fd45ade4d51539d",
+    "pick": "9202",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xf4333670146ed9744232913367793b07d83b6c11",
+    "pick": "40",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xf4333670146ed9744232913367793b07d83b6c11",
+    "pick": "4933",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0xf474089f4b37d54ba894a8e00d4524cf02b5b9b4",
+    "pick": "5045",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0xf4b27d824a8242f2445ad8522f92bf5f2707a07c",
+    "pick": "326",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xf5cad4ce8efee78e337a85e92d0640b137c9a7c4",
+    "pick": "9774",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xf6c29bfe4c7393efacad4398d560b52c670b1ff3",
+    "pick": "2256",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xf6c29bfe4c7393efacad4398d560b52c670b1ff3",
+    "pick": "5114",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xf7257a5691dbb58c0abed56602ed571474984a1a",
+    "pick": "7619",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xf7257a5691dbb58c0abed56602ed571474984a1a",
+    "pick": "17018",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0xf7257a5691dbb58c0abed56602ed571474984a1a",
+    "pick": "25053",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0xf7257a5691dbb58c0abed56602ed571474984a1a",
+    "pick": "34035",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xf7257a5691dbb58c0abed56602ed571474984a1a",
+    "pick": "74181",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0xf7257a5691dbb58c0abed56602ed571474984a1a",
+    "pick": "74303",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xf75032eedda0fd09b429062b164e6a00613645b1",
+    "pick": "3671",
+    "tier": 3,
+    "amount": "9999999"
+  },
+  {
+    "address": "0xf786278e8b12f4a743ec4af19b2365b0f9d191ff",
+    "pick": "5431",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xf7ab1924f57d0225787384e22f96cfc63014b711",
+    "pick": "1314",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xf7ce23e950d7ae6f56ee6dd245446c548cf8eafa",
+    "pick": "908",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xf886588584fda692833a9a05e314a792efc60af8",
+    "pick": "832",
+    "tier": 3,
+    "amount": "9999999"
+  },
+  {
+    "address": "0xf913c658413c4e87b633bd07e64766dec59937f9",
+    "pick": "42",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xfad50b516fc6e623053ed2c5351eb7cfd4098c89",
+    "pick": "713",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xfb424b3c08e5d1205c66d5140781bd718f7f9860",
+    "pick": "5686",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xfb4b5863acf4c891bd06ee1ac10cb9daa26de261",
+    "pick": "43874",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xfb4b5863acf4c891bd06ee1ac10cb9daa26de261",
+    "pick": "61589",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xfb4b5863acf4c891bd06ee1ac10cb9daa26de261",
+    "pick": "64428",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xfb4b5863acf4c891bd06ee1ac10cb9daa26de261",
+    "pick": "67613",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xfb4b5863acf4c891bd06ee1ac10cb9daa26de261",
+    "pick": "76298",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xfd096ecef960d3fc3afee5175e4975a47733bd57",
+    "pick": "1663",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xfd096ecef960d3fc3afee5175e4975a47733bd57",
+    "pick": "5162",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xfd5f6f62b0e3731266c136fd8ee84e3feb2d30fe",
+    "pick": "898",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xfe4b0286ad40b2fb2d621a925382e0502733dc2e",
+    "pick": "2308",
+    "tier": 5,
+    "amount": "5000000"
+  },
+  {
+    "address": "0xfee01fe301932e4a1acf1717d9213aff58888888",
+    "pick": "1919",
+    "tier": 4,
+    "amount": "4999999"
+  },
+  {
+    "address": "0xff06b844c4fe5782587cdb7f8655572bd3b738e7",
+    "pick": "5362",
+    "tier": 5,
+    "amount": "5000000"
+  }
+]
