@@ -15,7 +15,7 @@ env:
   DEBUG: ${{secrets.DEBUG}}
 jobs:
   runCLI:
-    name: PrizePoolNetwork Prizes Computation 
+    name: PrizePoolNetwork Prizes Computation
     runs-on: ${{ matrix.os }}
     strategy:
       max-parallel: 1
@@ -36,7 +36,7 @@ jobs:
           install-command: yarn
       - name: Install PoolTogether V4 CLI
         run: |
-          npm install -g @pooltogether/v4-cli@<v4 cli package version>
+          npm install -g @pooltogether/v4-cli@0.1.7-beta.4
           echo "$(npm -g bin)" >> $GITHUB_PATH
       # -------------------------------------------------------- #
       # Ethereum Mainnet (USDC)
