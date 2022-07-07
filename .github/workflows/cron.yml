@@ -36,7 +36,7 @@ jobs:
           install-command: yarn
       - name: Install PoolTogether V4 CLI
         run: |
-          npm install -g @pooltogether/v4-cli@0.1.7-beta.4
+          npm install -g @pooltogether/v4-cli@0.1.8
           echo "$(npm -g bin)" >> $GITHUB_PATH
       # -------------------------------------------------------- #
       # Ethereum Mainnet (USDC)
@@ -73,7 +73,7 @@ jobs:
         uses: maddog2050/executable-wrapper@v1
         continue-on-error: true
         with:
-          run_command: ptv4 compute poolPrizes -o ./api/prizes -t 0x5E5b54cd73872ba3103cd95A58067A7079d0259b -c 10
+          run_command: ptv4 compute poolPrizes -o ./api/prizes -t 0x62BB4fc73094c83B5e952C2180B23fA7054954c4 -c 10
       # -------------------------------------------------------- #
       # Comment Error
       # -------------------------------------------------------- #
