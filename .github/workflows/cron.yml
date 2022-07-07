@@ -64,7 +64,7 @@ jobs:
         uses: maddog2050/executable-wrapper@v1
         continue-on-error: true
         with:
-          run_command: ptv4 compute poolPrizes -o ./api/prizes -t 0xb27f379c050f6ed0973a01667458af6ecebc1d90 -c 43114
+          run_command: ptv4 compute poolPrizes -o ./api/prizes -t 0xB27f379C050f6eD0973A01667458af6eCeBc1d90 -c 43114
       # -------------------------------------------------------- #
       # Optimism Mainnet (USDC)
       # -------------------------------------------------------- #
