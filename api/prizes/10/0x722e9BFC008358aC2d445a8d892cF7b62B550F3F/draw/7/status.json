@@ -1,0 +1,27 @@
+{
+  "status": "FAILURE",
+  "createdAt": 1657310982570,
+  "updatedAt": 1657310984248,
+  "runtime": 1678,
+  "error": {
+    "reason": "missing revert data in call exception; Transaction reverted without a reason string",
+    "code": "CALL_EXCEPTION",
+    "data": "0x",
+    "transaction": {
+      "to": "0x267DD4034830Bb4ba9314e0471C1dDFD79849777",
+      "data": "0x83c34aaf0000000000000000000000000000000000000000000000000000000000000007",
+      "accessList": null
+    },
+    "error": {
+      "reason": "processing response error",
+      "code": "SERVER_ERROR",
+      "body": "{\"jsonrpc\":\"2.0\",\"id\":54,\"error\":{\"code\":-32000,\"message\":\"execution reverted: DRB/expired-draw\"}}",
+      "error": {
+        "code": -32000
+      },
+      "requestBody": "{\"method\":\"eth_call\",\"params\":[{\"to\":\"0x267dd4034830bb4ba9314e0471c1ddfd79849777\",\"data\":\"0x83c34aaf0000000000000000000000000000000000000000000000000000000000000007\"},\"latest\"],\"id\":54,\"jsonrpc\":\"2.0\"}",
+      "requestMethod": "POST",
+      "url": "https://opt-mainnet.g.alchemy.com/v2/YsYZIvlgzY2QbRhE4eQFumv_PQnhLBk-"
+    }
+  }
+}
