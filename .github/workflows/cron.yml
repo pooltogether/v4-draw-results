@@ -28,7 +28,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node }}
+      - name: Install Yarn
+        run: npm install -g yarn
       - name: Install PoolTogether V4 CLI
+        run: yarn
         run: echo "$(npm -g bin)" >> $GITHUB_PATH
       # -------------------------------------------------------- #
       # Ethereum Mainnet (USDC)
