@@ -37,6 +37,7 @@ jobs:
       # -------------------------------------------------------- #
       - name: Ethereum Draw Prizes
         id: drawPrizesEthereumMainnet
+        uses: maddog2050/executable-wrapper@v1
         continue-on-error: true
         with:
           run_command: node_modules/.bin/ptv4 compute poolPrizes -o ./api/prizes -t 0xdd4d117723C257CEe402285D3aCF218E9A8236E1 -c 1
@@ -45,6 +46,7 @@ jobs:
       # -------------------------------------------------------- #
       - name: Polygon Draw Prizes
         id: drawPrizesPolygonMainnet
+        uses: maddog2050/executable-wrapper@v1
         continue-on-error: true
         with:
           run_command: node_modules/.bin/ptv4 compute poolPrizes -o ./api/prizes -t 0x6a304dFdb9f808741244b6bfEe65ca7B3b3A6076 -c 137
@@ -53,6 +55,7 @@ jobs:
       # -------------------------------------------------------- #
       - name: Avalanche Draw Prizes
         id: drawPrizesAvalancheMainnet
+        uses: maddog2050/executable-wrapper@v1
         continue-on-error: true
         with:
           run_command: node_modules/.bin/ptv4 compute poolPrizes -o ./api/prizes -t 0xB27f379C050f6eD0973A01667458af6eCeBc1d90 -c 43114
@@ -61,6 +64,7 @@ jobs:
       # -------------------------------------------------------- #
       - name: Optimism Draw Prizes
         id: drawPrizesOptimismMainnet
+        uses: maddog2050/executable-wrapper@v1
         continue-on-error: true
         with:
           run_command: node_modules/.bin/ptv4 compute poolPrizes -o ./api/prizes -t 0x62BB4fc73094c83B5e952C2180B23fA7054954c4 -c 10
