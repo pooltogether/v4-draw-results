@@ -37,10 +37,9 @@ jobs:
       # -------------------------------------------------------- #
       - name: Optimism Kovan Draw Prizes
         id: drawPrizesOptimismKovan
-        uses: maddog2050/executable-wrapper@v1
         continue-on-error: true
         with:
-          run_command: ptv4 compute poolPrizes -o ./api/prizes -t 0xF567588A82660F9F93059E97063360900387a2cc -c 69
+          run_command: node_modules/.bin/ptv4 compute poolPrizes -o ./api/prizes -t 0xF567588A82660F9F93059E97063360900387a2cc -c 69
       # -------------------------------------------------------- #
       # Comment Error
       # -------------------------------------------------------- #
