@@ -5,7 +5,7 @@
   },
   "dependencies": {
     "@actions/core": "^1.6.0",
-    "@pooltogether/v4-cli": "^0.1.9",
+    "@pooltogether/v4-cli": "0.1.10",
     "cross-spawn": "^7.0.3"
   },
   "devDependencies": {
