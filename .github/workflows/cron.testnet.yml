@@ -41,11 +41,18 @@ jobs:
         continue-on-error: true
         run: node_modules/.bin/ptv4 compute poolPrizes -o ./api/prizes -t 0x8537C5a9AAd3ec1D31a84e94d19FcFC681E83ED0 -c 420
       # -------------------------------------------------------- #
+      # Arbitrum Goerli (USDC)
+      # -------------------------------------------------------- #
+      - name: Arbitrum Goerli Draw Prizes
+        id: drawPrizesArbitrumGoerli
+        continue-on-error: true
+        run: node_modules/.bin/ptv4 compute poolPrizes -o ./api/prizes -t 0x8739Da6c93D0CE6F5de9D2d71493fAF012F2bDbD -c 421613
+      # -------------------------------------------------------- #
       # Comment Error
       # -------------------------------------------------------- #
       - name: Comment Error
         id: commentError
-        if: steps.drawPrizesEthereumGoerli.outputs.exitcode == 1 || steps.drawPrizesOptimismGoerli.outputs.exitcode == 1
+        if: steps.drawPrizesEthereumGoerli.outputs.exitcode == 1 || steps.drawPrizesOptimismGoerli.outputs.exitcode == 1 || steps.drawPrizesArbitrumGoerli.outputs.exitcode == 1
         uses: actions/github-script@v5
         continue-on-error: true
         with:
@@ -77,12 +84,21 @@ jobs:
           git pull
           git add ./api/prizes/420/
           git commit -m "Add draw for Optimism Goerli draw ${{steps.drawPrizesOptimismGoerli.outputs.drawIds}}"
+      - name: Commit Arbitrum Goerli
+        if: steps.drawPrizesArbitrumGoerli.outputs.runStatus == 'true'
+        continue-on-error: true
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git pull
+          git add ./api/prizes/421613/
+          git commit -m "Add draw for Arbitrum Goerli draw ${{steps.drawPrizesArbitrumGoerli.outputs.drawIds}}"
       # -------------------------------------------------------- #
       # Push Draw Prizes Computation
       # -------------------------------------------------------- #
       - name: Push changes (if required)
         uses: ad-m/github-push-action@master
-        if: steps.drawPrizesEthereumGoerli.outputs.runStatus == 'true' || steps.drawPrizesOptimismGoerli.outputs.runStatus == 'true'
+        if: steps.drawPrizesEthereumGoerli.outputs.runStatus == 'true' || steps.drawPrizesOptimismGoerli.outputs.runStatus == 'true' || steps.drawPrizesArbitrumGoerli.outputs.runStatus == 'true'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
