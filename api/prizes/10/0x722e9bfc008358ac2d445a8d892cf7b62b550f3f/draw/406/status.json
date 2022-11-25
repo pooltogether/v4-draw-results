@@ -1,0 +1,12 @@
+{
+  "status": "FAILURE",
+  "createdAt": 1669410482840,
+  "updatedAt": 1669410787289,
+  "runtime": 304449,
+  "error": {
+    "message": "request to https://api.thegraph.com/subgraphs/name/pooltogether/optimism-twab failed, reason: read ECONNRESET",
+    "type": "system",
+    "errno": "ECONNRESET",
+    "code": "ECONNRESET"
+  }
+}
