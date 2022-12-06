@@ -1,20 +1,10 @@
 {
-  "status": "FAILURE",
-  "createdAt": 1670270887674,
-  "updatedAt": 1670270892111,
-  "runtime": 4437,
-  "error": {
-    "response": {
-      "errors": [
-        {
-          "message": "Store error: database unavailable"
-        }
-      ],
-      "status": 200,
-      "headers": {}
-    },
-    "request": {
-      "query": "\n            {\n            ticket(id: \"0x62bb4fc73094c83b5e952c2180b23fa7054954c4\") {\n                accounts(first: 1000 , where: { \n                    \n                    id_gt: \"0x02062b8727cdde62cd784382c60d738fcdbb736d\"\n                    }) {\n                    id\n                    delegateBalance\n                    \n    \n                    # get twab beforeOrAt drawStartTime\n                    beforeOrAtDrawStartTime: twabs(\n                        orderBy: timestamp\n                        orderDirection: desc\n                        first: 1\n                        where: { timestamp_lte: 1670181203 } #drawStartTime\n                    ) {\n                        amount\n                        timestamp\n                        delegateBalance\n                    }\n                    # now get twab beforeOrAt drawEndTime (may be the same as above)\n                    beforeOrAtDrawEndTime: twabs(\n                        orderBy: timestamp\n                        orderDirection: desc\n                        first: 1\n                        where: { timestamp_lte: 1670266703 } #drawEndTime\n                    ) {\n                        amount\n                        timestamp\n                        delegateBalance\n                    }\n                }\n            }\n        }\n        "
-    }
+  "status": "SUCCESS",
+  "createdAt": 1670337510920,
+  "updatedAt": 1670338037409,
+  "runtime": 526489,
+  "meta": {
+    "prizeLength": 458,
+    "amountsTotal": "915999542"
   }
 }
