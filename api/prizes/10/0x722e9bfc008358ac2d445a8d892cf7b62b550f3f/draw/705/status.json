@@ -1,0 +1,16 @@
+{
+  "status": "FAILURE",
+  "createdAt": 1695330263961,
+  "updatedAt": 1695330361050,
+  "runtime": 97089,
+  "error": {
+    "response": {
+      "error": "<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>cloudflare</center>\r\n</body>\r\n</html>\r\n",
+      "status": 502,
+      "headers": {}
+    },
+    "request": {
+      "query": "\n            {\n            ticket(id: \"0x62bb4fc73094c83b5e952c2180b23fa7054954c4\") {\n                accounts(first: 1000 , where: { \n                    \n                    id_gt: \"0x5107d3fdf7f0b75cd24099fa9d9db1031f9da26b\"\n                    }) {\n                    id\n                    delegateBalance\n                    \n    \n                    # get twab beforeOrAt drawStartTime\n                    beforeOrAtDrawStartTime: twabs(\n                        orderBy: timestamp\n                        orderDirection: desc\n                        first: 1\n                        where: { timestamp_lte: 1695236975 } #drawStartTime\n                    ) {\n                        amount\n                        timestamp\n                        delegateBalance\n                    }\n                    # now get twab beforeOrAt drawEndTime (may be the same as above)\n                    beforeOrAtDrawEndTime: twabs(\n                        orderBy: timestamp\n                        orderDirection: desc\n                        first: 1\n                        where: { timestamp_lte: 1695322475 } #drawEndTime\n                    ) {\n                        amount\n                        timestamp\n                        delegateBalance\n                    }\n                }\n            }\n        }\n        "
+    }
+  }
+}
