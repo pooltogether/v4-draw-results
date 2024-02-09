@@ -1,0 +1,23 @@
+{
+  "status": "FAILURE",
+  "createdAt": 1707512645535,
+  "updatedAt": 1707512782205,
+  "runtime": 136670,
+  "error": {
+    "response": {
+      "errors": [
+        {
+          "message": "Store error: database unavailable"
+        },
+        {
+          "message": "Store error: database unavailable"
+        }
+      ],
+      "status": 200,
+      "headers": {}
+    },
+    "request": {
+      "query": "\n            {\n            ticket(id: \"0x62bb4fc73094c83b5e952c2180b23fa7054954c4\") {\n                accounts(first: 1000 , where: { \n                    \n                    id_gt: \"0x3220c5f72b175e0697a062bd7ee7e3077ea1b1b4\"\n                    }) {\n                    id\n                    delegateBalance\n                    \n    \n                    # get twab beforeOrAt drawStartTime\n                    beforeOrAtDrawStartTime: twabs(\n                        orderBy: timestamp\n                        orderDirection: desc\n                        first: 1\n                        where: { timestamp_lte: 1707419447 } #drawStartTime\n                    ) {\n                        amount\n                        timestamp\n                        delegateBalance\n                    }\n                    # now get twab beforeOrAt drawEndTime (may be the same as above)\n                    beforeOrAtDrawEndTime: twabs(\n                        orderBy: timestamp\n                        orderDirection: desc\n                        first: 1\n                        where: { timestamp_lte: 1707504947 } #drawEndTime\n                    ) {\n                        amount\n                        timestamp\n                        delegateBalance\n                    }\n                }\n            }\n        }\n        "
+    }
+  }
+}
